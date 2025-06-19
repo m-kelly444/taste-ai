@@ -3,6 +3,7 @@ import numpy as np
 from PIL import Image
 import torchvision.transforms as transforms
 from .models import AestheticVisionTransformer, TrendPredictor
+from .burch_models import burch_engine
 from typing import Union, Dict, List
 import random
 
@@ -20,15 +21,23 @@ class AestheticModel:
                                std=[0.229, 0.224, 0.225])
         ])
         
+        print("✅ Aesthetic model initialized with Burch preferences")
+        
     def predict(self, image: Union[Image.Image, np.ndarray]) -> float:
+        """Predict aesthetic score using Burch-optimized engine"""
         if isinstance(image, np.ndarray):
             image = Image.fromarray(image)
         
-        image_tensor = self.transform(image).unsqueeze(0).to(self.device)
+        # Use the specialized Burch engine
+        result = burch_engine.score_aesthetic(image)
+        return result["aesthetic_score"]
+    
+    def predict_detailed(self, image: Union[Image.Image, np.ndarray]) -> Dict:
+        """Get detailed aesthetic analysis"""
+        if isinstance(image, np.ndarray):
+            image = Image.fromarray(image)
         
-        with torch.no_grad():
-            score = random.uniform(0.6, 0.95)
-            return score
+        return burch_engine.score_aesthetic(image)
     
     def predict_batch(self, images: List[Image.Image]) -> List[float]:
         return [self.predict(img) for img in images]
@@ -38,53 +47,34 @@ class TasteEngine:
         self.aesthetic_model = AestheticModel()
         
     def analyze_comprehensive(self, image: Image.Image) -> Dict:
-        aesthetic_score = self.aesthetic_model.predict(image)
-        
-        colors = self._extract_colors(image)
-        color_harmony = self._analyze_color_harmony(colors)
-        
-        patterns = self._detect_patterns(image)
-        trend_score = self._predict_trend_potential(image)
+        """Comprehensive analysis using Burch preferences"""
+        detailed_result = self.aesthetic_model.predict_detailed(image)
         
         return {
-            "aesthetic_score": float(aesthetic_score),
-            "color_analysis": {
-                "dominant_colors": colors,
-                "harmony_score": float(color_harmony)
-            },
-            "pattern_analysis": patterns,
-            "trend_potential": float(trend_score),
-            "overall_rating": self._calculate_overall_rating(
-                aesthetic_score, color_harmony, trend_score
-            )
+            "aesthetic_score": detailed_result["aesthetic_score"],
+            "burch_alignment": detailed_result["burch_alignment"],
+            "commercial_potential": detailed_result["commercial_potential"],
+            "confidence": detailed_result["confidence"],
+            "analysis": detailed_result["analysis"],
+            "trend_analysis": detailed_result["trend_analysis"],
+            "overall_rating": self._calculate_overall_rating(detailed_result)
         }
     
-    def _extract_colors(self, image: Image.Image) -> List[str]:
-        return ["#1a1a1a", "#f5f5f5", "#8b5a3c"]
-    
-    def _analyze_color_harmony(self, colors: List[str]) -> float:
-        return np.random.uniform(0.7, 0.95)
-    
-    def _detect_patterns(self, image: Image.Image) -> Dict:
-        return {
-            "geometric": True,
-            "organic": False,
-            "symmetry_score": 0.85
-        }
-    
-    def _predict_trend_potential(self, image: Image.Image) -> float:
-        return np.random.uniform(0.6, 0.9)
-    
-    def _calculate_overall_rating(self, aesthetic: float, harmony: float, trend: float) -> str:
-        score = (aesthetic * 0.4 + harmony * 0.3 + trend * 0.3)
+    def _calculate_overall_rating(self, result: Dict) -> str:
+        """Calculate overall rating based on multiple factors"""
+        score = (
+            result["aesthetic_score"] * 0.4 +
+            result["burch_alignment"] * 0.4 +
+            result["commercial_potential"] * 0.2
+        )
         
         if score >= 0.9:
-            return "Exceptional"
+            return "Exceptional - Chris Burch Signature"
         elif score >= 0.8:
-            return "Excellent" 
+            return "Excellent - Strong Burch Appeal" 
         elif score >= 0.7:
-            return "Good"
+            return "Good - Market Potential"
         elif score >= 0.6:
-            return "Average"
+            return "Average - Needs Refinement"
         else:
-            return "Below Average"
+            return "Below Standard - Major Issues"
