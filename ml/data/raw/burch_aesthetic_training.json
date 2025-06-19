@@ -1,0 +1,1502 @@
+[
+  {
+    "image_features": {
+      "complexity": 0.5773729180809004,
+      "symmetry": 0.6359492684233925,
+      "contrast": 0.25393611352848483,
+      "color_palette": "warm",
+      "pattern": "geometric",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.4034711422561283
+  },
+  {
+    "image_features": {
+      "complexity": 0.7080850897378461,
+      "symmetry": 0.3782951894320712,
+      "contrast": 0.6131496350969032,
+      "color_palette": "earth_tones",
+      "pattern": "organic",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "summer",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.6374961751989261
+  },
+  {
+    "image_features": {
+      "complexity": 0.5402359863352173,
+      "symmetry": 0.6752271247689257,
+      "contrast": 0.5524212481097825,
+      "color_palette": "cool",
+      "pattern": "geometric",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.8452540037318139
+  },
+  {
+    "image_features": {
+      "complexity": 0.6879022637879184,
+      "symmetry": 0.4611239588928374,
+      "contrast": 0.39253362058366736,
+      "color_palette": "earth_tones",
+      "pattern": "organic",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.431282936976732
+  },
+  {
+    "image_features": {
+      "complexity": 0.24817413310783262,
+      "symmetry": 0.4611593597554272,
+      "contrast": 0.5438028221952118,
+      "color_palette": "neutral",
+      "pattern": "textured",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.4025088676397798
+  },
+  {
+    "image_features": {
+      "complexity": 0.2841878031916616,
+      "symmetry": 0.8646732838475415,
+      "contrast": 0.22307569662347226,
+      "color_palette": "cool",
+      "pattern": "minimal",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.9070410475004445
+  },
+  {
+    "image_features": {
+      "complexity": 0.6226471544882911,
+      "symmetry": 0.4726218964650543,
+      "contrast": 0.453375573366452,
+      "color_palette": "warm",
+      "pattern": "textured",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.6564814687855185
+  },
+  {
+    "image_features": {
+      "complexity": 0.391988251529234,
+      "symmetry": 0.3973588240474837,
+      "contrast": 0.5392943060555917,
+      "color_palette": "warm",
+      "pattern": "organic",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.5872587228530166
+  },
+  {
+    "image_features": {
+      "complexity": 0.522667167434659,
+      "symmetry": 0.3367212646885599,
+      "contrast": 0.4124044586565755,
+      "color_palette": "earth_tones",
+      "pattern": "textured",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.5425039788350904
+  },
+  {
+    "image_features": {
+      "complexity": 0.5154871729017612,
+      "symmetry": 0.6028132444969911,
+      "contrast": 0.23070067404146788,
+      "color_palette": "earth_tones",
+      "pattern": "organic",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.5936870846019616
+  },
+  {
+    "image_features": {
+      "complexity": 0.7065842950583687,
+      "symmetry": 0.440567662238267,
+      "contrast": 0.4500480253767689,
+      "color_palette": "cool",
+      "pattern": "minimal",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.4950151739068872
+  },
+  {
+    "image_features": {
+      "complexity": 0.358991033046035,
+      "symmetry": 0.48371223466979807,
+      "contrast": 0.5550477873431469,
+      "color_palette": "warm",
+      "pattern": "textured",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "summer",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.884284104819806
+  },
+  {
+    "image_features": {
+      "complexity": 0.23937364459207408,
+      "symmetry": 0.5641425562831144,
+      "contrast": 0.21309093347850838,
+      "color_palette": "warm",
+      "pattern": "textured",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.7238710489981762
+  },
+  {
+    "image_features": {
+      "complexity": 0.6156631495297833,
+      "symmetry": 0.47298988406945586,
+      "contrast": 0.4841800654551969,
+      "color_palette": "neutral",
+      "pattern": "minimal",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.6187873384599083
+  },
+  {
+    "image_features": {
+      "complexity": 0.5062994306381443,
+      "symmetry": 0.6001809645298792,
+      "contrast": 0.4167548572077039,
+      "color_palette": "warm",
+      "pattern": "organic",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "summer",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.7830076587417987
+  },
+  {
+    "image_features": {
+      "complexity": 0.6594549314611214,
+      "symmetry": 0.5103669878862507,
+      "contrast": 0.6911566693750069,
+      "color_palette": "earth_tones",
+      "pattern": "organic",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.6799702902549992
+  },
+  {
+    "image_features": {
+      "complexity": 0.51270499228301,
+      "symmetry": 0.5478520253183403,
+      "contrast": 0.40516857133626494,
+      "color_palette": "cool",
+      "pattern": "geometric",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.7686141394351058
+  },
+  {
+    "image_features": {
+      "complexity": 0.3668179953413679,
+      "symmetry": 0.6318257169974437,
+      "contrast": 0.6194772566334037,
+      "color_palette": "warm",
+      "pattern": "minimal",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.8709287077304103
+  },
+  {
+    "image_features": {
+      "complexity": 0.23984777774891652,
+      "symmetry": 0.7143977831358814,
+      "contrast": 0.5818105898832768,
+      "color_palette": "earth_tones",
+      "pattern": "minimal",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.9222699951022729
+  },
+  {
+    "image_features": {
+      "complexity": 0.3661871578324095,
+      "symmetry": 0.5679522931490186,
+      "contrast": 0.49423384816575205,
+      "color_palette": "cool",
+      "pattern": "minimal",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.8241527803842159
+  },
+  {
+    "image_features": {
+      "complexity": 0.669311308987106,
+      "symmetry": 0.5639843105280962,
+      "contrast": 0.4708234904680146,
+      "color_palette": "neutral",
+      "pattern": "textured",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.8008526815311496
+  },
+  {
+    "image_features": {
+      "complexity": 0.5616304959968612,
+      "symmetry": 0.3033601023408317,
+      "contrast": 0.6645454089802012,
+      "color_palette": "cool",
+      "pattern": "minimal",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.7983472248499683
+  },
+  {
+    "image_features": {
+      "complexity": 0.7268019083076684,
+      "symmetry": 0.8770309581819926,
+      "contrast": 0.6660940421174188,
+      "color_palette": "earth_tones",
+      "pattern": "geometric",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.7955154507427302
+  },
+  {
+    "image_features": {
+      "complexity": 0.7196382537438757,
+      "symmetry": 0.8424134240400247,
+      "contrast": 0.6446916273062457,
+      "color_palette": "cool",
+      "pattern": "organic",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.6813174068773813
+  },
+  {
+    "image_features": {
+      "complexity": 0.4197804535147167,
+      "symmetry": 0.6024456219879395,
+      "contrast": 0.45688897308404697,
+      "color_palette": "cool",
+      "pattern": "geometric",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.7809484285640287
+  },
+  {
+    "image_features": {
+      "complexity": 0.42841729761848835,
+      "symmetry": 0.7762207189384582,
+      "contrast": 0.5911447588620252,
+      "color_palette": "cool",
+      "pattern": "textured",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.9156725672983395
+  },
+  {
+    "image_features": {
+      "complexity": 0.24576806081926453,
+      "symmetry": 0.6682203084458291,
+      "contrast": 0.27870725954900993,
+      "color_palette": "warm",
+      "pattern": "textured",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "summer",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.6834249138710055
+  },
+  {
+    "image_features": {
+      "complexity": 0.6231353195310463,
+      "symmetry": 0.3346770937170807,
+      "contrast": 0.6250535035820923,
+      "color_palette": "cool",
+      "pattern": "organic",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.5832208696325161
+  },
+  {
+    "image_features": {
+      "complexity": 0.7947876502839479,
+      "symmetry": 0.8773445594135012,
+      "contrast": 0.6070426719498883,
+      "color_palette": "warm",
+      "pattern": "organic",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.4267728752908358
+  },
+  {
+    "image_features": {
+      "complexity": 0.2936132569681319,
+      "symmetry": 0.3820874828008583,
+      "contrast": 0.6284478244107943,
+      "color_palette": "cool",
+      "pattern": "textured",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.5208236065098113
+  },
+  {
+    "image_features": {
+      "complexity": 0.5585911097063204,
+      "symmetry": 0.4467725938783904,
+      "contrast": 0.6576124299208375,
+      "color_palette": "earth_tones",
+      "pattern": "geometric",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.5172033121163007
+  },
+  {
+    "image_features": {
+      "complexity": 0.7186486791997189,
+      "symmetry": 0.8846934359231349,
+      "contrast": 0.6492136150274955,
+      "color_palette": "cool",
+      "pattern": "minimal",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.9046948694950386
+  },
+  {
+    "image_features": {
+      "complexity": 0.4000098906559503,
+      "symmetry": 0.7377104671654522,
+      "contrast": 0.2057730371398681,
+      "color_palette": "earth_tones",
+      "pattern": "organic",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.8875891799942817
+  },
+  {
+    "image_features": {
+      "complexity": 0.4043349525693739,
+      "symmetry": 0.38249047468757497,
+      "contrast": 0.40786129499165924,
+      "color_palette": "earth_tones",
+      "pattern": "organic",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.6352550649316211
+  },
+  {
+    "image_features": {
+      "complexity": 0.5685657688472157,
+      "symmetry": 0.453370296351619,
+      "contrast": 0.47888925690721723,
+      "color_palette": "neutral",
+      "pattern": "textured",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.5743096963106522
+  },
+  {
+    "image_features": {
+      "complexity": 0.3976762092177849,
+      "symmetry": 0.7934708198963305,
+      "contrast": 0.2881278605416779,
+      "color_palette": "warm",
+      "pattern": "textured",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "summer",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.6684700436875504
+  },
+  {
+    "image_features": {
+      "complexity": 0.30311462571010334,
+      "symmetry": 0.3452261061006102,
+      "contrast": 0.20964757255491917,
+      "color_palette": "cool",
+      "pattern": "textured",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.4364173844924245
+  },
+  {
+    "image_features": {
+      "complexity": 0.6419370644954041,
+      "symmetry": 0.6244098286505613,
+      "contrast": 0.279747160072802,
+      "color_palette": "earth_tones",
+      "pattern": "organic",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.7889514849975736
+  },
+  {
+    "image_features": {
+      "complexity": 0.4056152678719096,
+      "symmetry": 0.5814082591864961,
+      "contrast": 0.42205602989497815,
+      "color_palette": "neutral",
+      "pattern": "organic",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.8027481458379304
+  },
+  {
+    "image_features": {
+      "complexity": 0.21778202961989446,
+      "symmetry": 0.39745406092284585,
+      "contrast": 0.5487579053415798,
+      "color_palette": "cool",
+      "pattern": "geometric",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.4795153207395713
+  },
+  {
+    "image_features": {
+      "complexity": 0.6952878149519464,
+      "symmetry": 0.6582969732960033,
+      "contrast": 0.6755768994450185,
+      "color_palette": "cool",
+      "pattern": "geometric",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.7597103016917649
+  },
+  {
+    "image_features": {
+      "complexity": 0.5024057099057253,
+      "symmetry": 0.5685421931831243,
+      "contrast": 0.6012651042377817,
+      "color_palette": "cool",
+      "pattern": "organic",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.9228285732002708
+  },
+  {
+    "image_features": {
+      "complexity": 0.43944257076367493,
+      "symmetry": 0.6444528673035637,
+      "contrast": 0.6804902930541528,
+      "color_palette": "earth_tones",
+      "pattern": "geometric",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.7356601012341079
+  },
+  {
+    "image_features": {
+      "complexity": 0.5927437144843857,
+      "symmetry": 0.7405755804764356,
+      "contrast": 0.3262656002310613,
+      "color_palette": "warm",
+      "pattern": "minimal",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.7936333073242863
+  },
+  {
+    "image_features": {
+      "complexity": 0.2059272927325556,
+      "symmetry": 0.7967551492026737,
+      "contrast": 0.22506648381363092,
+      "color_palette": "earth_tones",
+      "pattern": "geometric",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.9346227760673632
+  },
+  {
+    "image_features": {
+      "complexity": 0.21198437499825942,
+      "symmetry": 0.8052125972059108,
+      "contrast": 0.23320599543932324,
+      "color_palette": "cool",
+      "pattern": "geometric",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.8462781172096676
+  },
+  {
+    "image_features": {
+      "complexity": 0.7543959464093786,
+      "symmetry": 0.7573517786482473,
+      "contrast": 0.6108412445888743,
+      "color_palette": "cool",
+      "pattern": "textured",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.6369932566216595
+  },
+  {
+    "image_features": {
+      "complexity": 0.35258837776318397,
+      "symmetry": 0.6779787775520996,
+      "contrast": 0.20036725013454582,
+      "color_palette": "neutral",
+      "pattern": "minimal",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.7889748993257717
+  },
+  {
+    "image_features": {
+      "complexity": 0.2563485783327764,
+      "symmetry": 0.8420734696159289,
+      "contrast": 0.5395847623616039,
+      "color_palette": "neutral",
+      "pattern": "organic",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.9294471778605975
+  },
+  {
+    "image_features": {
+      "complexity": 0.7682669042115251,
+      "symmetry": 0.41534824675759086,
+      "contrast": 0.30279586701463834,
+      "color_palette": "neutral",
+      "pattern": "geometric",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "summer",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.8850481048454539
+  },
+  {
+    "image_features": {
+      "complexity": 0.4155913861541606,
+      "symmetry": 0.33969177004067397,
+      "contrast": 0.45577247957018724,
+      "color_palette": "warm",
+      "pattern": "organic",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.5516203875456
+  },
+  {
+    "image_features": {
+      "complexity": 0.42593112010056805,
+      "symmetry": 0.6962063887621315,
+      "contrast": 0.2625680830702314,
+      "color_palette": "neutral",
+      "pattern": "geometric",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.5160107156971565
+  },
+  {
+    "image_features": {
+      "complexity": 0.3844639813305393,
+      "symmetry": 0.46363263427820767,
+      "contrast": 0.48903541696853875,
+      "color_palette": "warm",
+      "pattern": "textured",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.742367504551668
+  },
+  {
+    "image_features": {
+      "complexity": 0.5980527676125093,
+      "symmetry": 0.7608472136753982,
+      "contrast": 0.5539210230190967,
+      "color_palette": "earth_tones",
+      "pattern": "minimal",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "summer",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.9251758916205177
+  },
+  {
+    "image_features": {
+      "complexity": 0.5143115279699313,
+      "symmetry": 0.5069764013545719,
+      "contrast": 0.490570868816148,
+      "color_palette": "warm",
+      "pattern": "minimal",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.8748735107593435
+  },
+  {
+    "image_features": {
+      "complexity": 0.2896609939957111,
+      "symmetry": 0.6949304773791227,
+      "contrast": 0.6816635175221518,
+      "color_palette": "earth_tones",
+      "pattern": "minimal",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.8828325184182708
+  },
+  {
+    "image_features": {
+      "complexity": 0.7557158018016481,
+      "symmetry": 0.7981502466237043,
+      "contrast": 0.5444973775743678,
+      "color_palette": "warm",
+      "pattern": "minimal",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.8078113512222833
+  },
+  {
+    "image_features": {
+      "complexity": 0.7870635795896248,
+      "symmetry": 0.5338569584384263,
+      "contrast": 0.2481241588293246,
+      "color_palette": "earth_tones",
+      "pattern": "organic",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "summer",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.5265158795128769
+  },
+  {
+    "image_features": {
+      "complexity": 0.6097429014404674,
+      "symmetry": 0.6911863286077041,
+      "contrast": 0.6229679441055842,
+      "color_palette": "neutral",
+      "pattern": "minimal",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.895138492020675
+  },
+  {
+    "image_features": {
+      "complexity": 0.26377699262039606,
+      "symmetry": 0.4850094063527267,
+      "contrast": 0.5666673039679688,
+      "color_palette": "cool",
+      "pattern": "organic",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.8091248578156678
+  },
+  {
+    "image_features": {
+      "complexity": 0.370593994766386,
+      "symmetry": 0.8475845916486129,
+      "contrast": 0.22852971453176152,
+      "color_palette": "warm",
+      "pattern": "geometric",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "summer",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.8898139182657292
+  },
+  {
+    "image_features": {
+      "complexity": 0.3713584678377313,
+      "symmetry": 0.35900190664722625,
+      "contrast": 0.5753311142893467,
+      "color_palette": "neutral",
+      "pattern": "organic",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "summer",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.5063458087890187
+  },
+  {
+    "image_features": {
+      "complexity": 0.4697568008054242,
+      "symmetry": 0.3670377830985555,
+      "contrast": 0.3400531243335523,
+      "color_palette": "earth_tones",
+      "pattern": "minimal",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.534105417177015
+  },
+  {
+    "image_features": {
+      "complexity": 0.3002846752395276,
+      "symmetry": 0.5919928176465342,
+      "contrast": 0.5381587285835592,
+      "color_palette": "warm",
+      "pattern": "geometric",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "summer",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.47816050259853726
+  },
+  {
+    "image_features": {
+      "complexity": 0.38366971512511694,
+      "symmetry": 0.7059684039073801,
+      "contrast": 0.23120341913333492,
+      "color_palette": "earth_tones",
+      "pattern": "organic",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.41781344195615505
+  },
+  {
+    "image_features": {
+      "complexity": 0.64289528660601,
+      "symmetry": 0.34078038373518116,
+      "contrast": 0.2593671014838816,
+      "color_palette": "neutral",
+      "pattern": "minimal",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.8811427811265976
+  },
+  {
+    "image_features": {
+      "complexity": 0.2638961658740822,
+      "symmetry": 0.582933076960432,
+      "contrast": 0.4843961502923155,
+      "color_palette": "earth_tones",
+      "pattern": "geometric",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "summer",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.8025729085854629
+  },
+  {
+    "image_features": {
+      "complexity": 0.6354655458436911,
+      "symmetry": 0.7805840927418768,
+      "contrast": 0.22026200416287273,
+      "color_palette": "neutral",
+      "pattern": "minimal",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.8500620398760315
+  },
+  {
+    "image_features": {
+      "complexity": 0.6220024538004614,
+      "symmetry": 0.6017930634471416,
+      "contrast": 0.24711481952259806,
+      "color_palette": "earth_tones",
+      "pattern": "textured",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.47434673037567576
+  },
+  {
+    "image_features": {
+      "complexity": 0.7734381882343726,
+      "symmetry": 0.5017320418872087,
+      "contrast": 0.635343002612729,
+      "color_palette": "cool",
+      "pattern": "geometric",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.9050399967543781
+  },
+  {
+    "image_features": {
+      "complexity": 0.278881659536052,
+      "symmetry": 0.4600469021040612,
+      "contrast": 0.5233091141774302,
+      "color_palette": "neutral",
+      "pattern": "textured",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "summer",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.9414200432522724
+  },
+  {
+    "image_features": {
+      "complexity": 0.43273044091233925,
+      "symmetry": 0.6375178230433437,
+      "contrast": 0.6542782343468265,
+      "color_palette": "warm",
+      "pattern": "geometric",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.49910852537888556
+  },
+  {
+    "image_features": {
+      "complexity": 0.7035226124187892,
+      "symmetry": 0.550189922127827,
+      "contrast": 0.3437814030028663,
+      "color_palette": "earth_tones",
+      "pattern": "textured",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.4132196511398373
+  },
+  {
+    "image_features": {
+      "complexity": 0.365538647820398,
+      "symmetry": 0.5257946028409949,
+      "contrast": 0.2991703111515258,
+      "color_palette": "earth_tones",
+      "pattern": "textured",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.5974570602698347
+  },
+  {
+    "image_features": {
+      "complexity": 0.6148962082681472,
+      "symmetry": 0.4022561117561368,
+      "contrast": 0.231895441881934,
+      "color_palette": "earth_tones",
+      "pattern": "organic",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "summer",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.6460077565850855
+  },
+  {
+    "image_features": {
+      "complexity": 0.772646674821406,
+      "symmetry": 0.6601165815924045,
+      "contrast": 0.3935166543259285,
+      "color_palette": "neutral",
+      "pattern": "minimal",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "summer",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.7614791577769993
+  },
+  {
+    "image_features": {
+      "complexity": 0.7484183206910875,
+      "symmetry": 0.8340258001162657,
+      "contrast": 0.4812623252962357,
+      "color_palette": "neutral",
+      "pattern": "minimal",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.7054045765052023
+  },
+  {
+    "image_features": {
+      "complexity": 0.7893892913166369,
+      "symmetry": 0.883839480000137,
+      "contrast": 0.6383455617005297,
+      "color_palette": "cool",
+      "pattern": "organic",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "summer",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.5243475957684518
+  },
+  {
+    "image_features": {
+      "complexity": 0.6973793707924341,
+      "symmetry": 0.3353886523897922,
+      "contrast": 0.3130723904473734,
+      "color_palette": "cool",
+      "pattern": "geometric",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.9321704235082541
+  },
+  {
+    "image_features": {
+      "complexity": 0.4536734417541411,
+      "symmetry": 0.7624344035871569,
+      "contrast": 0.6037933294986448,
+      "color_palette": "warm",
+      "pattern": "minimal",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.509843573483952
+  },
+  {
+    "image_features": {
+      "complexity": 0.76626878148024,
+      "symmetry": 0.33450729926556677,
+      "contrast": 0.4866088020793456,
+      "color_palette": "earth_tones",
+      "pattern": "textured",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.6623599748524013
+  },
+  {
+    "image_features": {
+      "complexity": 0.38197338941442505,
+      "symmetry": 0.5938622299174535,
+      "contrast": 0.3314238531511011,
+      "color_palette": "neutral",
+      "pattern": "minimal",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.6000240218542376
+  },
+  {
+    "image_features": {
+      "complexity": 0.20321037527851005,
+      "symmetry": 0.8645198194205002,
+      "contrast": 0.22676650486658556,
+      "color_palette": "neutral",
+      "pattern": "geometric",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.6491344528608205
+  },
+  {
+    "image_features": {
+      "complexity": 0.5770456483840208,
+      "symmetry": 0.45453848800503993,
+      "contrast": 0.2696507934170922,
+      "color_palette": "warm",
+      "pattern": "geometric",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.5768930422207124
+  },
+  {
+    "image_features": {
+      "complexity": 0.787931093423702,
+      "symmetry": 0.5457550031880479,
+      "contrast": 0.20870969814083462,
+      "color_palette": "neutral",
+      "pattern": "minimal",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.8388052692932904
+  },
+  {
+    "image_features": {
+      "complexity": 0.6903235905402674,
+      "symmetry": 0.3506112274419059,
+      "contrast": 0.5928671987783054,
+      "color_palette": "warm",
+      "pattern": "minimal",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.6965272001199715
+  },
+  {
+    "image_features": {
+      "complexity": 0.4335652837289603,
+      "symmetry": 0.8330504684541831,
+      "contrast": 0.699068607299557,
+      "color_palette": "warm",
+      "pattern": "minimal",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.7880426635591187
+  },
+  {
+    "image_features": {
+      "complexity": 0.22475558954056535,
+      "symmetry": 0.5117258553347214,
+      "contrast": 0.6864337499007104,
+      "color_palette": "warm",
+      "pattern": "organic",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.6548993957167901
+  },
+  {
+    "image_features": {
+      "complexity": 0.6043295124077241,
+      "symmetry": 0.8425708678062709,
+      "contrast": 0.3164635340124351,
+      "color_palette": "neutral",
+      "pattern": "minimal",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.9425267880188822
+  },
+  {
+    "image_features": {
+      "complexity": 0.47989137437443613,
+      "symmetry": 0.8408663043032785,
+      "contrast": 0.543335876459559,
+      "color_palette": "warm",
+      "pattern": "minimal",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.8246353681965594
+  },
+  {
+    "image_features": {
+      "complexity": 0.39309616585825186,
+      "symmetry": 0.48372976367850185,
+      "contrast": 0.2079463223223777,
+      "color_palette": "cool",
+      "pattern": "minimal",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.8198815256918737
+  },
+  {
+    "image_features": {
+      "complexity": 0.497606390759808,
+      "symmetry": 0.5940963111488373,
+      "contrast": 0.2548375966535132,
+      "color_palette": "warm",
+      "pattern": "organic",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.45483412885556196
+  },
+  {
+    "image_features": {
+      "complexity": 0.37094166617300195,
+      "symmetry": 0.7127708954285483,
+      "contrast": 0.5441525298549749,
+      "color_palette": "cool",
+      "pattern": "geometric",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.4568391800662843
+  },
+  {
+    "image_features": {
+      "complexity": 0.4420253290349234,
+      "symmetry": 0.418161926540608,
+      "contrast": 0.3864319747201945,
+      "color_palette": "neutral",
+      "pattern": "minimal",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.4689721395368724
+  },
+  {
+    "image_features": {
+      "complexity": 0.242060851272406,
+      "symmetry": 0.3890073081326768,
+      "contrast": 0.2709932627282336,
+      "color_palette": "warm",
+      "pattern": "organic",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.5946506144166812
+  },
+  {
+    "image_features": {
+      "complexity": 0.6901929903055901,
+      "symmetry": 0.8593014443247484,
+      "contrast": 0.4073992099936947,
+      "color_palette": "cool",
+      "pattern": "organic",
+      "style": "bohemian"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.7602820181170125
+  },
+  {
+    "image_features": {
+      "complexity": 0.4124322101108509,
+      "symmetry": 0.4968602266802812,
+      "contrast": 0.30393764433170706,
+      "color_palette": "warm",
+      "pattern": "minimal",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "fall",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.9176917248245313
+  },
+  {
+    "image_features": {
+      "complexity": 0.5829706063809539,
+      "symmetry": 0.8488627469366261,
+      "contrast": 0.23356348101965968,
+      "color_palette": "earth_tones",
+      "pattern": "textured",
+      "style": "contemporary"
+    },
+    "market_context": {
+      "season": "summer",
+      "target_demographic": "mass_market"
+    },
+    "burch_score": 0.47847918917780974
+  },
+  {
+    "image_features": {
+      "complexity": 0.610281293654613,
+      "symmetry": 0.8887743523507421,
+      "contrast": 0.6995131495440996,
+      "color_palette": "neutral",
+      "pattern": "geometric",
+      "style": "classic"
+    },
+    "market_context": {
+      "season": "spring",
+      "target_demographic": "contemporary"
+    },
+    "burch_score": 0.8837354567485884
+  },
+  {
+    "image_features": {
+      "complexity": 0.35337795957573115,
+      "symmetry": 0.7108399461534327,
+      "contrast": 0.3373413610620466,
+      "color_palette": "neutral",
+      "pattern": "organic",
+      "style": "minimalist"
+    },
+    "market_context": {
+      "season": "winter",
+      "target_demographic": "luxury"
+    },
+    "burch_score": 0.44593655694196876
+  }
+]
