@@ -1,0 +1,19 @@
+services:
+  db:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=tasteai
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6380:6379"
+
+volumes:
+  postgres_data:

@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite3
+
+# ML Models
+ml/data/models/*.pth
+ml/data/models/*.pkl
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# Docker
+docker-compose.override.yml
+
+# Cache
+.cache/
+.parcel-cache/

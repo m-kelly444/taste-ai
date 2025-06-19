@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: certbot-renewal
+  namespace: tasteai
+spec:
+  schedule: "0 12 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: certbot
+            image: certbot/certbot:latest
+            command:
+            - /bin/sh
+            - -c
+            - certbot renew --quiet
+          restartPolicy: OnFailure

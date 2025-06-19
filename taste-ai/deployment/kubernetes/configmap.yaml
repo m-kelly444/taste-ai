@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: tasteai-config
+  namespace: tasteai
+data:
+  allowed-hosts: "tasteai.com,www.tasteai.com,api.tasteai.com"
