@@ -1,0 +1,1281 @@
+{
+  "embedded_companies": [],
+  "text_companies": [
+    "BRAD",
+    "NIHI",
+    "BeGlammed",
+    "Ground Control",
+    "Loop Returns",
+    "BAUBLEBAR",
+    "Stimulating Growth",
+    "SuperOrdinary",
+    "TwitterLinked",
+    "Barber Surgeons",
+    "NexGen",
+    "SelvaRey",
+    "GoHenry",
+    "Investment Portfolio",
+    "Milk Street",
+    "OnDeck",
+    "Barbers Surgeon",
+    "Superlost Coffee",
+    "PCH",
+    "Perfect Moment",
+    "Portfolio It",
+    "STAUD",
+    "Columbia Care",
+    "InstagramFacebook",
+    "Ordinary Co",
+    "Foray Collective",
+    "Rain Agency",
+    "BaubleBar",
+    "Guggenheim Partners",
+    "Full Portfolio",
+    "Win Brands",
+    "Going Public",
+    "One Hope",
+    "Rights Reserved",
+    "BusinessBarbers",
+    "The Vampires"
+  ],
+  "api_data": [
+    {
+      "url": "https://api.burchcreativecapital.com/wp-json/wp/v2/posts",
+      "data": [
+        {
+          "id": 2357,
+          "date": "2022-11-17T18:54:39",
+          "date_gmt": "2022-11-17T23:54:39",
+          "guid": {
+            "rendered": "https://burch-funkhaus.netlify.app/?p=2357"
+          },
+          "modified": "2022-11-17T19:06:43",
+          "modified_gmt": "2022-11-18T00:06:43",
+          "slug": "chris-burch-featured-in-forbes-magazine",
+          "status": "publish",
+          "type": "post",
+          "link": "https://burch-funkhaus.netlify.app/news/p/chris-burch-featured-in-forbes-magazine/",
+          "title": {
+            "rendered": "Chris Burch featured in Forbes"
+          },
+          "content": {
+            "rendered": "\n<h2 class=\"has-text-align-center wp-block-heading\">Author Tom Teicholz profiles Chris on what drives him in life and in business.</h2>\n\n\n\n<h3 class=\"has-text-align-center wp-block-heading\">Read the full story on <a rel=\"noreferrer noopener\" href=\"https://www.forbes.com/sites/tomteicholz/2022/11/14/chris-burch-never-stops-listening/?sh=3f05c43851c6\" target=\"_blank\">Forbes.com</a> </h3>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"flex-basis:25%\"></div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"flex-basis:90%\">\n<figure class=\"wp-block-image size-large\"><img decoding=\"async\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2022/11/960x0-684x1024.jpg\" alt=\"\" class=\"wp-image-2360\"/></figure>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"flex-basis:25%\"></div>\n</div>\n",
+            "protected": false
+          },
+          "excerpt": {
+            "rendered": "<p>Author Tom Teicholz profiles Chris on what drives him in life and in business. Read the full story on Forbes.com</p>\n",
+            "protected": false
+          },
+          "author": 1,
+          "featured_media": 2360,
+          "comment_status": "open",
+          "ping_status": "open",
+          "sticky": false,
+          "template": "",
+          "format": "standard",
+          "meta": {
+            "_acf_changed": false,
+            "footnotes": ""
+          },
+          "categories": [
+            1
+          ],
+          "tags": [],
+          "acf": [],
+          "_links": {
+            "self": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/posts/2357"
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/posts"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/types/post"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/comments?post=2357"
+              }
+            ],
+            "version-history": [
+              {
+                "count": 9,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/posts/2357/revisions"
+              }
+            ],
+            "predecessor-version": [
+              {
+                "id": 2368,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/posts/2357/revisions/2368"
+              }
+            ],
+            "wp:featuredmedia": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/media/2360"
+              }
+            ],
+            "wp:attachment": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/media?parent=2357"
+              }
+            ],
+            "wp:term": [
+              {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/categories?post=2357"
+              },
+              {
+                "taxonomy": "post_tag",
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/tags?post=2357"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages",
+      "data": [
+        {
+          "id": 1895,
+          "date": "2022-02-28T16:17:02",
+          "date_gmt": "2022-02-28T21:17:46",
+          "guid": {
+            "rendered": "https://burch-funkhaus.netlify.app/portfolio/barbers-surgeon/"
+          },
+          "modified": "2022-03-01T11:18:37",
+          "modified_gmt": "2022-03-01T16:18:37",
+          "slug": "barbers-surgeon",
+          "status": "publish",
+          "type": "page",
+          "link": "https://burch-funkhaus.netlify.app/portfolio/barbers-surgeon/",
+          "title": {
+            "rendered": "Stimulating Growth in Hair and Business &#8211; Barbers Surgeon Guild"
+          },
+          "content": {
+            "rendered": "\n<div class=\"wp-block-fuxt-cover-with-logos\"><div class=\"fuxt-logo-item\"><figure><img decoding=\"async\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2022/02/logo-barbers-surgenon-guild.svg\" alt=\"\" data-id=\"1902\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/barbers-surgeon/logo-barbers-surgenon-guild/\" class=\"wp-logo-1902\"/></figure></div></div>\n\n\n\n<h2 class=\"has-text-align-center wp-block-heading\">\u201cI understand the business of </h2>\n\n\n\n<h2 class=\"has-text-align-center wp-block-heading\">empowerment.\u201d</h2>\n\n\n\n<p class=\"has-text-align-center\">Chris Burch</p>\n\n\n\n<p></p>\n\n\n\n<figure class=\"wp-block-gallery columns-1 is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"422\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.21.53-AM-1024x422.jpg\" alt=\"\" data-id=\"1903\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.21.53-AM.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/barbers-surgeon/screen-shot-2022-02-07-at-11-21-53-am/\" class=\"wp-image-1903\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.21.53-AM-1024x422.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.21.53-AM-300x124.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.21.53-AM-768x317.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.21.53-AM-1536x634.jpg 1536w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.21.53-AM-2048x845.jpg 2048w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.21.53-AM-960x396.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.21.53-AM-375x155.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.21.53-AM-1280x528.jpg 1280w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.21.53-AM-1920x792.jpg 1920w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li></ul></figure>\n\n\n\n<blockquote class=\"wp-block-quote has-text-align-center is-layout-flow wp-block-quote-is-layout-flow\"><p>The Barber Surgeon\u2019s Guild has been keeping the traditions of the surgical practitioners and grooming experts of medieval Europe alive. </p><p>As deep as their knowledge of this practice runs, their methods are in no way out of date as clients receive result-driven, physician-led solutions to increase hair thickness through the use of personalized medical compounds, premium restorative treatments, and cosmetic lines.</p></blockquote>\n\n\n\n<p></p>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow\">\n<p>Beyond their efforts in hair restoration and regrowth, the aesthetic-mavens at BSG are a source of information and education for their clientele, advising them on preventative and maintenance techniques and products to ensure the longevity of their procedures in both look and feel. </p>\n\n\n\n<p>Companies aimed at empowerment are the bread and butter of Burch Creative Capital. \u201cI was drawn to working with the CEO and Founder, Dr. Justin Rome\u201d recalled Chris Burch. \u201cI immediately recognized his authenticity, integrity, drive, curiosity and desire to innovate, and I wanted to be his partner.\u201d Burch\u2019s experience growing the Tory Burch brand around the focus of women\u2019s power gave him the insight needed to help BSG reach their goals.</p>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"661\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.23.51-AM-1024x661.jpg\" alt=\"\" class=\"wp-image-1904\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.23.51-AM-1024x661.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.23.51-AM-300x194.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.23.51-AM-768x496.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.23.51-AM-1536x991.jpg 1536w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.23.51-AM-837x540.jpg 837w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.23.51-AM-375x242.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.23.51-AM-960x620.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.23.51-AM-1280x826.jpg 1280w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.23.51-AM.jpg 1641w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure>\n</div>\n</div>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"610\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.24.02-AM-1024x610.jpg\" alt=\"\" class=\"wp-image-1905\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.24.02-AM-1024x610.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.24.02-AM-300x179.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.24.02-AM-768x458.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.24.02-AM-1536x915.jpg 1536w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.24.02-AM-906x540.jpg 906w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.24.02-AM-375x223.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.24.02-AM-960x572.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.24.02-AM-1280x763.jpg 1280w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.24.02-AM.jpg 1776w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure>\n</div>\n\n\n\n<div class=\"wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow\">\n<blockquote class=\"wp-block-quote has-text-align-center is-layout-flow wp-block-quote-is-layout-flow\"><p>\u201cI believe in giving our customers everything they need to thrive emotionally and physically.\u201d</p><cite>Chris Burch</cite></blockquote>\n</div>\n</div>\n\n\n\n<p></p>\n\n\n\n<p></p>\n\n\n\n<figure class=\"wp-block-gallery columns-1 is-cropped wp-block-gallery-2 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"424\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.24.20-AM-1024x424.jpg\" alt=\"\" data-id=\"1906\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.24.20-AM.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/barbers-surgeon/screen-shot-2022-02-07-at-11-24-20-am/\" class=\"wp-image-1906\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.24.20-AM-1024x424.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.24.20-AM-300x124.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.24.20-AM-768x318.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.24.20-AM-1536x636.jpg 1536w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.24.20-AM-2048x849.jpg 2048w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.24.20-AM-960x398.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.24.20-AM-375x155.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.24.20-AM-1280x530.jpg 1280w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-07-at-11.24.20-AM-1920x795.jpg 1920w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li></ul></figure>\n\n\n\n<p></p>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-3 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow\">\n<p>Making appearances on massive platforms through collaborations with The Try Guys on YouTube, The Shop: Uninterrupted on HBO, and the Bald Talk Podcast, BSG has been making waves with big name talent to spread the word of their exceptional work.</p>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"682\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2022/02/lippman_bsg_dayone_21a5323_rt-1100x733-1-1024x682.jpg\" alt=\"\" class=\"wp-image-1907\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2022/02/lippman_bsg_dayone_21a5323_rt-1100x733-1-1024x682.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/lippman_bsg_dayone_21a5323_rt-1100x733-1-300x200.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/lippman_bsg_dayone_21a5323_rt-1100x733-1-768x512.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/lippman_bsg_dayone_21a5323_rt-1100x733-1-810x540.jpg 810w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/lippman_bsg_dayone_21a5323_rt-1100x733-1-375x250.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/lippman_bsg_dayone_21a5323_rt-1100x733-1-960x640.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/lippman_bsg_dayone_21a5323_rt-1100x733-1.jpg 1100w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure>\n</div>\n</div>\n\n\n\n<blockquote class=\"wp-block-quote has-text-align-center is-layout-flow wp-block-quote-is-layout-flow\"><p>\u201cBCC has been a strategic partner who always challenges me to think creatively when navigating in order to best leverage bandwidth and resources in the interest of maximizing growth opportunities.\u201d</p><p></p><cite>Dr. Justin Rome, Founder &amp; CEO</cite></blockquote>\n\n\n\n<p></p>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-4 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2022/02/6121ec6e7d966ebdef0d5d641370e4fd_large-1024x1024.jpg\" alt=\"\" class=\"wp-image-1908\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2022/02/6121ec6e7d966ebdef0d5d641370e4fd_large-1024x1024.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/6121ec6e7d966ebdef0d5d641370e4fd_large-300x300.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/6121ec6e7d966ebdef0d5d641370e4fd_large-150x150.jpg 150w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/6121ec6e7d966ebdef0d5d641370e4fd_large-768x768.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/6121ec6e7d966ebdef0d5d641370e4fd_large-540x540.jpg 540w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/6121ec6e7d966ebdef0d5d641370e4fd_large-375x375.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/6121ec6e7d966ebdef0d5d641370e4fd_large-960x960.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/6121ec6e7d966ebdef0d5d641370e4fd_large-1280x1280.jpg 1280w, https://api.burchcreativecapital.com/wp-content/uploads/2022/02/6121ec6e7d966ebdef0d5d641370e4fd_large.jpg 1500w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure>\n</div>\n\n\n\n<div class=\"wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow\">\n<p>While Barber Surgeons began as a profession in the evolving cities of Renaissance era Italy, The Guild has since expanded, setting up two flagship locations in Los Angeles and New York City where their work empowers confidence and growth (literally, and metaphorically).</p>\n</div>\n</div>\n\n\n\n<p></p>\n",
+            "protected": false
+          },
+          "excerpt": {
+            "rendered": "<p>\u201cI understand the business of empowerment.\u201d Chris Burch The Barber Surgeon\u2019s Guild has been keeping the traditions of the surgical&#8230;</p>\n",
+            "protected": false
+          },
+          "author": 1,
+          "featured_media": 1934,
+          "parent": 41,
+          "menu_order": 10,
+          "comment_status": "closed",
+          "ping_status": "closed",
+          "template": "",
+          "meta": {
+            "_acf_changed": false,
+            "footnotes": ""
+          },
+          "tags": [],
+          "acf": [],
+          "_links": {
+            "self": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/1895"
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/types/page"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/comments?post=1895"
+              }
+            ],
+            "version-history": [
+              {
+                "count": 10,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/1895/revisions"
+              }
+            ],
+            "predecessor-version": [
+              {
+                "id": 1943,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/1895/revisions/1943"
+              }
+            ],
+            "up": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/41"
+              }
+            ],
+            "wp:featuredmedia": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/media/1934"
+              }
+            ],
+            "wp:attachment": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/media?parent=1895"
+              }
+            ],
+            "wp:term": [
+              {
+                "taxonomy": "post_tag",
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/tags?post=1895"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        },
+        {
+          "id": 1055,
+          "date": "2021-11-23T15:38:02",
+          "date_gmt": "2021-11-23T20:38:04",
+          "guid": {
+            "rendered": "https://burch-funkhaus.netlify.app/portfolio/launching-a-bold-new-look-in-swimwear-solid-striped-2/"
+          },
+          "modified": "2021-12-07T17:31:11",
+          "modified_gmt": "2021-12-07T22:31:11",
+          "slug": "on-demand-on-the-way-rappi",
+          "status": "publish",
+          "type": "page",
+          "link": "https://burch-funkhaus.netlify.app/portfolio/on-demand-on-the-way-rappi/",
+          "title": {
+            "rendered": "On-demand, on the way &#8211; Rappi"
+          },
+          "content": {
+            "rendered": "\n<div class=\"wp-block-fuxt-cover-with-logos\"><div class=\"fuxt-logo-item\"><figure><img decoding=\"async\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/logo-rappi-new.svg\" alt=\"\" data-id=\"1678\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/on-demand-on-the-way-rappi/logo-rappi-new/\" class=\"wp-logo-1678\"/></figure></div></div>\n\n\n\n<h2 class=\"wp-block-heading\"><meta charset=\"utf-8\">Rappi is an on-demand delivery mobile app available across Latin America that allows users to shop for groceries, food, and drugstore medications, as well as send items through its courier service, 24/7.&nbsp;<meta charset=\"utf-8\"></h2>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-5 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<p>Beyond the delivery and courier services, Rappi doubles as a mobile ATM, frequently used by customers for convenient cash withdrawals across Argentina, Brazil, Chile, Mexico, Peru, Uruguay, and Colombia.</p>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<p>An investor in people first, Chris Burch saw co-founder Sebastian Mejia\u2019s vision as clear as if he had conceptualized it himself, taking a chance when no one else did. The Bogota-based app is worth $7 billion today.\u00a0</p>\n</div>\n</div>\n\n\n\n<figure class=\"wp-block-gallery columns-1 is-cropped wp-block-gallery-3 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1800\" height=\"1013\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/17-rappi.jpg\" alt=\"\" data-id=\"1688\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/17-rappi.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/on-demand-on-the-way-rappi/17-rappi/\" class=\"wp-image-1688\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/17-rappi.jpg 1800w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/17-rappi-300x169.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/17-rappi-1024x576.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/17-rappi-768x432.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/17-rappi-1536x864.jpg 1536w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/17-rappi-960x540.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/17-rappi-375x211.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/17-rappi-1280x720.jpg 1280w\" sizes=\"(max-width: 1800px) 100vw, 1800px\" /></figure></li></ul></figure>\n\n\n\n<figure class=\"wp-block-gallery columns-2 is-cropped wp-block-gallery-4 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/246843282_423515302471762_4935098283480266382_n-1024x1024.jpg\" alt=\"\" data-id=\"1067\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/246843282_423515302471762_4935098283480266382_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/on-demand-on-the-way-rappi/246843282_423515302471762_4935098283480266382_n/\" class=\"wp-image-1067\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/246843282_423515302471762_4935098283480266382_n-1024x1024.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/246843282_423515302471762_4935098283480266382_n-300x300.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/246843282_423515302471762_4935098283480266382_n-150x150.jpg 150w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/246843282_423515302471762_4935098283480266382_n-768x768.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/246843282_423515302471762_4935098283480266382_n-540x540.jpg 540w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/246843282_423515302471762_4935098283480266382_n-375x375.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/246843282_423515302471762_4935098283480266382_n-960x960.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/246843282_423515302471762_4935098283480266382_n.jpg 1080w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/247116666_423515389138420_3376249633214219473_n-1024x1024.jpg\" alt=\"\" data-id=\"1066\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/247116666_423515389138420_3376249633214219473_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/on-demand-on-the-way-rappi/247116666_423515389138420_3376249633214219473_n/\" class=\"wp-image-1066\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/247116666_423515389138420_3376249633214219473_n-1024x1024.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/247116666_423515389138420_3376249633214219473_n-300x300.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/247116666_423515389138420_3376249633214219473_n-150x150.jpg 150w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/247116666_423515389138420_3376249633214219473_n-768x768.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/247116666_423515389138420_3376249633214219473_n-540x540.jpg 540w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/247116666_423515389138420_3376249633214219473_n-375x375.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/247116666_423515389138420_3376249633214219473_n-960x960.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/247116666_423515389138420_3376249633214219473_n.jpg 1080w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/247846997_425986945557931_4068176587041818028_n-1024x1024.jpg\" alt=\"\" data-id=\"1065\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/247846997_425986945557931_4068176587041818028_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/on-demand-on-the-way-rappi/247846997_425986945557931_4068176587041818028_n/\" class=\"wp-image-1065\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/247846997_425986945557931_4068176587041818028_n-1024x1024.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/247846997_425986945557931_4068176587041818028_n-300x300.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/247846997_425986945557931_4068176587041818028_n-150x150.jpg 150w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/247846997_425986945557931_4068176587041818028_n-768x768.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/247846997_425986945557931_4068176587041818028_n-540x540.jpg 540w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/247846997_425986945557931_4068176587041818028_n-375x375.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/247846997_425986945557931_4068176587041818028_n-960x960.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/247846997_425986945557931_4068176587041818028_n.jpg 1080w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/249846943_429231118566847_106679559909609004_n-1024x1024.jpg\" alt=\"\" data-id=\"1064\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/249846943_429231118566847_106679559909609004_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/on-demand-on-the-way-rappi/249846943_429231118566847_106679559909609004_n/\" class=\"wp-image-1064\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/249846943_429231118566847_106679559909609004_n-1024x1024.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/249846943_429231118566847_106679559909609004_n-300x300.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/249846943_429231118566847_106679559909609004_n-150x150.jpg 150w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/249846943_429231118566847_106679559909609004_n-768x768.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/249846943_429231118566847_106679559909609004_n-540x540.jpg 540w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/249846943_429231118566847_106679559909609004_n-375x375.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/249846943_429231118566847_106679559909609004_n-960x960.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/249846943_429231118566847_106679559909609004_n.jpg 1080w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li></ul></figure>\n\n\n\n<p></p>\n",
+            "protected": false
+          },
+          "excerpt": {
+            "rendered": "<p>Rappi is an on-demand delivery mobile app available across Latin America that allows users to shop for groceries, food, and&#8230;</p>\n",
+            "protected": false
+          },
+          "author": 2,
+          "featured_media": 1684,
+          "parent": 41,
+          "menu_order": 9,
+          "comment_status": "closed",
+          "ping_status": "closed",
+          "template": "",
+          "meta": {
+            "_acf_changed": false,
+            "footnotes": ""
+          },
+          "tags": [],
+          "acf": [],
+          "_links": {
+            "self": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/1055"
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/types/page"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/comments?post=1055"
+              }
+            ],
+            "version-history": [
+              {
+                "count": 10,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/1055/revisions"
+              }
+            ],
+            "predecessor-version": [
+              {
+                "id": 1872,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/1055/revisions/1872"
+              }
+            ],
+            "up": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/41"
+              }
+            ],
+            "wp:featuredmedia": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/media/1684"
+              }
+            ],
+            "wp:attachment": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/media?parent=1055"
+              }
+            ],
+            "wp:term": [
+              {
+                "taxonomy": "post_tag",
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/tags?post=1055"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        },
+        {
+          "id": 1036,
+          "date": "2021-11-23T15:28:02",
+          "date_gmt": "2021-11-23T20:28:48",
+          "guid": {
+            "rendered": "https://burch-funkhaus.netlify.app/portfolio/launching-a-bold-new-look-in-swimwear-solid-striped-2/"
+          },
+          "modified": "2021-12-07T17:10:13",
+          "modified_gmt": "2021-12-07T22:10:13",
+          "slug": "investing-in-meaningful-revenue-through-brands-that-matter-win-brands",
+          "status": "publish",
+          "type": "page",
+          "link": "https://burch-funkhaus.netlify.app/portfolio/investing-in-meaningful-revenue-through-brands-that-matter-win-brands/",
+          "title": {
+            "rendered": "Investing in meaningful revenue through brands that matter &#8211; Win Brands"
+          },
+          "content": {
+            "rendered": "\n<div class=\"wp-block-fuxt-cover-with-logos\"><div class=\"fuxt-logo-item\"><figure><img decoding=\"async\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/logo-win-brands-new02.svg\" alt=\"\" data-id=\"1668\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/investing-in-meaningful-revenue-through-brands-that-matter-win-brands/logo-win-brands-new02/\" class=\"wp-logo-1668\"/></figure></div></div>\n\n\n\n<h2 class=\"has-text-align-center wp-block-heading\">Win Brands Group is a modern holding company that specializes in buying and building brands that matter.</h2>\n\n\n\n<p>The Win portfolio boasts meaningful brands like Homesick Candles, Gravity blankets, and QALO, which all share the similar brand mission in connecting one&#8217;s needs back to a sense of comfort and home. With a full-suite of services spanning from operations, product sourcing, outstanding customer service, and creative services, Win Group Brands are investing in sustainable growth rooted in the familiar, the nostalgic, and the sensible shopper.</p>\n\n\n\n<figure class=\"wp-block-gallery columns-1 is-cropped wp-block-gallery-5 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1138\" height=\"658\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/HP.Category.Rings_.jpg\" alt=\"\" data-id=\"1043\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/HP.Category.Rings_.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/win-brands/hp-category-rings/\" class=\"wp-image-1043\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/HP.Category.Rings_.jpg 1138w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/HP.Category.Rings_-300x173.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/HP.Category.Rings_-1024x592.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/HP.Category.Rings_-768x444.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/HP.Category.Rings_-934x540.jpg 934w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/HP.Category.Rings_-375x217.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/HP.Category.Rings_-960x555.jpg 960w\" sizes=\"(max-width: 1138px) 100vw, 1138px\" /></figure></li></ul></figure>\n\n\n\n<blockquote class=\"wp-block-quote has-text-align-center is-layout-flow wp-block-quote-is-layout-flow\"><p></p><p>\u201cPeople ask how much credit I give Chris and Burch Creative Capital for my career and where I am today. The answer is easy, 100%!\u201d</p><cite>Kyle Widrick, CEO Win Brands</cite></blockquote>\n\n\n\n<figure class=\"wp-block-gallery columns-2 is-cropped wp-block-gallery-6 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/85210131_536473153886693_5227982775339250908_n-1024x1024.jpg\" alt=\"\" data-id=\"1044\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/85210131_536473153886693_5227982775339250908_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/win-brands/85210131_536473153886693_5227982775339250908_n/\" class=\"wp-image-1044\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/85210131_536473153886693_5227982775339250908_n-1024x1024.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/85210131_536473153886693_5227982775339250908_n-300x300.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/85210131_536473153886693_5227982775339250908_n-150x150.jpg 150w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/85210131_536473153886693_5227982775339250908_n-768x768.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/85210131_536473153886693_5227982775339250908_n-540x540.jpg 540w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/85210131_536473153886693_5227982775339250908_n-375x375.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/85210131_536473153886693_5227982775339250908_n-960x960.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/85210131_536473153886693_5227982775339250908_n.jpg 1080w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/82077416_107542577375845_146488310239584940_n-1024x1024.jpg\" alt=\"\" data-id=\"1045\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/82077416_107542577375845_146488310239584940_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/win-brands/82077416_107542577375845_146488310239584940_n/\" class=\"wp-image-1045\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/82077416_107542577375845_146488310239584940_n-1024x1024.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/82077416_107542577375845_146488310239584940_n-300x300.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/82077416_107542577375845_146488310239584940_n-150x150.jpg 150w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/82077416_107542577375845_146488310239584940_n-768x768.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/82077416_107542577375845_146488310239584940_n-540x540.jpg 540w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/82077416_107542577375845_146488310239584940_n-375x375.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/82077416_107542577375845_146488310239584940_n-960x960.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/82077416_107542577375845_146488310239584940_n.jpg 1080w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/73321517_413981999298261_2441484821977500875_n-1024x1024.jpg\" alt=\"\" data-id=\"1046\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/73321517_413981999298261_2441484821977500875_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/win-brands/73321517_413981999298261_2441484821977500875_n/\" class=\"wp-image-1046\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/73321517_413981999298261_2441484821977500875_n-1024x1024.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/73321517_413981999298261_2441484821977500875_n-300x300.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/73321517_413981999298261_2441484821977500875_n-150x150.jpg 150w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/73321517_413981999298261_2441484821977500875_n-768x768.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/73321517_413981999298261_2441484821977500875_n-540x540.jpg 540w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/73321517_413981999298261_2441484821977500875_n-375x375.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/73321517_413981999298261_2441484821977500875_n-960x960.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/73321517_413981999298261_2441484821977500875_n-1280x1280.jpg 1280w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/73321517_413981999298261_2441484821977500875_n.jpg 1440w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/72919935_212987749699328_1213209744588383703_n-1024x1024.jpg\" alt=\"\" data-id=\"1048\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/72919935_212987749699328_1213209744588383703_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/win-brands/72919935_212987749699328_1213209744588383703_n/\" class=\"wp-image-1048\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/72919935_212987749699328_1213209744588383703_n-1024x1024.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/72919935_212987749699328_1213209744588383703_n-300x300.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/72919935_212987749699328_1213209744588383703_n-150x150.jpg 150w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/72919935_212987749699328_1213209744588383703_n-768x768.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/72919935_212987749699328_1213209744588383703_n-540x540.jpg 540w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/72919935_212987749699328_1213209744588383703_n-375x375.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/72919935_212987749699328_1213209744588383703_n-960x960.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/72919935_212987749699328_1213209744588383703_n-1280x1280.jpg 1280w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/72919935_212987749699328_1213209744588383703_n.jpg 1440w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li></ul></figure>\n\n\n\n<blockquote class=\"wp-block-quote has-text-align-center is-layout-flow wp-block-quote-is-layout-flow\"><p>It shouldn&#8217;t come as a surprise that the man behind the brand, CEO Kyle Widrick, was once mentored by Chris Burch. Kyle attributes the many years spent working for Chris as the invaluable experience which allowed him to build upon the broad business perspective he has today, and his trademark trait of investing in business and people intuitively.</p></blockquote>\n\n\n\n<figure class=\"wp-block-gallery columns-1 is-cropped wp-block-gallery-7 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1440\" height=\"1152\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/190723_Gravity_2146copy_c1d52220-f6bc-461b-8f96-80b2dd4c4ea2.jpg\" alt=\"\" data-id=\"1049\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/190723_Gravity_2146copy_c1d52220-f6bc-461b-8f96-80b2dd4c4ea2.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/win-brands/190723_gravity_2146copy_c1d52220-f6bc-461b-8f96-80b2dd4c4ea2/\" class=\"wp-image-1049\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/190723_Gravity_2146copy_c1d52220-f6bc-461b-8f96-80b2dd4c4ea2.jpg 1440w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/190723_Gravity_2146copy_c1d52220-f6bc-461b-8f96-80b2dd4c4ea2-300x240.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/190723_Gravity_2146copy_c1d52220-f6bc-461b-8f96-80b2dd4c4ea2-1024x819.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/190723_Gravity_2146copy_c1d52220-f6bc-461b-8f96-80b2dd4c4ea2-768x614.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/190723_Gravity_2146copy_c1d52220-f6bc-461b-8f96-80b2dd4c4ea2-675x540.jpg 675w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/190723_Gravity_2146copy_c1d52220-f6bc-461b-8f96-80b2dd4c4ea2-375x300.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/190723_Gravity_2146copy_c1d52220-f6bc-461b-8f96-80b2dd4c4ea2-960x768.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/190723_Gravity_2146copy_c1d52220-f6bc-461b-8f96-80b2dd4c4ea2-1280x1024.jpg 1280w\" sizes=\"(max-width: 1440px) 100vw, 1440px\" /></figure></li></ul></figure>\n\n\n\n<figure class=\"wp-block-gallery columns-2 is-cropped wp-block-gallery-8 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"683\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/204718595_131750679043163_3555127837039573204_n-1024x683.jpg\" alt=\"\" data-id=\"1050\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/204718595_131750679043163_3555127837039573204_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/win-brands/204718595_131750679043163_3555127837039573204_n/\" class=\"wp-image-1050\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/204718595_131750679043163_3555127837039573204_n-1024x683.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/204718595_131750679043163_3555127837039573204_n-300x200.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/204718595_131750679043163_3555127837039573204_n-768x512.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/204718595_131750679043163_3555127837039573204_n-810x540.jpg 810w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/204718595_131750679043163_3555127837039573204_n-375x250.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/204718595_131750679043163_3555127837039573204_n-960x640.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/204718595_131750679043163_3555127837039573204_n-1280x853.jpg 1280w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/204718595_131750679043163_3555127837039573204_n.jpg 1440w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"819\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/GRV.ChunkyKnit.Lifestyle1-1024x819.jpg\" alt=\"\" data-id=\"1051\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/GRV.ChunkyKnit.Lifestyle1.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/win-brands/grv-chunkyknit-lifestyle1/\" class=\"wp-image-1051\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/GRV.ChunkyKnit.Lifestyle1-1024x819.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/GRV.ChunkyKnit.Lifestyle1-300x240.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/GRV.ChunkyKnit.Lifestyle1-768x614.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/GRV.ChunkyKnit.Lifestyle1-675x540.jpg 675w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/GRV.ChunkyKnit.Lifestyle1-375x300.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/GRV.ChunkyKnit.Lifestyle1-960x768.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/GRV.ChunkyKnit.Lifestyle1-1280x1024.jpg 1280w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/GRV.ChunkyKnit.Lifestyle1.jpg 1440w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li></ul></figure>\n\n\n\n<p></p>\n",
+            "protected": false
+          },
+          "excerpt": {
+            "rendered": "<p>Win Brands Group is a modern holding company that specializes in buying and building brands that matter. The Win portfolio&#8230;</p>\n",
+            "protected": false
+          },
+          "author": 2,
+          "featured_media": 1039,
+          "parent": 41,
+          "menu_order": 6,
+          "comment_status": "closed",
+          "ping_status": "closed",
+          "template": "",
+          "meta": {
+            "_acf_changed": false,
+            "footnotes": ""
+          },
+          "tags": [],
+          "acf": [],
+          "_links": {
+            "self": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/1036"
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/types/page"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/comments?post=1036"
+              }
+            ],
+            "version-history": [
+              {
+                "count": 9,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/1036/revisions"
+              }
+            ],
+            "predecessor-version": [
+              {
+                "id": 1848,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/1036/revisions/1848"
+              }
+            ],
+            "up": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/41"
+              }
+            ],
+            "wp:featuredmedia": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/media/1039"
+              }
+            ],
+            "wp:attachment": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/media?parent=1036"
+              }
+            ],
+            "wp:term": [
+              {
+                "taxonomy": "post_tag",
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/tags?post=1036"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        },
+        {
+          "id": 1018,
+          "date": "2021-11-23T15:19:02",
+          "date_gmt": "2021-11-23T20:19:43",
+          "guid": {
+            "rendered": "https://burch-funkhaus.netlify.app/portfolio/launching-a-bold-new-look-in-swimwear-solid-striped-2/"
+          },
+          "modified": "2021-12-07T17:06:47",
+          "modified_gmt": "2021-12-07T22:06:47",
+          "slug": "sustainable-process-meets-historic-investment-philosophy-guggenheim",
+          "status": "publish",
+          "type": "page",
+          "link": "https://burch-funkhaus.netlify.app/portfolio/sustainable-process-meets-historic-investment-philosophy-guggenheim/",
+          "title": {
+            "rendered": "Sustainable process meets historic investment philosophy &#8211; Guggenheim Partners"
+          },
+          "content": {
+            "rendered": "\n<div class=\"wp-block-fuxt-cover-with-logos\"><div class=\"fuxt-logo-item\"><figure><img decoding=\"async\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/logo-guggenheim-new.svg\" alt=\"\" data-id=\"1662\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/sustainable-process-meets-historic-investment-philosophy-guggenheim/logo-guggenheim-new/\" class=\"wp-logo-1662\"/></figure></div></div>\n\n\n\n<h2 class=\"has-text-align-center wp-block-heading\">The Guggenheim brand is known the world over for their influence in art and culture with museums in New York and Spain. This followed nearly 100 years of massive success in the natural resource industry.</h2>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-6 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<p>Guggenheim Partners extended the brand name into a global asset management and investment advisory financial firm that engages in investment banking, trading, retail real estate consulting, along with capital market and insurance services. Co-founded in 2000 by Chris Burch and a small group of renowned investors,\u00a0 Guggenheim Partners has been unmistakably successful as it now manages approximately $330 billion of client assets.</p>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<p>The operation pays homage to its namesake by maintaining the quality and heritage of the family name, and by continuing to evolve its impressive brand equity extended into a full-service financial firm. As an extremely active shareholder, Chis was instrumental in marshaling that strategy into a sustainable infrastructure.</p>\n</div>\n</div>\n\n\n\n<figure class=\"wp-block-gallery columns-2 is-cropped wp-block-gallery-9 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"684\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c-1024x684.jpg\" alt=\"\" data-id=\"1025\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/guggenheim/2cb737374473114c773ee37e31d5cb064411738c/\" class=\"wp-image-1025\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c-1024x684.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c-300x200.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c-768x513.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c-1536x1026.jpg 1536w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c-808x540.jpg 808w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c-375x251.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c-960x641.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c-1280x855.jpg 1280w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c-1920x1283.jpg 1920w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c.jpg 2000w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"683\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/guggenheim-1024x683.jpg\" alt=\"\" data-id=\"1026\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/guggenheim.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/guggenheim/matt-greenslade/\" class=\"wp-image-1026\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/guggenheim-1024x683.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/guggenheim-300x200.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/guggenheim-768x512.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/guggenheim-810x540.jpg 810w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/guggenheim-375x250.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/guggenheim-960x640.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/guggenheim.jpg 1200w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"blocks-gallery-item__caption\">\u00a9 Matt Greenslade/photo-nyc.com</figcaption></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"263\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/CIOOutlook-InfrastructureBABs_2ArticleBanner1170x300_IR581_v01-1024x263.jpg\" alt=\"\" data-id=\"1027\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/CIOOutlook-InfrastructureBABs_2ArticleBanner1170x300_IR581_v01.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/guggenheim/ciooutlook-infrastructurebabs_2articlebanner1170x300_ir581_v01/\" class=\"wp-image-1027\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/CIOOutlook-InfrastructureBABs_2ArticleBanner1170x300_IR581_v01-1024x263.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/CIOOutlook-InfrastructureBABs_2ArticleBanner1170x300_IR581_v01-300x77.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/CIOOutlook-InfrastructureBABs_2ArticleBanner1170x300_IR581_v01-768x197.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/CIOOutlook-InfrastructureBABs_2ArticleBanner1170x300_IR581_v01-960x246.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/CIOOutlook-InfrastructureBABs_2ArticleBanner1170x300_IR581_v01-375x96.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/CIOOutlook-InfrastructureBABs_2ArticleBanner1170x300_IR581_v01.jpg 1170w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"267\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/GP-Careers-Banner-1024x267.jpg\" alt=\"\" data-id=\"1028\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/GP-Careers-Banner.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/guggenheim/gp-careers-banner/\" class=\"wp-image-1028\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/GP-Careers-Banner-1024x267.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/GP-Careers-Banner-300x78.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/GP-Careers-Banner-768x200.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/GP-Careers-Banner-1536x400.jpg 1536w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/GP-Careers-Banner-960x250.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/GP-Careers-Banner-375x98.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/GP-Careers-Banner-1280x333.jpg 1280w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/GP-Careers-Banner.jpg 1920w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li></ul></figure>\n\n\n\n<h2 class=\"has-text-align-center wp-block-heading\">From inserting key leadership, to leveraging its vast and unique network, Burch Creative Capital brought much more than initial funding and worked in lock-step with the managing partners to realize a vision that quickly scaled into the global brand we recognize today.&nbsp;</h2>\n\n\n\n<figure class=\"wp-block-gallery columns-2 is-cropped wp-block-gallery-10 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"684\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c-1024x684.jpg\" alt=\"\" data-id=\"1025\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/sustainable-process-meets-historic-investment-philosophy-guggenheim/2cb737374473114c773ee37e31d5cb064411738c/\" class=\"wp-image-1025\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c-1024x684.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c-300x200.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c-768x513.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c-1536x1026.jpg 1536w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c-808x540.jpg 808w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c-375x251.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c-960x641.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c-1280x855.jpg 1280w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c-1920x1283.jpg 1920w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/2cb737374473114c773ee37e31d5cb064411738c.jpg 2000w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"683\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Guggenheim-w-SilverStamp-1410x940-1-1024x683.jpg\" alt=\"\" data-id=\"1029\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Guggenheim-w-SilverStamp-1410x940-1.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/sustainable-process-meets-historic-investment-philosophy-guggenheim/guggenheim-w-silverstamp-1410x940/\" class=\"wp-image-1029\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Guggenheim-w-SilverStamp-1410x940-1-1024x683.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Guggenheim-w-SilverStamp-1410x940-1-300x200.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Guggenheim-w-SilverStamp-1410x940-1-768x512.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Guggenheim-w-SilverStamp-1410x940-1-810x540.jpg 810w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Guggenheim-w-SilverStamp-1410x940-1-375x250.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Guggenheim-w-SilverStamp-1410x940-1-960x640.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Guggenheim-w-SilverStamp-1410x940-1-1280x853.jpg 1280w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Guggenheim-w-SilverStamp-1410x940-1.jpg 1410w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li></ul></figure>\n",
+            "protected": false
+          },
+          "excerpt": {
+            "rendered": "<p>The Guggenheim brand is known the world over for their influence in art and culture with museums in New York&#8230;</p>\n",
+            "protected": false
+          },
+          "author": 2,
+          "featured_media": 1032,
+          "parent": 41,
+          "menu_order": 5,
+          "comment_status": "closed",
+          "ping_status": "closed",
+          "template": "",
+          "meta": {
+            "_acf_changed": false,
+            "footnotes": ""
+          },
+          "tags": [],
+          "acf": [],
+          "_links": {
+            "self": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/1018"
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/types/page"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/comments?post=1018"
+              }
+            ],
+            "version-history": [
+              {
+                "count": 10,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/1018/revisions"
+              }
+            ],
+            "predecessor-version": [
+              {
+                "id": 1839,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/1018/revisions/1839"
+              }
+            ],
+            "up": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/41"
+              }
+            ],
+            "wp:featuredmedia": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/media/1032"
+              }
+            ],
+            "wp:attachment": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/media?parent=1018"
+              }
+            ],
+            "wp:term": [
+              {
+                "taxonomy": "post_tag",
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/tags?post=1018"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        },
+        {
+          "id": 1001,
+          "date": "2021-11-23T14:56:02",
+          "date_gmt": "2021-11-23T19:56:35",
+          "guid": {
+            "rendered": "https://burch-funkhaus.netlify.app/portfolio/launching-a-bold-new-look-in-swimwear-solid-striped-2/"
+          },
+          "modified": "2021-12-07T17:14:05",
+          "modified_gmt": "2021-12-07T22:14:05",
+          "slug": "luxury-travel-reimagined-faena",
+          "status": "publish",
+          "type": "page",
+          "link": "https://burch-funkhaus.netlify.app/portfolio/luxury-travel-reimagined-faena/",
+          "title": {
+            "rendered": "Luxury travel reimagined &#8211; Faena"
+          },
+          "content": {
+            "rendered": "\n<div class=\"wp-block-fuxt-cover-with-logos\"><div class=\"fuxt-logo-item\"><figure><img decoding=\"async\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/logo-faena-new.svg\" alt=\"\" data-id=\"1671\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/luxury-travel-reimagined-faena/logo-faena-new/\" class=\"wp-logo-1671\"/></figure></div></div>\n\n\n\n<blockquote class=\"wp-block-quote has-text-align-center is-layout-flow wp-block-quote-is-layout-flow\"><p>Faena Group is a luxury hotel group with locations in Miami Beach &amp; Buenos Aires.</p></blockquote>\n\n\n\n<figure class=\"wp-block-gallery columns-2 is-cropped wp-block-gallery-11 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/b85c80e180cc05356066983e9c922053fe56f37df61f9936843e7779e48cecfa-1024x1024.jpg\" alt=\"\" data-id=\"1401\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/luxury-travel-reimagined-faena/b85c80e180cc05356066983e9c922053fe56f37df61f9936843e7779e48cecfa/\" class=\"wp-image-1401\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/b85c80e180cc05356066983e9c922053fe56f37df61f9936843e7779e48cecfa-1024x1024.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/b85c80e180cc05356066983e9c922053fe56f37df61f9936843e7779e48cecfa-300x300.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/b85c80e180cc05356066983e9c922053fe56f37df61f9936843e7779e48cecfa-150x150.jpg 150w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/b85c80e180cc05356066983e9c922053fe56f37df61f9936843e7779e48cecfa-768x768.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/b85c80e180cc05356066983e9c922053fe56f37df61f9936843e7779e48cecfa-540x540.jpg 540w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/b85c80e180cc05356066983e9c922053fe56f37df61f9936843e7779e48cecfa-375x375.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/b85c80e180cc05356066983e9c922053fe56f37df61f9936843e7779e48cecfa-960x960.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/b85c80e180cc05356066983e9c922053fe56f37df61f9936843e7779e48cecfa.jpg 1080w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"830\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/5d60669bb37d28e0ec8c8a955c6a2fe084dbd2e3c216ba549a0005abd669dda3-830x1024.jpg\" alt=\"\" data-id=\"1402\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/5d60669bb37d28e0ec8c8a955c6a2fe084dbd2e3c216ba549a0005abd669dda3.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/luxury-travel-reimagined-faena/5d60669bb37d28e0ec8c8a955c6a2fe084dbd2e3c216ba549a0005abd669dda3/\" class=\"wp-image-1402\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/5d60669bb37d28e0ec8c8a955c6a2fe084dbd2e3c216ba549a0005abd669dda3-830x1024.jpg 830w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/5d60669bb37d28e0ec8c8a955c6a2fe084dbd2e3c216ba549a0005abd669dda3-243x300.jpg 243w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/5d60669bb37d28e0ec8c8a955c6a2fe084dbd2e3c216ba549a0005abd669dda3-768x948.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/5d60669bb37d28e0ec8c8a955c6a2fe084dbd2e3c216ba549a0005abd669dda3-1245x1536.jpg 1245w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/5d60669bb37d28e0ec8c8a955c6a2fe084dbd2e3c216ba549a0005abd669dda3-438x540.jpg 438w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/5d60669bb37d28e0ec8c8a955c6a2fe084dbd2e3c216ba549a0005abd669dda3-375x463.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/5d60669bb37d28e0ec8c8a955c6a2fe084dbd2e3c216ba549a0005abd669dda3-960x1185.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/5d60669bb37d28e0ec8c8a955c6a2fe084dbd2e3c216ba549a0005abd669dda3-1280x1580.jpg 1280w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/5d60669bb37d28e0ec8c8a955c6a2fe084dbd2e3c216ba549a0005abd669dda3.jpg 1440w\" sizes=\"(max-width: 830px) 100vw, 830px\" /></figure></li></ul></figure>\n\n\n\n<h2 class=\"has-text-align-center wp-block-heading\">Founder Alan Faena and investor Chris Burch agreed on the common business model \u201cBuild it and they will come,\u201d leading to Burch Creative Capital funding the operations for Argentina.</h2>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<p>Each location boasts exquisite architecture, an inspiring curation of modern art, and an immersive culinary experience to awaken all your senses.\u00a0As one of the world\u2019s most creative impactful brands in the lifestyle and hospitality industry, Faena creates an epicenter of art &amp; cultural celebration.</p>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<p>It\u2019s one-of-a-kind holistic environments anchored in socially responsible projects echo through every one of Faena\u2019s hotels and resorts.\u00a0</p>\n</div>\n</div>\n\n\n\n<figure class=\"wp-block-gallery columns-2 is-cropped wp-block-gallery-12 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"819\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/0830c899250101a32a2cac2da9c9c08e20134970d74c9b6b7680993120a708c6-819x1024.jpg\" alt=\"\" data-id=\"1008\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/0830c899250101a32a2cac2da9c9c08e20134970d74c9b6b7680993120a708c6.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/faena/0830c899250101a32a2cac2da9c9c08e20134970d74c9b6b7680993120a708c6/\" class=\"wp-image-1008\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/0830c899250101a32a2cac2da9c9c08e20134970d74c9b6b7680993120a708c6-819x1024.jpg 819w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/0830c899250101a32a2cac2da9c9c08e20134970d74c9b6b7680993120a708c6-240x300.jpg 240w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/0830c899250101a32a2cac2da9c9c08e20134970d74c9b6b7680993120a708c6-768x960.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/0830c899250101a32a2cac2da9c9c08e20134970d74c9b6b7680993120a708c6-1229x1536.jpg 1229w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/0830c899250101a32a2cac2da9c9c08e20134970d74c9b6b7680993120a708c6-432x540.jpg 432w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/0830c899250101a32a2cac2da9c9c08e20134970d74c9b6b7680993120a708c6-375x469.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/0830c899250101a32a2cac2da9c9c08e20134970d74c9b6b7680993120a708c6-960x1200.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/0830c899250101a32a2cac2da9c9c08e20134970d74c9b6b7680993120a708c6-1280x1600.jpg 1280w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/0830c899250101a32a2cac2da9c9c08e20134970d74c9b6b7680993120a708c6.jpg 1440w\" sizes=\"(max-width: 819px) 100vw, 819px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"822\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/6d98f96c915a04c9a3829624a4e86339037969cab2056ed2b97134e5b0839946-822x1024.jpg\" alt=\"\" data-id=\"1009\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/6d98f96c915a04c9a3829624a4e86339037969cab2056ed2b97134e5b0839946.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/faena/6d98f96c915a04c9a3829624a4e86339037969cab2056ed2b97134e5b0839946/\" class=\"wp-image-1009\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/6d98f96c915a04c9a3829624a4e86339037969cab2056ed2b97134e5b0839946-822x1024.jpg 822w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/6d98f96c915a04c9a3829624a4e86339037969cab2056ed2b97134e5b0839946-241x300.jpg 241w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/6d98f96c915a04c9a3829624a4e86339037969cab2056ed2b97134e5b0839946-768x957.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/6d98f96c915a04c9a3829624a4e86339037969cab2056ed2b97134e5b0839946-433x540.jpg 433w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/6d98f96c915a04c9a3829624a4e86339037969cab2056ed2b97134e5b0839946-375x467.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/6d98f96c915a04c9a3829624a4e86339037969cab2056ed2b97134e5b0839946-960x1196.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/6d98f96c915a04c9a3829624a4e86339037969cab2056ed2b97134e5b0839946.jpg 1080w\" sizes=\"(max-width: 822px) 100vw, 822px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"819\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/255793840_269772488426210_8260266065123450857_n-1024x819.jpg\" alt=\"\" data-id=\"1010\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/255793840_269772488426210_8260266065123450857_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/faena/255793840_269772488426210_8260266065123450857_n/\" class=\"wp-image-1010\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/255793840_269772488426210_8260266065123450857_n-1024x819.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/255793840_269772488426210_8260266065123450857_n-300x240.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/255793840_269772488426210_8260266065123450857_n-768x614.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/255793840_269772488426210_8260266065123450857_n-675x540.jpg 675w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/255793840_269772488426210_8260266065123450857_n-375x300.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/255793840_269772488426210_8260266065123450857_n-960x768.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/255793840_269772488426210_8260266065123450857_n.jpg 1080w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"640\" height=\"800\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/242401174_178680207734810_6133225281212734984_n.jpg\" alt=\"\" data-id=\"1005\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/242401174_178680207734810_6133225281212734984_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/luxury-travel-reimagined-faena/242401174_178680207734810_6133225281212734984_n/\" class=\"wp-image-1005\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/242401174_178680207734810_6133225281212734984_n.jpg 640w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/242401174_178680207734810_6133225281212734984_n-240x300.jpg 240w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/242401174_178680207734810_6133225281212734984_n-432x540.jpg 432w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/242401174_178680207734810_6133225281212734984_n-375x469.jpg 375w\" sizes=\"(max-width: 640px) 100vw, 640px\" /></figure></li></ul></figure>\n\n\n\n<blockquote class=\"wp-block-quote has-text-align-center is-layout-flow wp-block-quote-is-layout-flow\"><p>&nbsp;The business-partners-turned-friends share their desire to uplift communities around underdeveloped destinations. Amplifying the culture, curating unique experiences around what makes these places special, and keeping the integrity of these communities intact are central missions of the Faena brand.&nbsp;</p></blockquote>\n\n\n\n<figure class=\"wp-block-gallery columns-2 wp-block-gallery-13 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"819\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/253650384_465838018195618_8261213204645670791_n-819x1024.jpg\" alt=\"\" data-id=\"1011\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/253650384_465838018195618_8261213204645670791_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/luxury-travel-reimagined-faena/253650384_465838018195618_8261213204645670791_n/\" class=\"wp-image-1011\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/253650384_465838018195618_8261213204645670791_n-819x1024.jpg 819w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/253650384_465838018195618_8261213204645670791_n-240x300.jpg 240w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/253650384_465838018195618_8261213204645670791_n-768x960.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/253650384_465838018195618_8261213204645670791_n-432x540.jpg 432w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/253650384_465838018195618_8261213204645670791_n-375x469.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/253650384_465838018195618_8261213204645670791_n-960x1200.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/253650384_465838018195618_8261213204645670791_n.jpg 1080w\" sizes=\"(max-width: 819px) 100vw, 819px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"819\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/245164508_296510595347717_3292292859998947609_n-819x1024.jpg\" alt=\"\" data-id=\"1007\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/245164508_296510595347717_3292292859998947609_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/luxury-travel-reimagined-faena/245164508_296510595347717_3292292859998947609_n/\" class=\"wp-image-1007\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/245164508_296510595347717_3292292859998947609_n-819x1024.jpg 819w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/245164508_296510595347717_3292292859998947609_n-240x300.jpg 240w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/245164508_296510595347717_3292292859998947609_n-768x960.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/245164508_296510595347717_3292292859998947609_n-432x540.jpg 432w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/245164508_296510595347717_3292292859998947609_n-375x469.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/245164508_296510595347717_3292292859998947609_n.jpg 897w\" sizes=\"(max-width: 819px) 100vw, 819px\" /></figure></li></ul></figure>\n\n\n\n<p></p>\n",
+            "protected": false
+          },
+          "excerpt": {
+            "rendered": "<p>Faena Group is a luxury hotel group with locations in Miami Beach &amp; Buenos Aires. Founder Alan Faena and investor&#8230;</p>\n",
+            "protected": false
+          },
+          "author": 2,
+          "featured_media": 1016,
+          "parent": 41,
+          "menu_order": 7,
+          "comment_status": "closed",
+          "ping_status": "closed",
+          "template": "",
+          "meta": {
+            "_acf_changed": false,
+            "footnotes": ""
+          },
+          "tags": [],
+          "acf": [],
+          "_links": {
+            "self": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/1001"
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/types/page"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/comments?post=1001"
+              }
+            ],
+            "version-history": [
+              {
+                "count": 10,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/1001/revisions"
+              }
+            ],
+            "predecessor-version": [
+              {
+                "id": 1854,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/1001/revisions/1854"
+              }
+            ],
+            "up": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/41"
+              }
+            ],
+            "wp:featuredmedia": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/media/1016"
+              }
+            ],
+            "wp:attachment": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/media?parent=1001"
+              }
+            ],
+            "wp:term": [
+              {
+                "taxonomy": "post_tag",
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/tags?post=1001"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        },
+        {
+          "id": 963,
+          "date": "2021-11-23T14:34:02",
+          "date_gmt": "2021-11-23T19:34:46",
+          "guid": {
+            "rendered": "https://burch-funkhaus.netlify.app/portfolio/launching-a-bold-new-look-in-swimwear-solid-striped-2/"
+          },
+          "modified": "2021-12-07T17:02:02",
+          "modified_gmt": "2021-12-07T22:02:02",
+          "slug": "bold-styles-designed-for-bolder-women-c-wonder",
+          "status": "publish",
+          "type": "page",
+          "link": "https://burch-funkhaus.netlify.app/portfolio/bold-styles-designed-for-bolder-women-c-wonder/",
+          "title": {
+            "rendered": "Bold styles designed for bolder women &#8211; C Wonder"
+          },
+          "content": {
+            "rendered": "\n<div class=\"wp-block-fuxt-cover-with-logos\"><div class=\"fuxt-logo-item\"><figure><img decoding=\"async\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/logo-c-wonder.svg\" alt=\"\" data-id=\"1626\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/bold-styles-designed-for-bolder-women-c-wonder/logo-c-wonder/\" class=\"wp-logo-1626\"/></figure></div></div>\n\n\n\n<h2 class=\"has-text-align-center wp-block-heading\">The C in C Wonder stands for customer, and the customer has always been the main goal and focus of the company.</h2>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<p>C Wonder designs with the intention of supporting women who create their own experiences. A classic sense of luxury stitched in every pattern, each collection is infused with energy and excitement.</p>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<p>A brand built to empower women beyond fashion and accessories, C Wonder brands a lifestyle designed to match one\u2019s visions, goals, and determination. It\u2019s a lifestyle brand built to last.</p>\n</div>\n</div>\n</div>\n</div>\n\n\n\n<figure class=\"wp-block-gallery columns-2 is-cropped wp-block-gallery-14 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/245342320_2957526691163273_7524409047932589731_n-1024x1024.jpg\" alt=\"\" data-id=\"973\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/245342320_2957526691163273_7524409047932589731_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/c-wonder/245342320_2957526691163273_7524409047932589731_n/\" class=\"wp-image-973\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/245342320_2957526691163273_7524409047932589731_n-1024x1024.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/245342320_2957526691163273_7524409047932589731_n-300x300.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/245342320_2957526691163273_7524409047932589731_n-150x150.jpg 150w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/245342320_2957526691163273_7524409047932589731_n-768x768.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/245342320_2957526691163273_7524409047932589731_n-540x540.jpg 540w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/245342320_2957526691163273_7524409047932589731_n-375x375.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/245342320_2957526691163273_7524409047932589731_n-960x960.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/245342320_2957526691163273_7524409047932589731_n.jpg 1080w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/234891216_691070258955885_1801926361472235014_n-1024x1024.jpg\" alt=\"\" data-id=\"974\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/234891216_691070258955885_1801926361472235014_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/c-wonder/234891216_691070258955885_1801926361472235014_n/\" class=\"wp-image-974\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/234891216_691070258955885_1801926361472235014_n-1024x1024.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/234891216_691070258955885_1801926361472235014_n-300x300.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/234891216_691070258955885_1801926361472235014_n-150x150.jpg 150w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/234891216_691070258955885_1801926361472235014_n-768x768.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/234891216_691070258955885_1801926361472235014_n-540x540.jpg 540w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/234891216_691070258955885_1801926361472235014_n-375x375.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/234891216_691070258955885_1801926361472235014_n-960x960.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/234891216_691070258955885_1801926361472235014_n.jpg 1080w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"819\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/172695128_375952690212255_2818075013695452433_n-819x1024.jpg\" alt=\"\" data-id=\"976\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/172695128_375952690212255_2818075013695452433_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/c-wonder/172695128_375952690212255_2818075013695452433_n/\" class=\"wp-image-976\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/172695128_375952690212255_2818075013695452433_n-819x1024.jpg 819w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/172695128_375952690212255_2818075013695452433_n-240x300.jpg 240w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/172695128_375952690212255_2818075013695452433_n-768x960.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/172695128_375952690212255_2818075013695452433_n-432x540.jpg 432w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/172695128_375952690212255_2818075013695452433_n-375x469.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/172695128_375952690212255_2818075013695452433_n-960x1200.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/172695128_375952690212255_2818075013695452433_n.jpg 1080w\" sizes=\"(max-width: 819px) 100vw, 819px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"819\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/211491289_234290128533831_5926127041642106516_n-819x1024.jpg\" alt=\"\" data-id=\"977\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/211491289_234290128533831_5926127041642106516_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/c-wonder/211491289_234290128533831_5926127041642106516_n/\" class=\"wp-image-977\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/211491289_234290128533831_5926127041642106516_n-819x1024.jpg 819w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/211491289_234290128533831_5926127041642106516_n-240x300.jpg 240w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/211491289_234290128533831_5926127041642106516_n-768x960.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/211491289_234290128533831_5926127041642106516_n-432x540.jpg 432w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/211491289_234290128533831_5926127041642106516_n-375x469.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/211491289_234290128533831_5926127041642106516_n-960x1200.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/211491289_234290128533831_5926127041642106516_n.jpg 1080w\" sizes=\"(max-width: 819px) 100vw, 819px\" /></figure></li></ul></figure>\n\n\n\n<h2 class=\"has-text-align-center wp-block-heading\">Embodying the entrepreneurial spirit of founder Chris Burch, there is a timeless touch to every product designed for the nostalgic shopper.&nbsp;</h2>\n\n\n\n<figure class=\"wp-block-gallery columns-1 is-cropped wp-block-gallery-15 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1440\" height=\"1440\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/157914257_263937215303872_2169193228303715254_n.jpg\" alt=\"\" data-id=\"978\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/157914257_263937215303872_2169193228303715254_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/c-wonder/157914257_263937215303872_2169193228303715254_n/\" class=\"wp-image-978\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/157914257_263937215303872_2169193228303715254_n.jpg 1440w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/157914257_263937215303872_2169193228303715254_n-300x300.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/157914257_263937215303872_2169193228303715254_n-1024x1024.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/157914257_263937215303872_2169193228303715254_n-150x150.jpg 150w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/157914257_263937215303872_2169193228303715254_n-768x768.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/157914257_263937215303872_2169193228303715254_n-540x540.jpg 540w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/157914257_263937215303872_2169193228303715254_n-375x375.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/157914257_263937215303872_2169193228303715254_n-960x960.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/157914257_263937215303872_2169193228303715254_n-1280x1280.jpg 1280w\" sizes=\"(max-width: 1440px) 100vw, 1440px\" /></figure></li></ul></figure>\n\n\n\n<figure class=\"wp-block-gallery columns-2 is-cropped wp-block-gallery-16 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/241863642_192394282987726_745749327941962894_n-1024x1024.jpg\" alt=\"\" data-id=\"979\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/241863642_192394282987726_745749327941962894_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/c-wonder/241863642_192394282987726_745749327941962894_n/\" class=\"wp-image-979\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/241863642_192394282987726_745749327941962894_n-1024x1024.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/241863642_192394282987726_745749327941962894_n-300x300.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/241863642_192394282987726_745749327941962894_n-150x150.jpg 150w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/241863642_192394282987726_745749327941962894_n-768x768.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/241863642_192394282987726_745749327941962894_n-540x540.jpg 540w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/241863642_192394282987726_745749327941962894_n-375x375.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/241863642_192394282987726_745749327941962894_n-960x960.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/241863642_192394282987726_745749327941962894_n.jpg 1080w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"956\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/CWonder_2_1120x1200JR_TileRow1-956x1024.jpg\" alt=\"\" data-id=\"980\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/CWonder_2_1120x1200JR_TileRow1.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/c-wonder/cwonder_2_1120x1200jr_tilerow1/\" class=\"wp-image-980\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/CWonder_2_1120x1200JR_TileRow1-956x1024.jpg 956w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/CWonder_2_1120x1200JR_TileRow1-280x300.jpg 280w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/CWonder_2_1120x1200JR_TileRow1-768x823.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/CWonder_2_1120x1200JR_TileRow1-504x540.jpg 504w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/CWonder_2_1120x1200JR_TileRow1-375x402.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/CWonder_2_1120x1200JR_TileRow1-960x1029.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/CWonder_2_1120x1200JR_TileRow1.jpg 1120w\" sizes=\"(max-width: 956px) 100vw, 956px\" /></figure></li></ul></figure>\n\n\n\n<p></p>\n",
+            "protected": false
+          },
+          "excerpt": {
+            "rendered": "<p>The C in C Wonder stands for customer, and the customer has always been the main goal and focus of&#8230;</p>\n",
+            "protected": false
+          },
+          "author": 2,
+          "featured_media": 971,
+          "parent": 41,
+          "menu_order": 3,
+          "comment_status": "closed",
+          "ping_status": "closed",
+          "template": "",
+          "meta": {
+            "_acf_changed": false,
+            "footnotes": ""
+          },
+          "tags": [],
+          "acf": [],
+          "_links": {
+            "self": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/963"
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/types/page"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/comments?post=963"
+              }
+            ],
+            "version-history": [
+              {
+                "count": 9,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/963/revisions"
+              }
+            ],
+            "predecessor-version": [
+              {
+                "id": 1829,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/963/revisions/1829"
+              }
+            ],
+            "up": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/41"
+              }
+            ],
+            "wp:featuredmedia": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/media/971"
+              }
+            ],
+            "wp:attachment": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/media?parent=963"
+              }
+            ],
+            "wp:term": [
+              {
+                "taxonomy": "post_tag",
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/tags?post=963"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        },
+        {
+          "id": 883,
+          "date": "2021-11-22T18:50:02",
+          "date_gmt": "2021-11-22T23:50:26",
+          "guid": {
+            "rendered": "https://burch-funkhaus.netlify.app/portfolio/launching-a-bold-new-look-in-swimwear-solid-striped-6/"
+          },
+          "modified": "2021-12-07T17:23:54",
+          "modified_gmt": "2021-12-07T22:23:54",
+          "slug": "an-escape-to-the-edge-of-wildness-to-return-to-oneself-nihi-sumba",
+          "status": "publish",
+          "type": "page",
+          "link": "https://burch-funkhaus.netlify.app/portfolio/an-escape-to-the-edge-of-wildness-to-return-to-oneself-nihi-sumba/",
+          "title": {
+            "rendered": "An escape to the \u201cEdge of Wildness\u201d to return to oneself &#8211; NIHI Sumba"
+          },
+          "content": {
+            "rendered": "\n<div class=\"wp-block-fuxt-cover-with-logos\"><div class=\"fuxt-logo-item\"><figure><img decoding=\"async\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/logo-nihi-sumba-island-new.svg\" alt=\"\" data-id=\"1674\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/an-escape-to-the-edge-of-wildness-to-return-to-oneself-nihi-sumba/logo-nihi-sumba-island-new/\" class=\"wp-logo-1674\"/></figure></div></div>\n\n\n\n<h2 class=\"has-text-align-center wp-block-heading\">Far from the ordinary escape from reality, NIHI Sumba serves as more than a vacation destination in the breath-taking islands of Indonesia.</h2>\n\n\n\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\n<iframe loading=\"lazy\" title=\"NIHI Sumba -  #1 Hotel in the World by Travel+Leisure Magazine's World's Best Awards\"  width=\"500\" height=\"281\" src=\"https://www.youtube.com/embed/Ivh28cCJzIE?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n</div></figure>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-10 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow\">\n<p>Built upon the purpose of fulfilling, returning, and inspiring all things to find their truest form, NIHI Hotels completes the circle of the destination experience, allowing one to feel woven into the fabric of their journey. </p>\n\n\n\n<p>Where rugged luxury meets unregulated freedom, Burch Creative Capital invests in the human experience for travelers and locals alike. This naturally led to the establishment of The Sumba Foundation. A foundation committed to providing humanitarian aid, clean water, and creating educational programs, for the local community of Sumba, Indonesia.</p>\n\n\n\n<p>Chris Burch is the driving force of philanthropy, funding all operation costs, and giving back to the people of Sumba Island, where Nihi is located.</p>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"880\" height=\"814\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/nihi-pool.jpg\" alt=\"\" class=\"wp-image-1856\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/nihi-pool.jpg 880w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/nihi-pool-300x278.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/nihi-pool-768x710.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/nihi-pool-584x540.jpg 584w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/nihi-pool-375x347.jpg 375w\" sizes=\"(max-width: 880px) 100vw, 880px\" /></figure>\n</div>\n</div>\n\n\n\n<blockquote class=\"wp-block-quote has-text-align-center is-layout-flow wp-block-quote-is-layout-flow\"><p>\u201cChris\u2019 kindness and care has touched the hearts of thousands of children and families in the constant quest for eradicating malnutrition for children, malaria by 90 %, and providing water wells to villages amongst many others. During the virus he supported the well being of thousands of people with his huge heart and exceptional generosity.\u201d</p><cite>James McBride, Partner &amp; CEO, NIHI</cite></blockquote>\n\n\n\n<figure class=\"wp-block-gallery columns-1 is-cropped wp-block-gallery-17 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1280\" height=\"814\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Kasambi1_1280x814_outodoorShower.jpg\" alt=\"\" data-id=\"828\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Kasambi1_1280x814_outodoorShower.jpg\" data-link=\"https://burch-funkhaus.netlify.app/?attachment_id=828\" class=\"wp-image-828\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Kasambi1_1280x814_outodoorShower.jpg 1280w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Kasambi1_1280x814_outodoorShower-300x191.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Kasambi1_1280x814_outodoorShower-1024x651.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Kasambi1_1280x814_outodoorShower-768x488.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Kasambi1_1280x814_outodoorShower-849x540.jpg 849w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Kasambi1_1280x814_outodoorShower-375x238.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Kasambi1_1280x814_outodoorShower-960x611.jpg 960w\" sizes=\"(max-width: 1280px) 100vw, 1280px\" /></figure></li></ul></figure>\n\n\n\n<figure class=\"wp-block-gallery columns-2 is-cropped wp-block-gallery-18 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"651\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_oudoorBathtub-1024x651.jpg\" alt=\"\" data-id=\"831\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_oudoorBathtub.jpg\" data-link=\"https://burch-funkhaus.netlify.app/?attachment_id=831\" class=\"wp-image-831\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_oudoorBathtub-1024x651.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_oudoorBathtub-300x191.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_oudoorBathtub-768x488.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_oudoorBathtub-849x540.jpg 849w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_oudoorBathtub-375x238.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_oudoorBathtub-960x611.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_oudoorBathtub.jpg 1280w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"651\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_outdoorShower-1024x651.jpg\" alt=\"\" data-id=\"832\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_outdoorShower.jpg\" data-link=\"https://burch-funkhaus.netlify.app/?attachment_id=832\" class=\"wp-image-832\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_outdoorShower-1024x651.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_outdoorShower-300x191.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_outdoorShower-768x488.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_outdoorShower-849x540.jpg 849w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_outdoorShower-375x238.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_outdoorShower-960x611.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_outdoorShower.jpg 1280w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"651\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/MaranggaPool_1280x814-1024x651.jpg\" alt=\"\" data-id=\"833\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/MaranggaPool_1280x814.jpg\" data-link=\"https://burch-funkhaus.netlify.app/?attachment_id=833\" class=\"wp-image-833\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/MaranggaPool_1280x814-1024x651.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/MaranggaPool_1280x814-300x191.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/MaranggaPool_1280x814-768x488.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/MaranggaPool_1280x814-849x540.jpg 849w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/MaranggaPool_1280x814-375x238.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/MaranggaPool_1280x814-960x611.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/MaranggaPool_1280x814.jpg 1280w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"651\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Kasambi2_1280x814_bathroom-1024x651.jpg\" alt=\"\" data-id=\"834\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Kasambi2_1280x814_bathroom.jpg\" data-link=\"https://burch-funkhaus.netlify.app/?attachment_id=834\" class=\"wp-image-834\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Kasambi2_1280x814_bathroom-1024x651.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Kasambi2_1280x814_bathroom-300x191.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Kasambi2_1280x814_bathroom-768x488.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Kasambi2_1280x814_bathroom-849x540.jpg 849w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Kasambi2_1280x814_bathroom-375x238.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Kasambi2_1280x814_bathroom-960x611.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/Kasambi2_1280x814_bathroom.jpg 1280w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li></ul></figure>\n\n\n\n<h2 class=\"has-text-align-center wp-block-heading\">This is not an escape from everyday life, rather it&#8217;s the return to a life well-lived. A place to connect with something larger than oneself. A haven for the adventurer, for the wanderer. The endlessly passionate and curious. Arrive with an open heart and leave changed forever. This is a vacation with a purpose. A destination with meaning. This is NIHI Sumba.</h2>\n\n\n\n<figure class=\"wp-block-gallery columns-1 is-cropped wp-block-gallery-19 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1280\" height=\"814\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_bedroom.jpg\" alt=\"\" data-id=\"837\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_bedroom.jpg\" data-link=\"https://burch-funkhaus.netlify.app/?attachment_id=837\" class=\"wp-image-837\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_bedroom.jpg 1280w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_bedroom-300x191.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_bedroom-1024x651.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_bedroom-768x488.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_bedroom-849x540.jpg 849w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_bedroom-375x238.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/kanatar1280x814_bedroom-960x611.jpg 960w\" sizes=\"(max-width: 1280px) 100vw, 1280px\" /></figure></li></ul></figure>\n\n\n\n<figure class=\"wp-block-gallery columns-2 is-cropped wp-block-gallery-20 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"480\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/nihiwatubeach-1024x480.jpg\" alt=\"\" data-id=\"925\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/nihiwatubeach.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/launching-a-bold-new-look-in-swimwear-solid-striped-6/nihiwatubeach/\" class=\"wp-image-925\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/nihiwatubeach-1024x480.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/nihiwatubeach-300x141.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/nihiwatubeach-768x360.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/nihiwatubeach-960x450.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/nihiwatubeach-375x176.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/nihiwatubeach.jpg 1280w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"320\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/HaweriEstate_stripe2-1024x320.jpg\" alt=\"\" data-id=\"923\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/HaweriEstate_stripe2.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/launching-a-bold-new-look-in-swimwear-solid-striped-6/haweriestate_stripe2/\" class=\"wp-image-923\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/HaweriEstate_stripe2-1024x320.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/HaweriEstate_stripe2-300x94.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/HaweriEstate_stripe2-768x240.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/HaweriEstate_stripe2-960x300.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/HaweriEstate_stripe2-375x117.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/HaweriEstate_stripe2.jpg 1280w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li></ul></figure>\n\n\n\n<p></p>\n",
+            "protected": false
+          },
+          "excerpt": {
+            "rendered": "<p>Far from the ordinary escape from reality, NIHI Sumba serves as more than a vacation destination in the breath-taking islands&#8230;</p>\n",
+            "protected": false
+          },
+          "author": 2,
+          "featured_media": 823,
+          "parent": 41,
+          "menu_order": 8,
+          "comment_status": "closed",
+          "ping_status": "closed",
+          "template": "",
+          "meta": {
+            "_acf_changed": false,
+            "footnotes": ""
+          },
+          "tags": [],
+          "acf": [],
+          "_links": {
+            "self": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/883"
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/types/page"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/comments?post=883"
+              }
+            ],
+            "version-history": [
+              {
+                "count": 10,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/883/revisions"
+              }
+            ],
+            "predecessor-version": [
+              {
+                "id": 1862,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/883/revisions/1862"
+              }
+            ],
+            "up": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/41"
+              }
+            ],
+            "wp:featuredmedia": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/media/823"
+              }
+            ],
+            "wp:attachment": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/media?parent=883"
+              }
+            ],
+            "wp:term": [
+              {
+                "taxonomy": "post_tag",
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/tags?post=883"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        },
+        {
+          "id": 881,
+          "date": "2021-11-22T18:50:02",
+          "date_gmt": "2021-11-22T23:50:26",
+          "guid": {
+            "rendered": "https://burch-funkhaus.netlify.app/portfolio/launching-a-bold-new-look-in-swimwear-solid-striped-4/"
+          },
+          "modified": "2021-12-07T16:59:41",
+          "modified_gmt": "2021-12-07T21:59:41",
+          "slug": "designs-brought-to-you-in-technicolor-dreams-staud",
+          "status": "publish",
+          "type": "page",
+          "link": "https://burch-funkhaus.netlify.app/portfolio/designs-brought-to-you-in-technicolor-dreams-staud/",
+          "title": {
+            "rendered": "Designs brought to you in technicolor dreams  &#8211; STAUD"
+          },
+          "content": {
+            "rendered": "\n<div class=\"wp-block-fuxt-cover-with-logos\"><div class=\"fuxt-logo-item\"><figure><img decoding=\"async\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/logo-staud-new.svg\" alt=\"\" data-id=\"1650\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/designs-brought-to-you-in-technicolor-dreams-staud/logo-staud-new/\" class=\"wp-logo-1650\"/></figure></div></div>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-11 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow\">\n<blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\"><p>\u201cSarah has a unique point of view amidst a sea of sameness.\u201d</p><cite>Chris Burch</cite></blockquote>\n</div>\n</div>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-12 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<p>STAUD is known as this generation\u2019s stand-out clothing brand for high-end aesthetic at an accessible price point. Capturing the hearts of influential women everywhere, the founders&#8217; intentions are stitched into every seam of the brand\u2019s business model and mission.</p>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<p>Driven by the story behind STAUD, Chris Burch leaned into his long history and strong connections within the garment supply chains to shape the brand\u2019s identity during the conceptual stages of building the online retailer.</p>\n</div>\n</div>\n\n\n\n<h2 class=\"has-text-align-center wp-block-heading\">Today, STAUD is sold in Neiman Marcus, NET-A-PORTER, Bloomingdales, Nordstrom, Moda Operandi, Carbon38, Verishop, Farfetch, FWRD.&nbsp;</h2>\n\n\n\n<figure class=\"wp-block-gallery columns-2 is-cropped wp-block-gallery-21 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"815\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NEW_IN_DT_c8d45e09-922f-49fa-9e31-959b3e38f736-815x1024.jpg\" alt=\"\" data-id=\"692\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NEW_IN_DT_c8d45e09-922f-49fa-9e31-959b3e38f736.jpg\" data-link=\"https://burch-funkhaus.netlify.app/?attachment_id=692\" class=\"wp-image-692\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NEW_IN_DT_c8d45e09-922f-49fa-9e31-959b3e38f736-815x1024.jpg 815w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NEW_IN_DT_c8d45e09-922f-49fa-9e31-959b3e38f736-239x300.jpg 239w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NEW_IN_DT_c8d45e09-922f-49fa-9e31-959b3e38f736-768x965.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NEW_IN_DT_c8d45e09-922f-49fa-9e31-959b3e38f736-1223x1536.jpg 1223w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NEW_IN_DT_c8d45e09-922f-49fa-9e31-959b3e38f736-430x540.jpg 430w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NEW_IN_DT_c8d45e09-922f-49fa-9e31-959b3e38f736-375x471.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NEW_IN_DT_c8d45e09-922f-49fa-9e31-959b3e38f736-960x1206.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NEW_IN_DT_c8d45e09-922f-49fa-9e31-959b3e38f736-1280x1608.jpg 1280w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NEW_IN_DT_c8d45e09-922f-49fa-9e31-959b3e38f736.jpg 1556w\" sizes=\"(max-width: 815px) 100vw, 815px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"819\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/256387457_1019027918671427_1364106829432745637_n-819x1024.jpg\" alt=\"\" data-id=\"694\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/256387457_1019027918671427_1364106829432745637_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/?attachment_id=694\" class=\"wp-image-694\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/256387457_1019027918671427_1364106829432745637_n-819x1024.jpg 819w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/256387457_1019027918671427_1364106829432745637_n-240x300.jpg 240w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/256387457_1019027918671427_1364106829432745637_n-768x960.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/256387457_1019027918671427_1364106829432745637_n-432x540.jpg 432w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/256387457_1019027918671427_1364106829432745637_n-375x469.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/256387457_1019027918671427_1364106829432745637_n-960x1200.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/256387457_1019027918671427_1364106829432745637_n.jpg 1080w\" sizes=\"(max-width: 819px) 100vw, 819px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"816\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NBXSTAUD_DT_4fd47f5a-2c79-443c-a51b-2efe6556ee60-816x1024.jpg\" alt=\"\" data-id=\"691\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NBXSTAUD_DT_4fd47f5a-2c79-443c-a51b-2efe6556ee60.jpg\" data-link=\"https://burch-funkhaus.netlify.app/?attachment_id=691\" class=\"wp-image-691\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NBXSTAUD_DT_4fd47f5a-2c79-443c-a51b-2efe6556ee60-816x1024.jpg 816w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NBXSTAUD_DT_4fd47f5a-2c79-443c-a51b-2efe6556ee60-239x300.jpg 239w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NBXSTAUD_DT_4fd47f5a-2c79-443c-a51b-2efe6556ee60-768x964.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NBXSTAUD_DT_4fd47f5a-2c79-443c-a51b-2efe6556ee60-1224x1536.jpg 1224w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NBXSTAUD_DT_4fd47f5a-2c79-443c-a51b-2efe6556ee60-430x540.jpg 430w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NBXSTAUD_DT_4fd47f5a-2c79-443c-a51b-2efe6556ee60-375x470.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NBXSTAUD_DT_4fd47f5a-2c79-443c-a51b-2efe6556ee60-960x1204.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NBXSTAUD_DT_4fd47f5a-2c79-443c-a51b-2efe6556ee60-1280x1606.jpg 1280w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/NBXSTAUD_DT_4fd47f5a-2c79-443c-a51b-2efe6556ee60.jpg 1555w\" sizes=\"(max-width: 816px) 100vw, 816px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"857\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/255137451_1922977884575929_658169332667152788_n-857x1024.jpg\" alt=\"\" data-id=\"697\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/255137451_1922977884575929_658169332667152788_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/?attachment_id=697\" class=\"wp-image-697\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/255137451_1922977884575929_658169332667152788_n-857x1024.jpg 857w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/255137451_1922977884575929_658169332667152788_n-251x300.jpg 251w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/255137451_1922977884575929_658169332667152788_n-768x917.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/255137451_1922977884575929_658169332667152788_n-452x540.jpg 452w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/255137451_1922977884575929_658169332667152788_n-375x448.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/255137451_1922977884575929_658169332667152788_n-960x1147.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/255137451_1922977884575929_658169332667152788_n.jpg 1080w\" sizes=\"(max-width: 857px) 100vw, 857px\" /></figure></li></ul></figure>\n\n\n\n<h2 class=\"has-text-align-center wp-block-heading\">STAUD has become a household staple for empowered stylistic women everywhere, making today\u2019s trends a part of tomorrow\u2019s accessibility.</h2>\n\n\n\n<figure class=\"wp-block-gallery columns-2 wp-block-gallery-22 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"819\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/staud-jumper02-819x1024.jpg\" alt=\"\" data-id=\"1706\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/staud-jumper02.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/designs-brought-to-you-in-technicolor-dreams-staud/staud-jumper02/\" class=\"wp-image-1706\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/staud-jumper02-819x1024.jpg 819w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/staud-jumper02-240x300.jpg 240w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/staud-jumper02-768x960.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/staud-jumper02-432x540.jpg 432w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/staud-jumper02-375x469.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/staud-jumper02-960x1200.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/staud-jumper02.jpg 1080w\" sizes=\"(max-width: 819px) 100vw, 819px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"818\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/staud-jumper01-818x1024.jpg\" alt=\"\" data-id=\"1705\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/staud-jumper01.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/designs-brought-to-you-in-technicolor-dreams-staud/staud-jumper01/\" class=\"wp-image-1705\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/staud-jumper01-818x1024.jpg 818w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/staud-jumper01-240x300.jpg 240w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/staud-jumper01-768x961.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/staud-jumper01-432x540.jpg 432w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/staud-jumper01-375x469.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/staud-jumper01-960x1201.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/12/staud-jumper01.jpg 1079w\" sizes=\"(max-width: 818px) 100vw, 818px\" /></figure></li></ul></figure>\n",
+            "protected": false
+          },
+          "excerpt": {
+            "rendered": "<p>\u201cSarah has a unique point of view amidst a sea of sameness.\u201d Chris Burch STAUD is known as this generation\u2019s&#8230;</p>\n",
+            "protected": false
+          },
+          "author": 2,
+          "featured_media": 657,
+          "parent": 41,
+          "menu_order": 0,
+          "comment_status": "closed",
+          "ping_status": "closed",
+          "template": "",
+          "meta": {
+            "_acf_changed": false,
+            "footnotes": ""
+          },
+          "tags": [],
+          "acf": [],
+          "_links": {
+            "self": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/881"
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/types/page"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/comments?post=881"
+              }
+            ],
+            "version-history": [
+              {
+                "count": 10,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/881/revisions"
+              }
+            ],
+            "predecessor-version": [
+              {
+                "id": 1823,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/881/revisions/1823"
+              }
+            ],
+            "up": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/41"
+              }
+            ],
+            "wp:featuredmedia": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/media/657"
+              }
+            ],
+            "wp:attachment": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/media?parent=881"
+              }
+            ],
+            "wp:term": [
+              {
+                "taxonomy": "post_tag",
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/tags?post=881"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        },
+        {
+          "id": 861,
+          "date": "2021-11-22T18:38:02",
+          "date_gmt": "2021-11-22T23:38:37",
+          "guid": {
+            "rendered": "https://burch-funkhaus.netlify.app/portfolio/launching-a-bold-new-look-in-swimwear-solid-striped-2/"
+          },
+          "modified": "2021-12-07T17:28:28",
+          "modified_gmt": "2021-12-07T22:28:28",
+          "slug": "fun-and-foundational-accessories-customized-for-every-mood-and-season-baublebar",
+          "status": "publish",
+          "type": "page",
+          "link": "https://burch-funkhaus.netlify.app/portfolio/fun-and-foundational-accessories-customized-for-every-mood-and-season-baublebar/",
+          "title": {
+            "rendered": "Fun and foundational accessories, customized for every mood and season &#8211; BaubleBar"
+          },
+          "content": {
+            "rendered": "\n<p></p>\n\n\n\n<div class=\"wp-block-fuxt-cover-with-logos\"><div class=\"fuxt-logo-item\"><figure><img decoding=\"async\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/12/logo-baublebar-new.svg\" alt=\"\" data-id=\"1656\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/fun-and-foundational-accessories-customized-for-every-mood-and-season-baublebar/logo-baublebar-new/\" class=\"wp-logo-1656\"/></figure></div></div>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-13 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<p class=\"has-text-align-left\">BaubleBar is the one-stop retailer for affordable, on-trend fashion jewelry and accessories. Driven to fill a need for stylish yet affordable accessories that can stand the test of time, BaubleBar is responsible for one of the biggest pivots in the fashion space and how consumers find their products.</p>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<p>Chris Burch\u2019s influence on BaubleBar\u2019s branding and business model has launched the brand from start-up company to corporation. With its finger on the pulse of market trends and an ability to forecast the needs of consumers, Chris implemented new categories and personalization features to BaubleBar\u2019s products, attributing to the success of the brand.</p>\n</div>\n</div>\n\n\n\n<h2 class=\"has-text-align-center wp-block-heading\">Burch Creative Capital continues to support the brand through its involvement with the day-to-day operations. Chris Burch is never shy in admitting he attends more design sessions than he does board meetings.</h2>\n\n\n\n<figure class=\"wp-block-gallery columns-2 is-cropped wp-block-gallery-23 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"819\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/213595599_569492187551289_1400529681409819124_n-819x1024.jpg\" alt=\"\" data-id=\"677\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/213595599_569492187551289_1400529681409819124_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/invest-in-the-essentials-and-play-with-trends-baublebar/213595599_569492187551289_1400529681409819124_n/\" class=\"wp-image-677\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/213595599_569492187551289_1400529681409819124_n-819x1024.jpg 819w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/213595599_569492187551289_1400529681409819124_n-240x300.jpg 240w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/213595599_569492187551289_1400529681409819124_n-768x960.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/213595599_569492187551289_1400529681409819124_n-432x540.jpg 432w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/213595599_569492187551289_1400529681409819124_n-375x469.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/213595599_569492187551289_1400529681409819124_n-960x1200.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/213595599_569492187551289_1400529681409819124_n.jpg 1080w\" sizes=\"(max-width: 819px) 100vw, 819px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/214358609_4240685199357500_5873967999445969719_n-1024x1024.jpg\" alt=\"\" data-id=\"673\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/214358609_4240685199357500_5873967999445969719_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/invest-in-the-essentials-and-play-with-trends-baublebar/214358609_4240685199357500_5873967999445969719_n/\" class=\"wp-image-673\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/214358609_4240685199357500_5873967999445969719_n-1024x1024.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/214358609_4240685199357500_5873967999445969719_n-300x300.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/214358609_4240685199357500_5873967999445969719_n-150x150.jpg 150w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/214358609_4240685199357500_5873967999445969719_n-768x768.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/214358609_4240685199357500_5873967999445969719_n-540x540.jpg 540w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/214358609_4240685199357500_5873967999445969719_n-375x375.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/214358609_4240685199357500_5873967999445969719_n-960x960.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/214358609_4240685199357500_5873967999445969719_n.jpg 1080w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"819\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/210581077_3906837242748409_8656868082521236982_n-819x1024.jpg\" alt=\"\" data-id=\"674\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/210581077_3906837242748409_8656868082521236982_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/invest-in-the-essentials-and-play-with-trends-baublebar/210581077_3906837242748409_8656868082521236982_n/\" class=\"wp-image-674\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/210581077_3906837242748409_8656868082521236982_n-819x1024.jpg 819w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/210581077_3906837242748409_8656868082521236982_n-240x300.jpg 240w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/210581077_3906837242748409_8656868082521236982_n-768x960.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/210581077_3906837242748409_8656868082521236982_n-432x540.jpg 432w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/210581077_3906837242748409_8656868082521236982_n-375x469.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/210581077_3906837242748409_8656868082521236982_n-960x1200.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/210581077_3906837242748409_8656868082521236982_n.jpg 1080w\" sizes=\"(max-width: 819px) 100vw, 819px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"819\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/210492706_178261684318770_7241728009246999029_n-819x1024.jpg\" alt=\"\" data-id=\"676\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/210492706_178261684318770_7241728009246999029_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/portfolio/invest-in-the-essentials-and-play-with-trends-baublebar/210492706_178261684318770_7241728009246999029_n-2/\" class=\"wp-image-676\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/210492706_178261684318770_7241728009246999029_n-819x1024.jpg 819w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/210492706_178261684318770_7241728009246999029_n-240x300.jpg 240w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/210492706_178261684318770_7241728009246999029_n-768x960.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/210492706_178261684318770_7241728009246999029_n-432x540.jpg 432w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/210492706_178261684318770_7241728009246999029_n-375x469.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/210492706_178261684318770_7241728009246999029_n-960x1200.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/210492706_178261684318770_7241728009246999029_n.jpg 1080w\" sizes=\"(max-width: 819px) 100vw, 819px\" /></figure></li></ul></figure>\n\n\n\n<blockquote class=\"wp-block-quote has-text-align-center is-layout-flow wp-block-quote-is-layout-flow\"><p>In the five years since their launch, the site receives 1 million visitors a month. The company&#8217;s reach has expanded offline, as well, thanks to partnerships with retailers like Anthropologie, Bloomingdale&#8217;s, Nordstrom, and Target.</p></blockquote>\n\n\n\n<figure class=\"wp-block-gallery columns-3 is-cropped wp-block-gallery-24 is-layout-flex wp-block-gallery-is-layout-flex\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"819\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/218691356_344832377347087_9086871844581401355_n-819x1024.jpg\" alt=\"\" data-id=\"683\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/218691356_344832377347087_9086871844581401355_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/?attachment_id=683\" class=\"wp-image-683\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/218691356_344832377347087_9086871844581401355_n-819x1024.jpg 819w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/218691356_344832377347087_9086871844581401355_n-240x300.jpg 240w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/218691356_344832377347087_9086871844581401355_n-768x961.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/218691356_344832377347087_9086871844581401355_n-432x540.jpg 432w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/218691356_344832377347087_9086871844581401355_n-375x469.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/218691356_344832377347087_9086871844581401355_n-960x1201.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/218691356_344832377347087_9086871844581401355_n.jpg 1080w\" sizes=\"(max-width: 819px) 100vw, 819px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"819\" height=\"1024\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/208441683_778360052876191_69205136406613718_n-819x1024.jpg\" alt=\"\" data-id=\"682\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/208441683_778360052876191_69205136406613718_n.jpg\" data-link=\"https://burch-funkhaus.netlify.app/?attachment_id=682\" class=\"wp-image-682\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/208441683_778360052876191_69205136406613718_n-819x1024.jpg 819w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/208441683_778360052876191_69205136406613718_n-240x300.jpg 240w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/208441683_778360052876191_69205136406613718_n-768x961.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/208441683_778360052876191_69205136406613718_n-432x540.jpg 432w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/208441683_778360052876191_69205136406613718_n-375x469.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/208441683_778360052876191_69205136406613718_n-960x1201.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/208441683_778360052876191_69205136406613718_n.jpg 1080w\" sizes=\"(max-width: 819px) 100vw, 819px\" /></figure></li><li class=\"blocks-gallery-item\"><figure><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"829\" src=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/20210719-06-m-1024x829.jpg\" alt=\"\" data-id=\"681\" data-full-url=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/20210719-06-m.jpg\" data-link=\"https://burch-funkhaus.netlify.app/?attachment_id=681\" class=\"wp-image-681\" srcset=\"https://api.burchcreativecapital.com/wp-content/uploads/2021/11/20210719-06-m-1024x829.jpg 1024w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/20210719-06-m-300x243.jpg 300w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/20210719-06-m-768x622.jpg 768w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/20210719-06-m-667x540.jpg 667w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/20210719-06-m-375x303.jpg 375w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/20210719-06-m-960x777.jpg 960w, https://api.burchcreativecapital.com/wp-content/uploads/2021/11/20210719-06-m.jpg 1080w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></li></ul></figure>\n\n\n\n<p></p>\n",
+            "protected": false
+          },
+          "excerpt": {
+            "rendered": "<p>BaubleBar is the one-stop retailer for affordable, on-trend fashion jewelry and accessories. Driven to fill a need for stylish yet&#8230;</p>\n",
+            "protected": false
+          },
+          "author": 2,
+          "featured_media": 870,
+          "parent": 41,
+          "menu_order": 2,
+          "comment_status": "closed",
+          "ping_status": "closed",
+          "template": "",
+          "meta": {
+            "_acf_changed": false,
+            "footnotes": ""
+          },
+          "tags": [],
+          "acf": [],
+          "_links": {
+            "self": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/861"
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/types/page"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/comments?post=861"
+              }
+            ],
+            "version-history": [
+              {
+                "count": 11,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/861/revisions"
+              }
+            ],
+            "predecessor-version": [
+              {
+                "id": 1894,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/861/revisions/1894"
+              }
+            ],
+            "up": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/41"
+              }
+            ],
+            "wp:featuredmedia": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/media/870"
+              }
+            ],
+            "wp:attachment": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/media?parent=861"
+              }
+            ],
+            "wp:term": [
+              {
+                "taxonomy": "post_tag",
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/tags?post=861"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        },
+        {
+          "id": 45,
+          "date": "2021-09-28T23:38:02",
+          "date_gmt": "2021-09-28T23:38:02",
+          "guid": {
+            "rendered": "https://burch-api.flywheelsites.com/contact/"
+          },
+          "modified": "2021-12-07T18:50:56",
+          "modified_gmt": "2021-12-07T23:50:56",
+          "slug": "contact",
+          "status": "publish",
+          "type": "page",
+          "link": "https://burch-funkhaus.netlify.app/contact/",
+          "title": {
+            "rendered": "Contact"
+          },
+          "content": {
+            "rendered": "",
+            "protected": false
+          },
+          "excerpt": {
+            "rendered": "",
+            "protected": false
+          },
+          "author": 1,
+          "featured_media": 0,
+          "parent": 0,
+          "menu_order": 4,
+          "comment_status": "closed",
+          "ping_status": "closed",
+          "template": "",
+          "meta": {
+            "_acf_changed": false,
+            "footnotes": ""
+          },
+          "tags": [],
+          "acf": [],
+          "_links": {
+            "self": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/45"
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/types/page"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/comments?post=45"
+              }
+            ],
+            "version-history": [
+              {
+                "count": 7,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/45/revisions"
+              }
+            ],
+            "predecessor-version": [
+              {
+                "id": 1879,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/pages/45/revisions/1879"
+              }
+            ],
+            "wp:attachment": [
+              {
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/media?parent=45"
+              }
+            ],
+            "wp:term": [
+              {
+                "taxonomy": "post_tag",
+                "embeddable": true,
+                "href": "https://api.burchcreativecapital.com/wp-json/wp/v2/tags?post=45"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "sitemap_portfolio_urls": [
+    "https://www.burchcreativecapital.com/contact/</loc></url><url><loc>https://www.burchcreativecapital.com/news/</loc></url><url><loc>https://www.burchcreativecapital.com/our-story/</loc></url><url><loc>https://www.burchcreativecapital.com/philanthropy/</loc></url><url><loc>https://www.burchcreativecapital.com/portfolio/",
+    "https://www.burchcreativecapital.com/</loc></url><url><loc>https://www.burchcreativecapital.com/news/c/press/</loc></url><url><loc>https://www.burchcreativecapital.com/news/c/investments/</loc></url><url><loc>https://www.burchcreativecapital.com/news/c/podcasts/</loc></url><url><loc>https://www.burchcreativecapital.com/news/c/musings/</loc></url><url><loc>https://www.burchcreativecapital.com/news/c/elephant/</loc></url><url><loc>https://www.burchcreativecapital.com/news/p/chris-burch-featured-in-forbes-magazine/</loc></url><url><loc>https://www.burchcreativecapital.com/portfolio/designs-brought-to-you-in-technicolor-dreams-staud/",
+    "https://www.burchcreativecapital.com/portfolio/fun-and-foundational-accessories-customized-for-every-mood-and-season-baublebar/",
+    "https://www.burchcreativecapital.com/portfolio/bold-styles-designed-for-bolder-women-c-wonder/",
+    "https://www.burchcreativecapital.com/portfolio/sustainable-process-meets-historic-investment-philosophy-guggenheim/",
+    "https://www.burchcreativecapital.com/portfolio/investing-in-meaningful-revenue-through-brands-that-matter-win-brands/",
+    "https://www.burchcreativecapital.com/portfolio/luxury-travel-reimagined-faena/",
+    "https://www.burchcreativecapital.com/portfolio/an-escape-to-the-edge-of-wildness-to-return-to-oneself-nihi-sumba/",
+    "https://www.burchcreativecapital.com/portfolio/on-demand-on-the-way-rappi/",
+    "https://www.burchcreativecapital.com/portfolio/barbers-surgeon/",
+    "https://www.burchcreativecapital.com/contact/</loc></url><url><loc>https://www.burchcreativecapital.com/news/</loc></url><url><loc>https://www.burchcreativecapital.com/our-story/</loc></url><url><loc>https://www.burchcreativecapital.com/philanthropy/</loc></url><url><loc>https://www.burchcreativecapital.com/portfolio/",
+    "https://www.burchcreativecapital.com/</loc></url><url><loc>https://www.burchcreativecapital.com/news/c/press/</loc></url><url><loc>https://www.burchcreativecapital.com/news/c/investments/</loc></url><url><loc>https://www.burchcreativecapital.com/news/c/podcasts/</loc></url><url><loc>https://www.burchcreativecapital.com/news/c/musings/</loc></url><url><loc>https://www.burchcreativecapital.com/news/c/elephant/</loc></url><url><loc>https://www.burchcreativecapital.com/news/p/chris-burch-featured-in-forbes-magazine/</loc></url><url><loc>https://www.burchcreativecapital.com/portfolio/designs-brought-to-you-in-technicolor-dreams-staud/",
+    "https://www.burchcreativecapital.com/portfolio/fun-and-foundational-accessories-customized-for-every-mood-and-season-baublebar/",
+    "https://www.burchcreativecapital.com/portfolio/bold-styles-designed-for-bolder-women-c-wonder/",
+    "https://www.burchcreativecapital.com/portfolio/sustainable-process-meets-historic-investment-philosophy-guggenheim/",
+    "https://www.burchcreativecapital.com/portfolio/investing-in-meaningful-revenue-through-brands-that-matter-win-brands/",
+    "https://www.burchcreativecapital.com/portfolio/luxury-travel-reimagined-faena/",
+    "https://www.burchcreativecapital.com/portfolio/an-escape-to-the-edge-of-wildness-to-return-to-oneself-nihi-sumba/",
+    "https://www.burchcreativecapital.com/portfolio/on-demand-on-the-way-rappi/",
+    "https://www.burchcreativecapital.com/portfolio/barbers-surgeon/"
+  ],
+  "extraction_summary": {
+    "embedded_count": 0,
+    "text_patterns_count": 36,
+    "api_endpoints_found": 2,
+    "sitemap_urls_found": 20
+  }
+}
