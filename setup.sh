@@ -1,82 +1,116 @@
 #!/bin/bash
+set -e
 
-# Script to remove all .tar.gz files from current working directory and Git history
-# WARNING: This will rewrite Git history - make sure to backup your repo first!
+echo "🔍 COLLECTING CHRIS BURCH DATA - PHASE 1"
+echo "========================================"
 
-set -e  # Exit on any error
-
-echo "🗑️  Removing .tar.gz files from repository and Git history..."
-echo "⚠️  WARNING: This will rewrite Git history!"
-echo "📋 Make sure you have a backup of your repository before proceeding."
-echo ""
-
-read -p "Do you want to continue? (y/N): " -n 1 -r
-echo
-if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-    echo "Operation cancelled."
-    exit 1
-fi
-
-# Check if we're in a Git repository
-if ! git rev-parse --git-dir > /dev/null 2>&1; then
-    echo "❌ Error: Not in a Git repository"
-    exit 1
-fi
-
-# Remove .tar.gz files from current working directory
-echo "🧹 Removing .tar.gz files from working directory..."
-find . -name "*.tar.gz" -type f -delete
-echo "✅ Removed .tar.gz files from working directory"
-
-# Stage the deletions
-git add -A
-
-# Commit the changes if there are any
-if ! git diff --cached --quiet; then
-    git commit -m "Remove .tar.gz files from working directory"
-    echo "✅ Committed removal of .tar.gz files"
+# Determine Redis command
+if command -v redis-cli &> /dev/null; then
+    REDIS_CMD="redis-cli"
 else
-    echo "ℹ️  No .tar.gz files found in working directory"
+    REDIS_CMD="docker exec chris-analysis-redis redis-cli"
 fi
 
-# Remove .tar.gz files from Git history using git filter-branch
-echo "🔄 Removing .tar.gz files from Git history..."
-echo "This may take a while for large repositories..."
+# Create data collection log
+LOG_FILE="chris_analysis/data/collection_$(date +%Y%m%d_%H%M%S).log"
+touch "$LOG_FILE"
 
-# Use git filter-branch to remove .tar.gz files from all commits
-git filter-branch --force --index-filter \
-    'git rm --cached --ignore-unmatch **/*.tar.gz *.tar.gz' \
-    --prune-empty --tag-name-filter cat -- --all
+echo "📋 Starting systematic data collection..." | tee -a "$LOG_FILE"
 
-# Clean up the backup refs created by filter-branch
-echo "🧹 Cleaning up backup references..."
-git for-each-ref --format='delete %(refname)' refs/original | git update-ref --stdin
+# Known Chris Burch data sources to collect
+declare -a SOURCES=(
+    "https://www.burchcreativecapital.com"
+    "https://en.wikipedia.org/wiki/J._Christopher_Burch"
+    "https://www.crunchbase.com/person/j-christopher-burch"
+    "https://www.linkedin.com/in/christopher-burch-116531123"
+    "https://www.bjtonline.com/business-jet-news/billionaire-chris-burch"
+    "https://www.prnewswire.com/news-releases/burch-creative-capital-announces-new-and-follow-on-investments-to-founder-chris-burchs-portfolio-300389216.html"
+)
 
-# Force garbage collection to free up space
-echo "🗑️  Running garbage collection..."
-git reflog expire --expire=now --all
-git gc --prune=now --aggressive
+# Collect data from each source
+for i in "${!SOURCES[@]}"; do
+    SOURCE="${SOURCES[$i]}"
+    echo "🌐 Collecting from source $((i+1))/${#SOURCES[@]}: $SOURCE" | tee -a "$LOG_FILE"
+    
+    # Create unique filename for this source
+    FILENAME="chris_analysis/sources/web/source_$((i+1))_$(date +%H%M%S).html"
+    
+    # Download content (with timeout and user agent)
+    if curl -L -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36" \
+        --connect-timeout 10 --max-time 30 \
+        -o "$FILENAME" "$SOURCE" 2>/dev/null; then
+        
+        echo "  ✅ Downloaded: $(wc -c < "$FILENAME") bytes" | tee -a "$LOG_FILE"
+        
+        # Store source info in Redis
+        $REDIS_CMD SELECT 10
+        $REDIS_CMD HSET "sources:web:$i" \
+            "url" "$SOURCE" \
+            "filename" "$FILENAME" \
+            "collected_at" "$(date -Iseconds)" \
+            "size_bytes" "$(wc -c < "$FILENAME")" \
+            "status" "collected"
+        
+        # Update collection progress
+        COLLECTED=$($REDIS_CMD HGET "chris_analysis:progress" "sources_collected")
+        $REDIS_CMD HSET "chris_analysis:progress" "sources_collected" "$((${COLLECTED:-0} + 1))"
+        
+    else
+        echo "  ❌ Failed to download from $SOURCE" | tee -a "$LOG_FILE"
+        $REDIS_CMD HSET "sources:web:$i" \
+            "url" "$SOURCE" \
+            "status" "failed" \
+            "attempted_at" "$(date -Iseconds)"
+    fi
+    
+    # Brief delay to be respectful
+    sleep 2
+done
 
-# Add .tar.gz to .gitignore if it's not already there
-if [ ! -f .gitignore ] || ! grep -q "*.tar.gz" .gitignore; then
-    echo "📝 Adding *.tar.gz to .gitignore..."
-    echo "*.tar.gz" >> .gitignore
-    git add .gitignore
-    git commit -m "Add *.tar.gz to .gitignore"
-    echo "✅ Added *.tar.gz to .gitignore"
-else
-    echo "ℹ️  *.tar.gz already in .gitignore"
-fi
+# Search for interviews and podcast appearances
+echo "🎤 Searching for Chris Burch interviews..." | tee -a "$LOG_FILE"
 
-echo ""
-echo "🎉 Successfully removed all .tar.gz files from repository and Git history!"
-echo ""
-echo "⚠️  IMPORTANT NOTES:"
-echo "   • Git history has been rewritten"
-echo "   • If this is a shared repository, all collaborators will need to:"
-echo "     - Backup their local changes"
-echo "     - Delete their local repository"
-echo "     - Re-clone the repository"
-echo "   • If you have already pushed to a remote, you'll need to force push:"
-echo "     git push --force-with-lease origin --all"
-echo "     git push --force-with-lease origin --tags"
+# Known interview keywords to search for
+INTERVIEW_KEYWORDS=(
+    "chris burch interview"
+    "christopher burch podcast"
+    "chris burch speaks"
+    "burch creative capital interview"
+    "chris burch entrepreneurship"
+)
+
+# Create search results file
+SEARCH_RESULTS="chris_analysis/data/interview_search_results.txt"
+echo "# Chris Burch Interview Search Results - $(date)" > "$SEARCH_RESULTS"
+
+for keyword in "${INTERVIEW_KEYWORDS[@]}"; do
+    echo "🔎 Searching for: $keyword" | tee -a "$LOG_FILE"
+    echo "## Search: $keyword" >> "$SEARCH_RESULTS"
+    
+    # Note: In a real implementation, you would use APIs like:
+    # - YouTube Data API for video interviews
+    # - Podcast Index API for podcast appearances  
+    # - Google Custom Search API for web results
+    # For now, we'll create placeholders for manual collection
+    
+    echo "TODO: Manual search required for '$keyword'" >> "$SEARCH_RESULTS"
+    echo "  - Check YouTube for video interviews" >> "$SEARCH_RESULTS"
+    echo "  - Check podcast platforms (Spotify, Apple Podcasts)" >> "$SEARCH_RESULTS"
+    echo "  - Check business publication interviews" >> "$SEARCH_RESULTS"
+    echo "" >> "$SEARCH_RESULTS"
+done
+
+# Update Redis with search tasks
+$REDIS_CMD SELECT 10
+$REDIS_CMD SET "interview_searches:status" "manual_collection_required"
+$REDIS_CMD SET "interview_searches:keywords" "$(printf '%s,' "${INTERVIEW_KEYWORDS[@]}" | sed 's/,$//')"
+
+# Summary
+SOURCES_COLLECTED=$($REDIS_CMD HGET "chris_analysis:progress" "sources_collected")
+echo "" | tee -a "$LOG_FILE"
+echo "📊 COLLECTION SUMMARY:" | tee -a "$LOG_FILE"
+echo "  Sources collected: ${SOURCES_COLLECTED:-0}/${#SOURCES[@]}" | tee -a "$LOG_FILE"
+echo "  Log file: $LOG_FILE" | tee -a "$LOG_FILE"
+echo "  Search results: $SEARCH_RESULTS" | tee -a "$LOG_FILE"
+echo "" | tee -a "$LOG_FILE"
+echo "🎯 Next: Run text analysis script to extract insights from collected data" | tee -a "$LOG_FILE"
