@@ -1,925 +1,294 @@
 #!/bin/bash
-set -e
+set -euo pipefail
 
-echo "🔧 TASTE.AI - Complete Test Fix & Setup Script"
-echo "=============================================="
-echo "This script will fix all issues and make the repo pass all tests"
-echo ""
+# TASTE.AI Elite Intelligence Engine
+# Zero-hardcoded prompts, maximum intelligence generation
 
-# Colors for output
-RED='\033[0;31m'
+REDIS_PORT=${REDIS_PORT:-6381}
+INTELLIGENCE_DB=${INTELLIGENCE_DB:-5}
+
+CYAN='\033[0;36m'
 GREEN='\033[0;32m'
+PURPLE='\033[0;35m'
 YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m' # No Color
+NC='\033[0m'
 
-log_info() {
-    echo -e "${BLUE}ℹ️  $1${NC}"
+log() { echo -e "${CYAN}[$(date +'%H:%M:%S')]${NC} $1"; }
+success() { echo -e "${GREEN}✅${NC} $1"; }
+
+# LLM API placeholders (replace with actual API calls)
+query_llm() {
+    local llm=$1
+    local prompt=$2
+    # Simulate LLM response for demo
+    case $llm in
+        "chatgpt")
+            echo '{"categories": ["psychological_profiling", "investment_psychology", "aesthetic_preferences", "decision_patterns", "market_timing", "risk_assessment"]}'
+            ;;
+        "claude")
+            echo '{"strategies": ["behavioral_analysis", "trend_correlation", "sentiment_analysis", "pattern_recognition", "predictive_modeling"]}'
+            ;;
+        "grok")
+            echo '{"insights": ["market_dynamics", "consumer_psychology", "brand_positioning", "competitive_analysis", "innovation_tracking"]}'
+            ;;
+    esac
 }
 
-log_success() {
-    echo -e "${GREEN}✅ $1${NC}"
-}
-
-log_warning() {
-    echo -e "${YELLOW}⚠️  $1${NC}"
-}
-
-log_error() {
-    echo -e "${RED}❌ $1${NC}"
-}
-
-# Check if running in taste-ai directory
-if [ ! -f "docker-compose.yml" ] || [ ! -d "backend" ] || [ ! -d "frontend" ]; then
-    log_error "This script must be run from the taste-ai root directory"
-    exit 1
-fi
-
-log_info "Starting comprehensive fix and setup..."
-
-# 1. Clean up any existing containers and volumes
-log_info "Cleaning up existing Docker containers and volumes..."
-docker-compose down --volumes --remove-orphans 2>/dev/null || true
-docker system prune -f 2>/dev/null || true
-
-# 2. Create missing directories
-log_info "Creating missing directories..."
-mkdir -p test-images/advanced
-mkdir -p test-data
-mkdir -p ml/data/models
-mkdir -p ml/evaluation/metrics
-mkdir -p ml/evaluation/visualizations
-mkdir -p ml/evaluation/reports
-mkdir -p production_data/brands/websites
-mkdir -p backend/app/ml/data/models
-mkdir -p backups
-mkdir -p logs
-mkdir -p deployment/ssl/certs
-
-# 3. Fix Python dependencies
-log_info "Fixing Python dependencies..."
-
-# Create requirements.txt with working versions
-cat > backend/requirements.txt << 'EOF'
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-python-multipart==0.0.6
-pillow==10.1.0
-numpy==1.24.3
-pydantic==2.5.0
-pydantic-settings==2.1.0
-python-dotenv==1.0.0
-python-jose[cryptography]==3.3.0
-passlib[bcrypt]==1.7.4
-redis==5.0.1
-psycopg2-binary==2.9.9
-sqlalchemy==2.0.23
-aiohttp==3.9.0
-beautifulsoup4==4.12.2
-requests==2.31.0
-torch==2.1.0
-torchvision==0.16.0
-scikit-learn==1.3.2
-matplotlib==3.8.0
-pandas==2.1.3
-EOF
-
-# 4. Fix frontend dependencies
-log_info "Fixing frontend dependencies..."
-
-# Create package.json with working versions
-cat > frontend/package.json << 'EOF'
-{
-  "name": "taste-ai-frontend",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite --host 0.0.0.0 --port 3002",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.0",
-    "axios": "^1.6.0",
-    "framer-motion": "^10.16.0",
-    "react-dropzone": "^14.2.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
-    "@vitejs/plugin-react": "^4.0.0",
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.24",
-    "tailwindcss": "^3.3.0",
-    "vite": "^4.4.5"
-  }
-}
-EOF
-
-# 5. Create test data
-log_info "Creating test data and images..."
-
-# Create basic test images using Python
-python3 << 'EOF'
-import os
-from PIL import Image, ImageDraw
-import numpy as np
-
-# Create test-images directory
-os.makedirs('test-images', exist_ok=True)
-os.makedirs('test-images/advanced', exist_ok=True)
-
-# Create simple test image
-img = Image.new('RGB', (400, 300), color='lightblue')
-draw = ImageDraw.Draw(img)
-draw.rectangle([50, 50, 350, 250], fill='navy', outline='darkblue', width=3)
-draw.ellipse([150, 100, 250, 200], fill='gold')
-img.save('test-images/test_aesthetic.jpg', 'JPEG')
-
-# Create mandala pattern
-img = Image.new('RGB', (300, 300), color='white')
-draw = ImageDraw.Draw(img)
-center = 150
-for i in range(8):
-    angle = i * 45
-    x = center + 80 * np.cos(np.radians(angle))
-    y = center + 80 * np.sin(np.radians(angle))
-    draw.ellipse([x-20, y-20, x+20, y+20], fill='purple', outline='darkpurple')
-img.save('test-images/mandala_pattern.jpg', 'JPEG')
-
-# Create fashion-style image
-img = Image.new('RGB', (400, 600), color='cream')
-draw = ImageDraw.Draw(img)
-draw.rectangle([100, 100, 300, 500], fill='navy', outline='gold', width=2)
-draw.rectangle([120, 200, 180, 400], fill='gold')
-img.save('test-images/fashion_mockup.jpg', 'JPEG')
-
-print("✅ Test images created")
-EOF
-
-# 6. Create test data files
-log_info "Creating test data files..."
-
-# Create aesthetic training data
-cat > ml/data/raw/burch_aesthetic_training.json << 'EOF'
-[
-  {
-    "image_features": {
-      "complexity": 0.6,
-      "symmetry": 0.8,
-      "contrast": 0.7,
-      "color_palette": "neutral",
-      "pattern": "minimal",
-      "style": "classic"
-    },
-    "market_context": {
-      "season": "spring",
-      "target_demographic": "luxury"
-    },
-    "burch_score": 0.85
-  },
-  {
-    "image_features": {
-      "complexity": 0.4,
-      "symmetry": 0.9,
-      "contrast": 0.6,
-      "color_palette": "navy",
-      "pattern": "geometric",
-      "style": "sophisticated"
-    },
-    "market_context": {
-      "season": "fall",
-      "target_demographic": "contemporary"
-    },
-    "burch_score": 0.92
-  },
-  {
-    "image_features": {
-      "complexity": 0.3,
-      "symmetry": 0.7,
-      "contrast": 0.8,
-      "color_palette": "camel",
-      "pattern": "solid",
-      "style": "timeless"
-    },
-    "market_context": {
-      "season": "winter",
-      "target_demographic": "luxury"
-    },
-    "burch_score": 0.88
-  }
-]
-EOF
-
-# Create trend training data
-cat > ml/data/raw/trend_prediction_training.json << 'EOF'
-[
-  {
-    "market_penetration": 0.3,
-    "demographic_appeal": {
-      "age_18_25": 0.4,
-      "age_26_35": 0.7,
-      "age_36_50": 0.8,
-      "age_50_plus": 0.3
-    },
-    "channels": {
-      "social_media": 0.6,
-      "runway": 0.8,
-      "street_style": 0.5,
-      "retail": 0.7
-    },
-    "duration_days": 180,
-    "category": "luxury_minimalism",
-    "burch_adoption": 0.9,
-    "peak_intensity": 0.85,
-    "success_score": 0.88
-  },
-  {
-    "market_penetration": 0.5,
-    "demographic_appeal": {
-      "age_18_25": 0.8,
-      "age_26_35": 0.6,
-      "age_36_50": 0.4,
-      "age_50_plus": 0.2
-    },
-    "channels": {
-      "social_media": 0.9,
-      "runway": 0.3,
-      "street_style": 0.8,
-      "retail": 0.5
-    },
-    "duration_days": 90,
-    "category": "sustainable_fashion",
-    "burch_adoption": 0.7,
-    "peak_intensity": 0.75,
-    "success_score": 0.72
-  }
-]
-EOF
-
-# 7. Fix configuration files
-log_info "Fixing configuration files..."
-
-# Create working .env file
-cat > backend/.env << 'EOF'
-DATABASE_URL=postgresql://user:password@localhost:5434/tasteai
-REDIS_URL=redis://localhost:6381
-SECRET_KEY=dev-secret-key-change-in-production
-ALGORITHM=HS256
-ACCESS_TOKEN_EXPIRE_MINUTES=30
-EOF
-
-# Create working docker-compose.yml
-cat > docker-compose.yml << 'EOF'
-services:
-  db:
-    image: postgres:15
-    environment:
-      - POSTGRES_DB=tasteai
-      - POSTGRES_USER=user
-      - POSTGRES_PASSWORD=password
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    ports:
-      - "5434:5432"
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U user -d tasteai"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-
-  redis:
-    image: redis:7-alpine
-    ports:
-      - "6381:6379"
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-
-volumes:
-  postgres_data:
-EOF
-
-# 8. Fix main backend file to handle missing imports gracefully
-log_info "Fixing backend imports and error handling..."
-
-# Update main.py with better error handling
-cat > backend/app/main.py << 'EOF'
-from fastapi import FastAPI, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
-import uvicorn
-import sys
-import os
-
-# Add parent directory to path for imports
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
-app = FastAPI(
-    title="TASTE.AI",
-    description="Aesthetic Intelligence Platform",
-    version="1.0.0",
-    docs_url="/api/docs"
-)
-
-# CORS configuration
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["http://localhost:3002", "http://localhost:3000", "*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-# Basic routes
-@app.get("/")
-async def root():
-    return {
-        "message": "TASTE.AI - Aesthetic Intelligence Platform", 
-        "status": "running",
-        "version": "1.0.0"
-    }
-
-@app.get("/health")
-async def health_check():
-    return {
-        "status": "healthy", 
-        "version": "1.0.0"
-    }
-
-# Simple authentication
-@app.post("/api/v1/auth/login")
-async def login(credentials: dict):
-    username = credentials.get("username")
-    password = credentials.get("password")
+initialize_intelligence() {
+    log "Initializing Elite Intelligence Engine..."
     
-    if username == "admin" and password == "password":
-        return {
-            "access_token": "test-token",
-            "token_type": "bearer"
-        }
-    else:
-        raise HTTPException(status_code=401, detail="Invalid credentials")
-
-# Try to include routers with error handling
-try:
-    from app.api import aesthetic
-    app.include_router(aesthetic.router, prefix="/api/v1/aesthetic", tags=["aesthetic"])
-    print("✅ Aesthetic router loaded")
-except Exception as e:
-    print(f"⚠️  Could not load aesthetic router: {e}")
-
-# Trends endpoint
-@app.get("/api/v1/trends/current")
-async def get_current_trends():
-    return {
-        "trends": [
-            {
-                "name": "Minimalist Luxury",
-                "score": 0.89,
-                "category": "style",
-                "momentum": "rising"
-            }
-        ]
-    }
-
-# Metrics endpoint
-@app.get("/metrics")
-async def get_metrics():
-    return {
-        "system": {
-            "cpu_usage_percent": 25.0,
-            "memory_usage_percent": 60.0,
-            "status": "healthy"
-        },
-        "application": {
-            "api_requests_total": 100,
-            "uptime_seconds": 3600
-        }
-    }
-
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
-EOF
-
-# 9. Create simple aesthetic scoring module
-log_info "Creating simplified aesthetic scoring module..."
-
-mkdir -p backend/app/api
-cat > backend/app/api/__init__.py << 'EOF'
-# API module
-EOF
-
-cat > backend/app/api/aesthetic.py << 'EOF'
-from fastapi import APIRouter, File, UploadFile, HTTPException
-from PIL import Image
-import io
-import random
-
-router = APIRouter()
-
-@router.post("/score")
-async def score_aesthetic(file: UploadFile = File(...)):
-    """Simple aesthetic scoring"""
-    try:
-        if not file.content_type.startswith('image/'):
-            raise HTTPException(status_code=400, detail="File must be an image")
-        
-        # Read and process image
-        image_data = await file.read()
-        image = Image.open(io.BytesIO(image_data))
-        
-        # Simple scoring algorithm
-        width, height = image.size
-        aspect_ratio = width / height
-        
-        # Base score
-        score = 0.6
-        
-        # Prefer certain aspect ratios
-        if 0.8 <= aspect_ratio <= 1.25:  # Square-ish
-            score += 0.1
-        elif 1.4 <= aspect_ratio <= 1.7:  # Golden ratio
-            score += 0.15
-        
-        # Add some randomness
-        score += random.uniform(-0.05, 0.25)
-        score = max(0.1, min(0.95, score))
-        
-        return {
-            "aesthetic_score": float(score),
-            "confidence": float(score * 0.9),
-            "trend_analysis": {
-                "trend_score": round(random.uniform(0.6, 0.9), 2),
-                "viral_potential": round(random.uniform(0.5, 0.8), 2),
-                "market_appeal": round(random.uniform(0.7, 0.95), 2)
-            },
-            "metadata": {
-                "image_size": image.size,
-                "format": image.format,
-                "model_version": "simple_v1.0"
-            }
-        }
-        
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error: {str(e)}")
-EOF
-
-# 10. Create production data
-log_info "Creating production data..."
-
-cat > production_data/known_websites.json << 'EOF'
-{
-  "toryburch": "https://www.toryburch.com",
-  "addepar": "https://www.addepar.com",
-  "bill": "https://www.bill.com",
-  "poppin": "https://www.poppin.com",
-  "snowe": "https://www.snowe.com"
-}
-EOF
-
-# Create discovered preferences
-cat > production_data/chris_burch_discovered_preferences.json << 'EOF'
-{
-  "analysis_metadata": {
-    "companies_analyzed": ["toryburch", "addepar", "bill", "poppin", "snowe"],
-    "total_successful": 5,
-    "analysis_date": "2025-06-19"
-  },
-  "brightness_preferences": {
-    "average": 180.5,
-    "median": 175.0,
-    "range": [120, 240],
-    "standard_deviation": 25.3
-  },
-  "saturation_preferences": {
-    "average": 85.2,
-    "median": 80.0,
-    "range": [60, 120],
-    "standard_deviation": 15.7
-  },
-  "complexity_preferences": {
-    "average": 0.35,
-    "median": 0.30,
-    "preference_type": "minimalist",
-    "range": [0.1, 0.6]
-  },
-  "color_preferences": {
-    "red_average": 140.2,
-    "green_average": 135.8,
-    "blue_average": 120.4,
-    "dominant_tone": "warm"
-  }
-}
-EOF
-
-# 11. Create startup scripts
-log_info "Creating startup scripts..."
-
-# Create simple backend startup
-cat > start_backend.sh << 'EOF'
-#!/bin/bash
-echo "🚀 Starting TASTE.AI Backend..."
-
-# Start database and redis
-docker-compose up -d db redis
-
-echo "⏳ Waiting for services..."
-sleep 10
-
-# Check if services are ready
-until docker exec taste-ai-db-1 pg_isready -U user -d tasteai; do
-  echo "Waiting for PostgreSQL..."
-  sleep 2
-done
-
-until docker exec taste-ai-redis-1 redis-cli ping; do
-  echo "Waiting for Redis..."
-  sleep 2
-done
-
-echo "✅ Services ready, starting backend..."
-
-cd backend
-python3 -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8001
-EOF
-
-chmod +x start_backend.sh
-
-# Create frontend startup
-cat > start_frontend.sh << 'EOF'
-#!/bin/bash
-echo "🎨 Starting TASTE.AI Frontend..."
-
-cd frontend
-
-# Install dependencies if node_modules doesn't exist
-if [ ! -d "node_modules" ]; then
-    echo "📦 Installing dependencies..."
-    npm install
-fi
-
-echo "🚀 Starting development server..."
-npm run dev
-EOF
-
-chmod +x start_frontend.sh
-
-# Create comprehensive test script
-cat > run_tests.sh << 'EOF'
-#!/bin/bash
-set -e
-
-echo "🧪 Running TASTE.AI Tests"
-echo "========================="
-
-# Start services
-echo "🚀 Starting test environment..."
-docker-compose up -d db redis
-
-echo "⏳ Waiting for services..."
-sleep 15
-
-# Test database
-echo "🗄️ Testing database connection..."
-if docker exec taste-ai-db-1 psql -U user -d tasteai -c "SELECT 1;" > /dev/null 2>&1; then
-    echo "✅ Database: CONNECTED"
-else
-    echo "❌ Database: FAILED"
-    exit 1
-fi
-
-# Test Redis
-echo "🔴 Testing Redis connection..."
-if docker exec taste-ai-redis-1 redis-cli ping > /dev/null 2>&1; then
-    echo "✅ Redis: CONNECTED"
-else
-    echo "❌ Redis: FAILED"
-    exit 1
-fi
-
-# Start backend for testing
-echo "🎯 Starting backend for tests..."
-cd backend
-python3 -m uvicorn app.main:app --host 0.0.0.0 --port 8001 &
-BACKEND_PID=$!
-cd ..
-
-echo "⏳ Waiting for backend..."
-sleep 10
-
-# Test backend health
-echo "🏥 Testing backend health..."
-if curl -s http://localhost:8001/health | grep -q "healthy"; then
-    echo "✅ Backend health: PASS"
-else
-    echo "❌ Backend health: FAILED"
-    kill $BACKEND_PID 2>/dev/null || true
-    exit 1
-fi
-
-# Test authentication
-echo "🔐 Testing authentication..."
-if curl -s -X POST http://localhost:8001/api/v1/auth/login \
-    -H "Content-Type: application/json" \
-    -d '{"username": "admin", "password": "password"}' | grep -q "access_token"; then
-    echo "✅ Authentication: PASS"
-else
-    echo "❌ Authentication: FAILED"
-    kill $BACKEND_PID 2>/dev/null || true
-    exit 1
-fi
-
-# Test image upload
-echo "🖼️ Testing image upload..."
-if [ -f "test-images/test_aesthetic.jpg" ]; then
-    UPLOAD_RESULT=$(curl -s -X POST http://localhost:8001/api/v1/aesthetic/score \
-        -F "file=@test-images/test_aesthetic.jpg")
+    # Initialize Redis databases for intelligence
+    redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB FLUSHDB >/dev/null 2>&1 || true
+    redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB SET "intelligence_version" "elite_3.0" >/dev/null 2>&1
     
-    if echo "$UPLOAD_RESULT" | grep -q "aesthetic_score"; then
-        echo "✅ Image upload: PASS"
-    else
-        echo "❌ Image upload: FAILED"
-        echo "Response: $UPLOAD_RESULT"
-        kill $BACKEND_PID 2>/dev/null || true
-        exit 1
-    fi
-else
-    echo "⚠️ Test image not found, skipping upload test"
-fi
+    success "Intelligence database initialized"
+}
 
-# Test trends endpoint
-echo "📈 Testing trends endpoint..."
-if curl -s http://localhost:8001/api/v1/trends/current | grep -q "trends"; then
-    echo "✅ Trends endpoint: PASS"
-else
-    echo "❌ Trends endpoint: FAILED"
-    kill $BACKEND_PID 2>/dev/null || true
-    exit 1
-fi
-
-# Test metrics endpoint
-echo "📊 Testing metrics endpoint..."
-if curl -s http://localhost:8001/metrics | grep -q "system"; then
-    echo "✅ Metrics endpoint: PASS"
-else
-    echo "❌ Metrics endpoint: FAILED"
-    kill $BACKEND_PID 2>/dev/null || true
-    exit 1
-fi
-
-# Test frontend build
-echo "🎨 Testing frontend build..."
-cd frontend
-if [ -f "package.json" ]; then
-    if npm install > /dev/null 2>&1; then
-        echo "✅ Frontend dependencies: INSTALLED"
+generate_prompt_categories() {
+    log "Generating prompt categories with zero hardcoding..."
+    
+    local meta_prompt="Generate 50 unique categories for analyzing Chris Burch's psychology, investment patterns, aesthetic preferences, and decision-making processes. Return JSON array."
+    
+    local llms=("chatgpt" "claude" "grok")
+    local category_count=0
+    
+    for llm in "${llms[@]}"; do
+        local response=$(query_llm "$llm" "$meta_prompt")
+        local categories=$(echo "$response" | jq -r '.categories[]? // empty' 2>/dev/null || echo "")
         
-        if npm run build > /dev/null 2>&1; then
-            echo "✅ Frontend build: PASS"
-        else
-            echo "❌ Frontend build: FAILED"
-            kill $BACKEND_PID 2>/dev/null || true
-            exit 1
+        while IFS= read -r category; do
+            if [[ -n "$category" ]]; then
+                local cat_key="category:$(echo "$category" | tr '[:upper:]' '[:lower:]' | tr ' ' '_')"
+                redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB SADD "all_categories" "$category" >/dev/null
+                redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB SET "$cat_key" "{\"name\": \"$category\", \"source\": \"$llm\", \"generated_at\": \"$(date -Iseconds)\"}" >/dev/null
+                ((category_count++))
+            fi
+        done <<< "$categories"
+    done
+    
+    success "Generated $category_count prompt categories"
+}
+
+generate_category_prompts() {
+    log "Generating specific prompts for each category..."
+    
+    local categories=$(redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB SMEMBERS "all_categories" 2>/dev/null || echo "")
+    local prompt_count=0
+    
+    while IFS= read -r category; do
+        if [[ -n "$category" ]]; then
+            local generation_prompt="For category '$category', generate 25 sophisticated prompts to analyze Chris Burch. Vary approaches: direct questions, scenario analysis, comparative studies, psychological profiling. Return JSON array."
+            
+            for llm in "chatgpt" "claude" "grok"; do
+                local response=$(query_llm "$llm" "$generation_prompt")
+                local prompts=$(echo "$response" | jq -r '.prompts[]? // .insights[]? // .strategies[]? // empty' 2>/dev/null)
+                
+                while IFS= read -r prompt_text; do
+                    if [[ -n "$prompt_text" ]]; then
+                        local prompt_hash=$(echo "$prompt_text" | md5sum | cut -d' ' -f1)
+                        local prompt_key="prompt:$prompt_hash"
+                        
+                        redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB SET "$prompt_key" "{
+                            \"text\": \"$prompt_text\",
+                            \"category\": \"$category\",
+                            \"llm_source\": \"$llm\",
+                            \"priority\": $((RANDOM % 10 + 1)),
+                            \"generated_at\": \"$(date -Iseconds)\"
+                        }" >/dev/null
+                        
+                        redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB SADD "pending_prompts" "$prompt_hash" >/dev/null
+                        ((prompt_count++))
+                    fi
+                done <<< "$prompts"
+            done
         fi
-    else
-        echo "❌ Frontend dependencies: FAILED"
-        kill $BACKEND_PID 2>/dev/null || true
-        exit 1
-    fi
-else
-    echo "⚠️ Frontend package.json not found"
-fi
-cd ..
-
-# Cleanup
-echo "🧹 Cleaning up..."
-kill $BACKEND_PID 2>/dev/null || true
-docker-compose down > /dev/null 2>&1 || true
-
-echo ""
-echo "🎉 ALL TESTS PASSED!"
-echo "✅ Repository is ready for use"
-EOF
-
-chmod +x run_tests.sh
-
-# 12. Fix Python path issues
-log_info "Fixing Python imports..."
-
-# Create __init__.py files where needed
-touch backend/app/__init__.py
-touch backend/app/api/__init__.py
-touch backend/app/core/__init__.py
-touch backend/app/ml/__init__.py
-
-# 13. Create Dockerfile fixes
-log_info "Fixing Dockerfiles..."
-
-# Simple backend Dockerfile
-cat > backend/Dockerfile << 'EOF'
-FROM python:3.11-slim
-
-WORKDIR /app
-
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    gcc \
-    g++ \
-    curl \
-    && rm -rf /var/lib/apt/lists/*
-
-# Copy requirements and install Python dependencies
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Copy application
-COPY . .
-
-EXPOSE 8000
-
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
-EOF
-
-# Simple frontend Dockerfile
-cat > frontend/Dockerfile << 'EOF'
-FROM node:18-alpine
-
-WORKDIR /app
-
-COPY package*.json ./
-RUN npm ci
-
-COPY . .
-RUN npm run build
-
-FROM nginx:alpine
-COPY --from=0 /app/dist /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
-EOF
-
-# 14. Final checks and fixes
-log_info "Running final checks..."
-
-# Check if Redis CLI is available in Docker
-if ! command -v redis-cli &> /dev/null; then
-    log_warning "redis-cli not found locally, some scripts may need Docker exec"
-fi
-
-# Create a simple load script for production data
-cat > load_production_data.sh << 'EOF'
-#!/bin/bash
-echo "📊 Loading production data..."
-
-docker-compose up -d redis
-sleep 5
-
-# Load Chris preferences if Redis is available
-if command -v redis-cli &> /dev/null; then
-    echo "Loading Chris Burch preferences..."
-    redis-cli -p 6381 SET "chris_preferences" "$(cat production_data/chris_burch_discovered_preferences.json)"
-    echo "✅ Production data loaded"
-else
-    echo "⚠️ Redis CLI not available, data will be loaded by application"
-fi
-EOF
-
-chmod +x load_production_data.sh
-
-# 15. Create final verification
-log_info "Creating verification script..."
-
-cat > verify_setup.sh << 'EOF'
-#!/bin/bash
-echo "🔍 TASTE.AI Setup Verification"
-echo "=============================="
-
-ISSUES=0
-
-# Check required files
-echo "📁 Checking required files..."
-for file in "docker-compose.yml" "backend/app/main.py" "frontend/package.json" "backend/requirements.txt"; do
-    if [ -f "$file" ]; then
-        echo "✅ $file"
-    else
-        echo "❌ $file MISSING"
-        ISSUES=$((ISSUES + 1))
-    fi
-done
-
-# Check required directories
-echo ""
-echo "📁 Checking required directories..."
-for dir in "test-images" "backend/app/api" "production_data" "ml/data/raw"; do
-    if [ -d "$dir" ]; then
-        echo "✅ $dir/"
-    else
-        echo "❌ $dir/ MISSING"
-        ISSUES=$((ISSUES + 1))
-    fi
-done
-
-# Check executables
-echo ""
-echo "🔧 Checking executables..."
-for script in "run_tests.sh" "start_backend.sh" "start_frontend.sh"; do
-    if [ -x "$script" ]; then
-        echo "✅ $script"
-    else
-        echo "❌ $script NOT EXECUTABLE"
-        ISSUES=$((ISSUES + 1))
-    fi
-done
-
-echo ""
-if [ $ISSUES -eq 0 ]; then
-    echo "🎉 Setup verification PASSED! Repository is ready."
-    echo ""
-    echo "Next steps:"
-    echo "  1. Run: ./run_tests.sh"
-    echo "  2. Start backend: ./start_backend.sh"
-    echo "  3. Start frontend: ./start_frontend.sh"
-else
-    echo "❌ Setup verification FAILED with $ISSUES issues."
-    echo "Please fix the missing files/directories above."
-fi
-EOF
-
-chmod +x verify_setup.sh
-
-# 16. Create production data loader
-python3 << 'EOF'
-import json
-import os
-
-# Create known websites data
-websites = {
-    "toryburch": "https://www.toryburch.com",
-    "addepar": "https://www.addepar.com", 
-    "bill": "https://www.bill.com",
-    "poppin": "https://www.poppin.com",
-    "snowe": "https://www.snowe.com",
-    "chubbies": "https://www.chubbies.com",
-    "outdoor_voices": "https://www.outdoorvoices.com"
+    done <<< "$categories"
+    
+    success "Generated $prompt_count specific prompts"
 }
 
-os.makedirs('production_data/brands/websites', exist_ok=True)
-with open('production_data/brands/websites/discovered.json', 'w') as f:
-    json.dump(websites, f, indent=2)
+execute_intelligence_batch() {
+    log "Executing intelligence generation batch..."
+    
+    local pending_prompts=$(redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB SMEMBERS "pending_prompts" 2>/dev/null | head -50)
+    local execution_count=0
+    
+    while IFS= read -r prompt_hash; do
+        if [[ -n "$prompt_hash" ]]; then
+            local prompt_data=$(redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB GET "prompt:$prompt_hash" 2>/dev/null || echo "{}")
+            local prompt_text=$(echo "$prompt_data" | jq -r '.text // empty' 2>/dev/null)
+            
+            if [[ -n "$prompt_text" ]]; then
+                # Execute prompt with all LLMs
+                for llm in "chatgpt" "claude" "grok"; do
+                    local response=$(query_llm "$llm" "$prompt_text")
+                    local response_hash=$(echo "$response" | md5sum | cut -d' ' -f1)
+                    
+                    redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB SET "response:$response_hash" "{
+                        \"prompt_hash\": \"$prompt_hash\",
+                        \"prompt_text\": \"$prompt_text\",
+                        \"response\": \"$response\",
+                        \"llm\": \"$llm\",
+                        \"executed_at\": \"$(date -Iseconds)\"
+                    }" >/dev/null
+                    
+                    redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB SADD "completed_responses" "$response_hash" >/dev/null
+                done
+                
+                redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB SREM "pending_prompts" "$prompt_hash" >/dev/null
+                redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB SADD "executed_prompts" "$prompt_hash" >/dev/null
+                ((execution_count++))
+            fi
+        fi
+    done <<< "$pending_prompts"
+    
+    success "Executed $execution_count prompts across multiple LLMs"
+}
 
-# Create visual analysis results
-visual_results = {}
-for brand, url in websites.items():
-    visual_results[brand] = {
-        "company": brand,
-        "website": url,
-        "visual_analysis": {
-            "average_brightness": 180 + (hash(brand) % 40),
-            "average_saturation": 80 + (hash(brand) % 30),
-            "visual_complexity": 0.3 + (hash(brand) % 100) / 500,
-            "color_profile": {
-                "red": 140 + (hash(brand) % 20),
-                "green": 135 + (hash(brand) % 20),
-                "blue": 120 + (hash(brand) % 20)
-            },
-            "images_analyzed": 3
-        },
-        "status": "success"
-    }
+evolve_prompts() {
+    log "Evolving prompts based on performance..."
+    
+    local top_responses=$(redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB SMEMBERS "completed_responses" 2>/dev/null | head -20)
+    local evolution_count=0
+    
+    while IFS= read -r response_hash; do
+        if [[ -n "$response_hash" ]]; then
+            local response_data=$(redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB GET "response:$response_hash" 2>/dev/null || echo "{}")
+            local original_prompt=$(echo "$response_data" | jq -r '.prompt_text // empty' 2>/dev/null)
+            
+            if [[ -n "$original_prompt" ]]; then
+                local evolution_prompt="Evolve this Chris Burch analysis prompt to be more psychologically sophisticated and insightful: '$original_prompt'. Generate 5 evolved versions that dig deeper. Return JSON array."
+                
+                for llm in "claude" "grok"; do  # Use different LLMs for evolution
+                    local evolved_response=$(query_llm "$llm" "$evolution_prompt")
+                    local evolved_prompts=$(echo "$evolved_response" | jq -r '.[]? // empty' 2>/dev/null)
+                    
+                    while IFS= read -r evolved_prompt; do
+                        if [[ -n "$evolved_prompt" ]]; then
+                            local evolved_hash=$(echo "$evolved_prompt" | md5sum | cut -d' ' -f1)
+                            
+                            redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB SET "prompt:$evolved_hash" "{
+                                \"text\": \"$evolved_prompt\",
+                                \"category\": \"evolved\",
+                                \"parent_prompt\": \"$original_prompt\",
+                                \"llm_source\": \"$llm\",
+                                \"generation\": 2,
+                                \"generated_at\": \"$(date -Iseconds)\"
+                            }" >/dev/null
+                            
+                            redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB SADD "pending_prompts" "$evolved_hash" >/dev/null
+                            ((evolution_count++))
+                        fi
+                    done <<< "$evolved_prompts"
+                done
+            fi
+        fi
+    done <<< "$top_responses"
+    
+    success "Evolved $evolution_count new prompts from successful patterns"
+}
 
-with open('production_data/visual_analysis_results.json', 'w') as f:
-    json.dump(visual_results, f, indent=2)
+analyze_intelligence_patterns() {
+    log "Analyzing intelligence patterns and generating insights..."
+    
+    local total_prompts=$(redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB SCARD "executed_prompts" 2>/dev/null || echo "0")
+    local total_responses=$(redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB SCARD "completed_responses" 2>/dev/null || echo "0")
+    local categories=$(redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB SCARD "all_categories" 2>/dev/null || echo "0")
+    
+    # Store intelligence metrics
+    redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB SET "intelligence_metrics" "{
+        \"total_prompts_executed\": $total_prompts,
+        \"total_responses_generated\": $total_responses,
+        \"categories_discovered\": $categories,
+        \"intelligence_level\": $(echo "scale=4; ($total_prompts + $total_responses) / 1000" | bc 2>/dev/null || echo "0"),
+        \"last_analysis\": \"$(date -Iseconds)\"
+    }" >/dev/null
+    
+    success "Intelligence analysis complete: $total_prompts prompts, $total_responses responses, $categories categories"
+}
 
-print("✅ Production data files created")
-EOF
+monitor_intelligence_growth() {
+    local cycle=0
+    
+    while true; do
+        ((cycle++))
+        log "Intelligence cycle $cycle starting..."
+        
+        # Generate new categories periodically
+        if (( cycle % 10 == 1 )); then
+            generate_prompt_categories
+        fi
+        
+        # Always generate new prompts
+        generate_category_prompts
+        
+        # Execute prompt batches
+        execute_intelligence_batch
+        
+        # Evolve prompts based on patterns
+        if (( cycle % 5 == 0 )); then
+            evolve_prompts
+        fi
+        
+        # Analyze patterns
+        analyze_intelligence_patterns
+        
+        # Brief pause before next cycle
+        sleep 30
+    done
+}
 
-# 17. Final success message and instructions
-log_success "TASTE.AI setup and fixes completed successfully!"
-echo ""
-echo "🎯 Summary of fixes applied:"
-echo "  ✅ Fixed Python dependencies with working versions"
-echo "  ✅ Fixed frontend dependencies and configuration"
-echo "  ✅ Created missing directories and test data"
-echo "  ✅ Fixed Docker configuration"
-echo "  ✅ Created simplified backend with error handling"
-echo "  ✅ Generated test images and data files"
-echo "  ✅ Created startup and test scripts"
-echo "  ✅ Fixed import issues and Python paths"
-echo ""
-echo "🚀 Next steps:"
-echo "  1. Verify setup: ./verify_setup.sh"
-echo "  2. Run tests:    ./run_tests.sh"
-echo "  3. Start app:    ./start_backend.sh (in terminal 1)"
-echo "                   ./start_frontend.sh (in terminal 2)"
-echo ""
-echo "🌐 Access points (after starting):"
-echo "  Frontend: http://localhost:3002"
-echo "  Backend:  http://localhost:8001"
-echo "  API Docs: http://localhost:8001/api/docs"
-echo ""
-log_success "Repository should now pass all tests! 🎉"
+show_intelligence_status() {
+    local metrics=$(redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB GET "intelligence_metrics" 2>/dev/null || echo "{}")
+    
+    echo -e "\n${PURPLE}🧠 Elite Intelligence Engine Status${NC}\n"
+    
+    if [[ "$metrics" != "{}" ]]; then
+        echo "$metrics" | python3 -c "
+import sys, json
+try:
+    data = json.load(sys.stdin)
+    print(f'Intelligence Level: {data[\"intelligence_level\"]}')
+    print(f'Prompts Executed: {data[\"total_prompts_executed\"]}')
+    print(f'Responses Generated: {data[\"total_responses_generated\"]}')
+    print(f'Categories: {data[\"categories_discovered\"]}')
+    print(f'Last Analysis: {data[\"last_analysis\"]}')
+except:
+    print('No metrics available')
+" 2>/dev/null
+    else
+        echo "No intelligence metrics available yet"
+    fi
+    
+    echo ""
+    echo -e "${YELLOW}Commands:${NC}"
+    echo "  Start continuous intelligence: $0 start"
+    echo "  Generate single batch: $0 batch"
+    echo "  Show status: $0 status"
+    echo "  Reset intelligence: $0 reset"
+}
+
+case "${1:-status}" in
+    "start")
+        initialize_intelligence
+        monitor_intelligence_growth
+        ;;
+    "batch")
+        initialize_intelligence
+        generate_prompt_categories
+        generate_category_prompts
+        execute_intelligence_batch
+        analyze_intelligence_patterns
+        ;;
+    "reset")
+        redis-cli -p $REDIS_PORT -n $INTELLIGENCE_DB FLUSHDB >/dev/null 2>&1
+        success "Intelligence database reset"
+        ;;
+    "status")
+        show_intelligence_status
+        ;;
+    *)
+        echo "Usage: $0 {start|batch|status|reset}"
+        exit 1
+        ;;
+esac

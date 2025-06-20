@@ -1,0 +1,45 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.elite
+    ports: ["8001:8000"]
+    environment:
+      - DATABASE_URL=postgresql://user:pass@db:5432/tasteai
+      - REDIS_URL=redis://redis:6379
+      - ELITE_MODE=true
+    depends_on: [db, redis]
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits: { memory: 1G, cpus: '0.5' }
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.elite
+    ports: ["3002:80"]
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits: { memory: 256M, cpus: '0.25' }
+
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: tasteai
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+    ports: ["5434:5432"]
+    volumes: [postgres_data:/var/lib/postgresql/data]
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    ports: ["6381:6379"]
+    restart: unless-stopped
+    command: redis-server --maxmemory 256mb --maxmemory-policy allkeys-lru
+
+volumes:
+  postgres_data:
