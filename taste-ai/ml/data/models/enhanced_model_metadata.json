@@ -1,0 +1,18 @@
+{
+  "model_type": "enhanced_random_forest",
+  "performance_metrics": {
+    "mse": 0.00037078361844716784,
+    "features_count": 13,
+    "market_integration": true
+  },
+  "external_data_sources": [
+    "sentiment_analysis",
+    "economic_indicators",
+    "fashion_trends",
+    "competitive_landscape",
+    "consumer_insights"
+  ],
+  "training_timestamp": "2025-06-19T21:40:14.803274",
+  "burch_optimization": true,
+  "production_ready": true
+}

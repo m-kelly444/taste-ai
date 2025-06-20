@@ -1,0 +1,161 @@
+{
+  "collection_timestamp": "2025-06-19T21:33:58.385582",
+  "data_sources": {
+    "fashion_trends": {
+      "count": 4,
+      "data": [
+        {
+          "name": "Indigenous Fashion Insights",
+          "category": "pattern",
+          "popularity_score": 0.0,
+          "trend_score": 2.07,
+          "recency_factor": 1.0,
+          "source": "github_fashion",
+          "momentum": 1.0
+        },
+        {
+          "name": "Styles By Nova Android App",
+          "category": "style",
+          "popularity_score": 0.047,
+          "trend_score": 1.64,
+          "recency_factor": 1.0,
+          "source": "github_fashion",
+          "momentum": 1.0
+        },
+        {
+          "name": "E Commerceapp",
+          "category": "style",
+          "popularity_score": 0.0,
+          "trend_score": 2.89,
+          "recency_factor": 1.0,
+          "source": "github_fashion",
+          "momentum": 1.0
+        },
+        {
+          "name": "Trendaura",
+          "category": "color",
+          "popularity_score": 0.0,
+          "trend_score": 1.07,
+          "recency_factor": 1.0,
+          "source": "github_fashion",
+          "momentum": 1.0
+        }
+      ],
+      "avg_trend_score": 1.9175,
+      "top_categories": [
+        "pattern",
+        "color",
+        "style"
+      ]
+    },
+    "color_palettes": {
+      "count": 2,
+      "data": [
+        {
+          "palette_name": "Classic Navy",
+          "colors": [
+            "#1B365D",
+            "#C19A6B",
+            "#F5F5DC",
+            "#8B4513"
+          ],
+          "harmony_score": 0.92,
+          "burch_alignment": 0.95
+        },
+        {
+          "palette_name": "Sage Minimalist",
+          "colors": [
+            "#9CAF88",
+            "#F4F1E8",
+            "#6B705C",
+            "#CB997E"
+          ],
+          "harmony_score": 0.88,
+          "burch_alignment": 0.89
+        }
+      ],
+      "avg_harmony": 0.9,
+      "avg_burch_alignment": 0.9199999999999999
+    },
+    "luxury_market": {
+      "count": 8,
+      "data": [
+        {
+          "segment": "apparel",
+          "market_score": 0.01,
+          "growth_indicator": 0.25,
+          "brand_strength": 0.31,
+          "source": "market_analysis",
+          "timestamp": "2025-06-19T21:33:58.343724"
+        },
+        {
+          "segment": "general_luxury",
+          "market_score": 0.006,
+          "growth_indicator": 0.25,
+          "brand_strength": 0.306,
+          "source": "market_analysis",
+          "timestamp": "2025-06-19T21:33:58.343765"
+        },
+        {
+          "segment": "general_luxury",
+          "market_score": 0.002,
+          "growth_indicator": 0.25,
+          "brand_strength": 0.302,
+          "source": "market_analysis",
+          "timestamp": "2025-06-19T21:33:58.343784"
+        },
+        {
+          "segment": "general_luxury",
+          "market_score": 0.002,
+          "growth_indicator": 0.25,
+          "brand_strength": 0.302,
+          "source": "market_analysis",
+          "timestamp": "2025-06-19T21:33:58.343810"
+        },
+        {
+          "segment": "apparel",
+          "market_score": 0.002,
+          "growth_indicator": 0.25,
+          "brand_strength": 0.302,
+          "source": "market_analysis",
+          "timestamp": "2025-06-19T21:33:58.343956"
+        },
+        {
+          "segment": "handbags",
+          "market_score": 0.85,
+          "growth_indicator": 0.75,
+          "brand_strength": 0.9,
+          "source": "baseline_data"
+        },
+        {
+          "segment": "shoes",
+          "market_score": 0.78,
+          "growth_indicator": 0.68,
+          "brand_strength": 0.82,
+          "source": "baseline_data"
+        },
+        {
+          "segment": "apparel",
+          "market_score": 0.72,
+          "growth_indicator": 0.71,
+          "brand_strength": 0.75,
+          "source": "baseline_data"
+        }
+      ],
+      "market_strength": 0.2965,
+      "growth_outlook": 0.42375
+    },
+    "social_sentiment": {
+      "count": 0,
+      "data": [],
+      "avg_sentiment": 0.5,
+      "engagement_level": 0
+    }
+  },
+  "integration_insights": {
+    "data_quality_score": 0.23333333333333334,
+    "burch_relevance_score": 0.702,
+    "trend_momentum": 0.8,
+    "market_confidence": 0.33467499999999994
+  }
+}

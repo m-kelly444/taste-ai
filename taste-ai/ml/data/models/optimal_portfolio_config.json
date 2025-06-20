@@ -1,0 +1,106 @@
+{
+  "optimal_allocation": {
+    "sharpe_maximizing": {
+      "weights": [
+        0.11611754657135515,
+        0.22415443063167556,
+        0.3435589120225307,
+        0.0405330449006072,
+        0.06341477544844717,
+        0.21222129042538426
+      ],
+      "metrics": {
+        "expected_return": 0.1186734632758966,
+        "volatility": 0.21547067826867763,
+        "sharpe_ratio": 1.4597218699668426,
+        "var_95": -0.053213227475435804,
+        "max_drawdown": -0.18407652294383073
+      }
+    },
+    "return_maximizing": {
+      "weights": [
+        0.2231847040368552,
+        0.4738994542024574,
+        0.11955865667752862,
+        0.16240159595886103,
+        0.010641420039820222,
+        0.010314169084477395
+      ],
+      "metrics": {
+        "expected_return": 0.17169872233380207,
+        "volatility": 0.31318199009566644,
+        "sharpe_ratio": 1.052723554336514
+      }
+    },
+    "risk_adjusted": {
+      "weights": [
+        0.09048933060163544,
+        0.18625135277824556,
+        0.27352280460356565,
+        0.07319048560998265,
+        0.061512341047639314,
+        0.31503368535893134
+      ],
+      "metrics": {
+        "expected_return": 0.08382309174298466,
+        "volatility": 0.1438796043488654,
+        "sharpe_ratio": 1.7699256028007933
+      }
+    }
+  },
+  "rebalancing": {
+    "optimal_frequency_months": 6,
+    "expected_net_return": 0.14201153523168183
+  },
+  "risk_analysis": {
+    "risk_budgets": [
+      0.2054505078148269,
+      0.18155979140867748,
+      0.1724404135623434,
+      0.18254119564497184,
+      0.2494022326114229,
+      0.0086058589577573
+    ],
+    "concentration_ratio": 3.6388942745732837
+  },
+  "portfolio_composition": {
+    "top_holdings": [
+      {
+        "asset_id": "asset_1",
+        "type": "handbags",
+        "price_range": "luxury",
+        "region": "north_america",
+        "weight": 0.15,
+        "aesthetic_score": 0.89,
+        "expected_return": 0.14
+      },
+      {
+        "asset_id": "asset_2",
+        "type": "shoes",
+        "price_range": "contemporary",
+        "region": "europe",
+        "weight": 0.12,
+        "aesthetic_score": 0.85,
+        "expected_return": 0.11
+      }
+    ],
+    "sector_allocation": {
+      "handbags": 0.3,
+      "shoes": 0.25,
+      "apparel": 0.22,
+      "accessories": 0.15,
+      "jewelry": 0.05,
+      "home": 0.03
+    },
+    "region_allocation": {
+      "north_america": 0.45,
+      "europe": 0.35,
+      "asia_pacific": 0.2
+    },
+    "price_tier_allocation": {
+      "luxury": 0.4,
+      "contemporary": 0.45,
+      "accessible": 0.15
+    }
+  }
+}

@@ -1,0 +1,75 @@
+[
+  {
+    "category": "colors",
+    "issue": "low_confidence",
+    "avg_confidence": 0.2794117647058823,
+    "recommendation": "Collect more colors data from diverse sources"
+  },
+  {
+    "category": "materials",
+    "issue": "low_confidence",
+    "avg_confidence": 0.3,
+    "recommendation": "Collect more materials data from diverse sources"
+  },
+  {
+    "category": "materials",
+    "issue": "insufficient_data",
+    "item_count": 4,
+    "recommendation": "Expand materials data collection scope"
+  },
+  {
+    "category": "materials",
+    "issue": "no_high_confidence_items",
+    "recommendation": "Focus on validating materials preferences with additional sources"
+  },
+  {
+    "category": "styles",
+    "issue": "low_confidence",
+    "avg_confidence": 0.15545454545454543,
+    "recommendation": "Collect more styles data from diverse sources"
+  },
+  {
+    "category": "styles",
+    "issue": "no_high_confidence_items",
+    "recommendation": "Focus on validating styles preferences with additional sources"
+  },
+  {
+    "category": "price_points",
+    "issue": "low_confidence",
+    "avg_confidence": 0.22799999999999998,
+    "recommendation": "Collect more price_points data from diverse sources"
+  },
+  {
+    "category": "price_points",
+    "issue": "no_high_confidence_items",
+    "recommendation": "Focus on validating price_points preferences with additional sources"
+  },
+  {
+    "category": "brand_aesthetics",
+    "issue": "low_confidence",
+    "avg_confidence": 0.19999999999999998,
+    "recommendation": "Collect more brand_aesthetics data from diverse sources"
+  },
+  {
+    "category": "brand_aesthetics",
+    "issue": "no_high_confidence_items",
+    "recommendation": "Focus on validating brand_aesthetics preferences with additional sources"
+  },
+  {
+    "category": "investment_patterns",
+    "issue": "low_confidence",
+    "avg_confidence": 0.27,
+    "recommendation": "Collect more investment_patterns data from diverse sources"
+  },
+  {
+    "category": "investment_patterns",
+    "issue": "insufficient_data",
+    "item_count": 3,
+    "recommendation": "Expand investment_patterns data collection scope"
+  },
+  {
+    "category": "investment_patterns",
+    "issue": "no_high_confidence_items",
+    "recommendation": "Focus on validating investment_patterns preferences with additional sources"
+  }
+]

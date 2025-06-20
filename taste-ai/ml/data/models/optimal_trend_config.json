@@ -1,0 +1,55 @@
+{
+  "models": {
+    "intensity": {
+      "model_type": "gb",
+      "parameters": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+      },
+      "validation_mae": 0.013810138335814173,
+      "scaler_type": "MinMaxScaler"
+    },
+    "duration": {
+      "model_type": "svr",
+      "parameters": {
+        "C": 10,
+        "gamma": "auto"
+      },
+      "validation_mae": 52.718350313997256,
+      "scaler_type": "MinMaxScaler"
+    },
+    "success": {
+      "model_type": "ridge",
+      "parameters": {
+        "alpha": 10.0
+      },
+      "validation_mae": 0.01079694785525492,
+      "scaler_type": "StandardScaler"
+    }
+  },
+  "preprocessing": {
+    "optimal_window_days": 90,
+    "momentum_threshold": 0.38765995330081476,
+    "success_threshold": 0.17907147758144593
+  },
+  "clustering": {
+    "optimal_clusters": 7,
+    "silhouette_score": 0.24147434854216987
+  },
+  "feature_weights": {
+    "trend_velocity": [
+      0.24814897657129006,
+      0.43667277045231895,
+      0.25855054751041145,
+      0.05662770546597951
+    ],
+    "burch_alignment": 1.04612575
+  },
+  "prediction_horizons": {
+    "30_days": 0.010204742992566292,
+    "60_days": 0.009549045164398744,
+    "90_days": 0.0097499665220373,
+    "180_days": 0.010051656404867921
+  }
+}

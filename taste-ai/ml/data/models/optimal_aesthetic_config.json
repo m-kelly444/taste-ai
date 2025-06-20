@@ -1,0 +1,29 @@
+{
+  "model_type": "GradientBoostingRegressor",
+  "best_params": {
+    "model__learning_rate": 0.01,
+    "model__max_depth": 7,
+    "model__n_estimators": 50
+  },
+  "performance_metrics": {
+    "mse": 0.002083695006371071,
+    "mae": 0.03912934440113486,
+    "correlation": 0.9942765750552081,
+    "cv_score": 0.004969523674924029
+  },
+  "feature_importance": {
+    "brightness": 0.11165549692194698,
+    "contrast": 0.06475036331426247,
+    "color_variance": 0.04946371888237826,
+    "red": 0.03096115794424102,
+    "green": 0.16512379232611887,
+    "blue": 0.2775305322618201,
+    "aspect_ratio": 0.23972816968970814,
+    "size": 0.06078676865952408
+  },
+  "optimal_thresholds": {
+    "aesthetic_threshold": 0.1,
+    "accuracy": 1.0
+  },
+  "burch_alignment_multiplier": 1.3135999999999999
+}

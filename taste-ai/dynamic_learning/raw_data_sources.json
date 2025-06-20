@@ -1,0 +1,225 @@
+[
+  {
+    "source": "tory_burch_brand",
+    "data": [
+      {
+        "name": "Miller Sandal",
+        "category": "shoes",
+        "colors": [
+          "tan",
+          "navy",
+          "black",
+          "gold"
+        ],
+        "materials": [
+          "leather"
+        ],
+        "price": 248,
+        "style_tags": [
+          "classic",
+          "logo",
+          "comfortable"
+        ]
+      },
+      {
+        "name": "Kira Chevron Bag",
+        "category": "handbags",
+        "colors": [
+          "black",
+          "cream",
+          "camel"
+        ],
+        "materials": [
+          "quilted leather"
+        ],
+        "price": 528,
+        "style_tags": [
+          "structured",
+          "quilted",
+          "logo"
+        ]
+      },
+      {
+        "name": "Printed Tunic",
+        "category": "clothing",
+        "colors": [
+          "navy",
+          "white",
+          "multicolor"
+        ],
+        "materials": [
+          "silk"
+        ],
+        "price": 398,
+        "style_tags": [
+          "printed",
+          "flowing",
+          "bohemian"
+        ]
+      },
+      {
+        "element": "logo_colors",
+        "values": [
+          "navy",
+          "gold",
+          "orange"
+        ],
+        "frequency": "very_high",
+        "source": "brand_identity_analysis"
+      },
+      {
+        "element": "signature_patterns",
+        "values": [
+          "reva",
+          "double_t",
+          "geometric"
+        ],
+        "frequency": "high",
+        "source": "product_catalog_analysis"
+      },
+      {
+        "element": "material_preferences",
+        "values": [
+          "leather",
+          "silk",
+          "cotton"
+        ],
+        "frequency": "high",
+        "source": "material_analysis"
+      }
+    ]
+  },
+  {
+    "source": "investment_portfolio",
+    "data": [
+      {
+        "category": "luxury_fashion",
+        "confidence": 0.95,
+        "source": "public_records"
+      },
+      {
+        "category": "digital_platforms",
+        "confidence": 0.78,
+        "source": "portfolio_analysis"
+      },
+      {
+        "category": "lifestyle_brands",
+        "confidence": 0.82,
+        "source": "media_reports"
+      }
+    ]
+  },
+  {
+    "source": "public_statements",
+    "data": []
+  },
+  {
+    "source": "competitive_analysis",
+    "data": [
+      {
+        "competitor": "coach",
+        "cb_differentiation": [
+          "american_heritage",
+          "accessible_luxury",
+          "classic_design"
+        ],
+        "price_positioning": "premium_accessible"
+      },
+      {
+        "competitor": "kate_spade",
+        "cb_differentiation": [
+          "sophisticated_fun",
+          "color_boldness",
+          "lifestyle_integration"
+        ],
+        "price_positioning": "contemporary"
+      },
+      {
+        "competitor": "michael_kors",
+        "cb_differentiation": [
+          "design_heritage",
+          "quality_focus",
+          "brand_authenticity"
+        ],
+        "price_positioning": "accessible_luxury"
+      }
+    ]
+  },
+  {
+    "source": "seasonal_patterns",
+    "data": [
+      {
+        "dominant_colors": [
+          "sage_green",
+          "cream",
+          "coral",
+          "navy"
+        ],
+        "style_themes": [
+          "fresh",
+          "optimistic",
+          "natural"
+        ],
+        "material_focus": [
+          "lightweight_cotton",
+          "linen",
+          "silk"
+        ]
+      },
+      {
+        "dominant_colors": [
+          "white",
+          "navy",
+          "bright_coral",
+          "turquoise"
+        ],
+        "style_themes": [
+          "casual_luxury",
+          "resort_ready",
+          "comfortable"
+        ],
+        "material_focus": [
+          "cotton",
+          "linen",
+          "breathable_fabrics"
+        ]
+      },
+      {
+        "dominant_colors": [
+          "camel",
+          "burgundy",
+          "navy",
+          "forest_green"
+        ],
+        "style_themes": [
+          "sophisticated",
+          "cozy_luxury",
+          "layered"
+        ],
+        "material_focus": [
+          "wool",
+          "cashmere",
+          "leather"
+        ]
+      },
+      {
+        "dominant_colors": [
+          "black",
+          "charcoal",
+          "cream",
+          "deep_red"
+        ],
+        "style_themes": [
+          "elegant",
+          "formal",
+          "rich_textures"
+        ],
+        "material_focus": [
+          "wool",
+          "cashmere",
+          "heavy_knits"
+        ]
+      }
+    ]
+  }
+]

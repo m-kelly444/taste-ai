@@ -1,0 +1,597 @@
+{
+  "collection_timestamp": "2025-06-19T21:38:09.509484",
+  "data_quality_metrics": {
+    "completeness_score": 0.9333333333333332,
+    "freshness_score": 0.95,
+    "reliability_score": 0.88,
+    "burch_relevance": 0.5967043637195855
+  },
+  "market_intelligence": {
+    "sentiment_analysis": {
+      "count": 10,
+      "data": [
+        {
+          "source": "synthetic_social",
+          "title": "Fashion Trend Analysis 1",
+          "sentiment_score": 0.7066351901580452,
+          "keyword_relevance": 0.6498627523445804,
+          "business_relevance": 0.7409746488629332,
+          "timestamp": "2025-06-19T21:38:09.194689"
+        },
+        {
+          "source": "synthetic_social",
+          "title": "Fashion Trend Analysis 2",
+          "sentiment_score": 0.5198615718295319,
+          "keyword_relevance": 0.4558696288592207,
+          "business_relevance": 0.6828972888086611,
+          "timestamp": "2025-06-19T21:38:09.194715"
+        },
+        {
+          "source": "synthetic_social",
+          "title": "Fashion Trend Analysis 3",
+          "sentiment_score": 0.5214170578518418,
+          "keyword_relevance": 0.3246892416706776,
+          "business_relevance": 0.7668595101195459,
+          "timestamp": "2025-06-19T21:38:09.194725"
+        },
+        {
+          "source": "synthetic_social",
+          "title": "Fashion Trend Analysis 4",
+          "sentiment_score": 0.7519689407832314,
+          "keyword_relevance": 0.8389119306505004,
+          "business_relevance": 0.6811214987687948,
+          "timestamp": "2025-06-19T21:38:09.194733"
+        },
+        {
+          "source": "synthetic_social",
+          "title": "Fashion Trend Analysis 5",
+          "sentiment_score": 0.8994399854991569,
+          "keyword_relevance": 0.5418375532407703,
+          "business_relevance": 0.5575166714846005,
+          "timestamp": "2025-06-19T21:38:09.194743"
+        },
+        {
+          "source": "synthetic_social",
+          "title": "Fashion Trend Analysis 6",
+          "sentiment_score": 0.65655111748415,
+          "keyword_relevance": 0.5179643436416874,
+          "business_relevance": 0.5913292261988761,
+          "timestamp": "2025-06-19T21:38:09.194751"
+        },
+        {
+          "source": "synthetic_social",
+          "title": "Fashion Trend Analysis 7",
+          "sentiment_score": 0.5847266248799718,
+          "keyword_relevance": 0.7940835978194327,
+          "business_relevance": 0.6397524297649156,
+          "timestamp": "2025-06-19T21:38:09.194759"
+        },
+        {
+          "source": "synthetic_social",
+          "title": "Fashion Trend Analysis 8",
+          "sentiment_score": 0.3550061479487094,
+          "keyword_relevance": 0.6421031019848948,
+          "business_relevance": 0.8546443630968135,
+          "timestamp": "2025-06-19T21:38:09.194768"
+        },
+        {
+          "source": "synthetic_social",
+          "title": "Fashion Trend Analysis 9",
+          "sentiment_score": 0.35109205566204355,
+          "keyword_relevance": 0.4999124817670826,
+          "business_relevance": 0.7089524057081737,
+          "timestamp": "2025-06-19T21:38:09.194775"
+        },
+        {
+          "source": "synthetic_social",
+          "title": "Fashion Trend Analysis 10",
+          "sentiment_score": 0.5054786394243101,
+          "keyword_relevance": 0.561334217272117,
+          "business_relevance": 0.7116975112510284,
+          "timestamp": "2025-06-19T21:38:09.194784"
+        }
+      ],
+      "avg_sentiment": 0.5852177331520992,
+      "business_relevance": 0.6935745554064343
+    },
+    "economic_indicators": {
+      "count": 10,
+      "data": [
+        {
+          "currency": "EUR",
+          "exchange_rate": 0.87,
+          "luxury_market_strength": 1.379310344827586,
+          "market_confidence": 0.8015738598512312,
+          "source": "exchange_rates"
+        },
+        {
+          "currency": "GBP",
+          "exchange_rate": 0.743,
+          "luxury_market_strength": 1.4804845222072678,
+          "market_confidence": 0.738627404962998,
+          "source": "exchange_rates"
+        },
+        {
+          "currency": "JPY",
+          "exchange_rate": 145.33,
+          "luxury_market_strength": 0.006880891763572559,
+          "market_confidence": 0.8197578899823298,
+          "source": "exchange_rates"
+        },
+        {
+          "currency": "CHF",
+          "exchange_rate": 0.817,
+          "luxury_market_strength": 1.2239902080783354,
+          "market_confidence": 0.6100955670458788,
+          "source": "exchange_rates"
+        },
+        {
+          "currency": "CAD",
+          "exchange_rate": 1.37,
+          "luxury_market_strength": 0.7299270072992701,
+          "market_confidence": 0.6627446969877989,
+          "source": "exchange_rates"
+        },
+        {
+          "metric": "luxury_consumption_index",
+          "strength_score": 0.82,
+          "trend_direction": "rising",
+          "market_relevance": 0.8193392598450318,
+          "source": "economic_baseline"
+        },
+        {
+          "metric": "disposable_income_growth",
+          "strength_score": 0.75,
+          "trend_direction": "stable",
+          "market_relevance": 0.7194043128497292,
+          "source": "economic_baseline"
+        },
+        {
+          "metric": "fashion_retail_strength",
+          "strength_score": 0.78,
+          "trend_direction": "rising",
+          "market_relevance": 0.8859799086498564,
+          "source": "economic_baseline"
+        },
+        {
+          "metric": "digital_commerce_adoption",
+          "strength_score": 0.89,
+          "trend_direction": "accelerating",
+          "market_relevance": 0.7165564457274434,
+          "source": "economic_baseline"
+        },
+        {
+          "metric": "sustainable_fashion_demand",
+          "strength_score": 0.71,
+          "trend_direction": "rising",
+          "market_relevance": 0.814978412062902,
+          "source": "economic_baseline"
+        }
+      ],
+      "market_strength": 0.7899999999999999,
+      "luxury_market_confidence": 0.9641185948352063
+    },
+    "fashion_trends": {
+      "count": 26,
+      "data": [
+        {
+          "city": "Paris",
+          "season": "Spring/Summer 2025",
+          "trend_category": "minimalism",
+          "trend_strength": 0.7743213676675861,
+          "burch_alignment": 0.98,
+          "commercial_viability": 0.7588349403142344,
+          "source": "fashion_week_analysis",
+          "luxury_appeal": 0.7965883004702925
+        },
+        {
+          "city": "Paris",
+          "season": "Spring/Summer 2025",
+          "trend_category": "maximalism",
+          "trend_strength": 0.44266519271314253,
+          "burch_alignment": 0.4190482307180471,
+          "commercial_viability": 0.18549806580690573,
+          "source": "fashion_week_analysis",
+          "luxury_appeal": 0.6718853246439664
+        },
+        {
+          "city": "Paris",
+          "season": "Spring/Summer 2025",
+          "trend_category": "sustainable",
+          "trend_strength": 0.6070494999928651,
+          "burch_alignment": 0.8076490628653804,
+          "commercial_viability": 0.4902829597821352,
+          "source": "fashion_week_analysis",
+          "luxury_appeal": 0.552107268364246
+        },
+        {
+          "city": "Paris",
+          "season": "Spring/Summer 2025",
+          "trend_category": "tech-wear",
+          "trend_strength": 0.4978479715236617,
+          "burch_alignment": 0.6269610437325084,
+          "commercial_viability": 0.31213128384658706,
+          "source": "fashion_week_analysis",
+          "luxury_appeal": 0.776938934211583
+        },
+        {
+          "city": "Paris",
+          "season": "Spring/Summer 2025",
+          "trend_category": "neo-classic",
+          "trend_strength": 0.5823460231542452,
+          "burch_alignment": 0.98,
+          "commercial_viability": 0.5706991026911603,
+          "source": "fashion_week_analysis",
+          "luxury_appeal": 0.8077300567281968
+        },
+        {
+          "city": "Milan",
+          "season": "Spring/Summer 2025",
+          "trend_category": "minimalism",
+          "trend_strength": 0.3860239020001502,
+          "burch_alignment": 0.9266682288478266,
+          "commercial_viability": 0.35771608555940615,
+          "source": "fashion_week_analysis",
+          "luxury_appeal": 0.5233955080975848
+        },
+        {
+          "city": "Milan",
+          "season": "Spring/Summer 2025",
+          "trend_category": "maximalism",
+          "trend_strength": 0.8071250576710847,
+          "burch_alignment": 0.3394074364697842,
+          "commercial_viability": 0.2739442467346696,
+          "source": "fashion_week_analysis",
+          "luxury_appeal": 0.6283357729790007
+        },
+        {
+          "city": "Milan",
+          "season": "Spring/Summer 2025",
+          "trend_category": "sustainable",
+          "trend_strength": 0.7352899861148982,
+          "burch_alignment": 0.85007193287179,
+          "commercial_viability": 0.625049379717963,
+          "source": "fashion_week_analysis",
+          "luxury_appeal": 0.4736851438368615
+        },
+        {
+          "city": "Milan",
+          "season": "Spring/Summer 2025",
+          "trend_category": "tech-wear",
+          "trend_strength": 0.7915797302135605,
+          "burch_alignment": 0.6660924236443977,
+          "commercial_viability": 0.527265261005729,
+          "source": "fashion_week_analysis",
+          "luxury_appeal": 0.41061537162997075
+        },
+        {
+          "city": "Milan",
+          "season": "Spring/Summer 2025",
+          "trend_category": "neo-classic",
+          "trend_strength": 0.45643984430535023,
+          "burch_alignment": 0.9760346925428608,
+          "commercial_viability": 0.44550112310088374,
+          "source": "fashion_week_analysis",
+          "luxury_appeal": 0.7637701999939177
+        },
+        {
+          "city": "New York",
+          "season": "Spring/Summer 2025",
+          "trend_category": "minimalism",
+          "trend_strength": 0.7191147704791209,
+          "burch_alignment": 0.9751782972443506,
+          "commercial_viability": 0.701265117399091,
+          "source": "fashion_week_analysis",
+          "luxury_appeal": 0.4946139292798133
+        },
+        {
+          "city": "New York",
+          "season": "Spring/Summer 2025",
+          "trend_category": "maximalism",
+          "trend_strength": 0.8325491101457075,
+          "burch_alignment": 0.40193164577829826,
+          "commercial_viability": 0.33462783403212193,
+          "source": "fashion_week_analysis",
+          "luxury_appeal": 0.6658341359434176
+        },
+        {
+          "city": "New York",
+          "season": "Spring/Summer 2025",
+          "trend_category": "sustainable",
+          "trend_strength": 0.39792284505873643,
+          "burch_alignment": 0.8113047411637688,
+          "commercial_viability": 0.32283669081352867,
+          "source": "fashion_week_analysis",
+          "luxury_appeal": 0.4590391335311895
+        },
+        {
+          "city": "New York",
+          "season": "Spring/Summer 2025",
+          "trend_category": "tech-wear",
+          "trend_strength": 0.37795985696481715,
+          "burch_alignment": 0.653625719651401,
+          "commercial_viability": 0.24704428350796923,
+          "source": "fashion_week_analysis",
+          "luxury_appeal": 0.7953282389823575
+        },
+        {
+          "city": "New York",
+          "season": "Spring/Summer 2025",
+          "trend_category": "neo-classic",
+          "trend_strength": 0.6454295746719351,
+          "burch_alignment": 0.98,
+          "commercial_viability": 0.6325209831784964,
+          "source": "fashion_week_analysis",
+          "luxury_appeal": 0.7464956072991787
+        },
+        {
+          "city": "London",
+          "season": "Spring/Summer 2025",
+          "trend_category": "minimalism",
+          "trend_strength": 0.7613250232073733,
+          "burch_alignment": 0.9051970771777446,
+          "commercial_viability": 0.6891491857895928,
+          "source": "fashion_week_analysis",
+          "luxury_appeal": 0.5001373807843341
+        },
+        {
+          "city": "London",
+          "season": "Spring/Summer 2025",
+          "trend_category": "maximalism",
+          "trend_strength": 0.13096616479089007,
+          "burch_alignment": 0.3644858450021389,
+          "commercial_viability": 0.047735313240496936,
+          "source": "fashion_week_analysis",
+          "luxury_appeal": 0.4551213181014696
+        },
+        {
+          "city": "London",
+          "season": "Spring/Summer 2025",
+          "trend_category": "sustainable",
+          "trend_strength": 0.5533347948050281,
+          "burch_alignment": 0.8573499622778595,
+          "commercial_viability": 0.474401565453118,
+          "source": "fashion_week_analysis",
+          "luxury_appeal": 0.6247012220254647
+        },
+        {
+          "city": "London",
+          "season": "Spring/Summer 2025",
+          "trend_category": "tech-wear",
+          "trend_strength": 0.7663190705323,
+          "burch_alignment": 0.5642709439317148,
+          "commercial_viability": 0.43241158528213525,
+          "source": "fashion_week_analysis",
+          "luxury_appeal": 0.6748383330182928
+        },
+        {
+          "city": "London",
+          "season": "Spring/Summer 2025",
+          "trend_category": "neo-classic",
+          "trend_strength": 0.8791601053996585,
+          "burch_alignment": 0.98,
+          "commercial_viability": 0.8615769032916654,
+          "source": "fashion_week_analysis",
+          "luxury_appeal": 0.9229435216656172
+        },
+        {
+          "color_name": "Sage Green",
+          "hex_code": "#87A96B",
+          "trend_momentum": 0.6063859021347411,
+          "burch_alignment": 0.92,
+          "seasonal_relevance": 0.7360086950467173,
+          "commercial_appeal": 0.5578750299639618,
+          "source": "color_trend_analysis"
+        },
+        {
+          "color_name": "Warm Taupe",
+          "hex_code": "#D4B896",
+          "trend_momentum": 0.7703166364018371,
+          "burch_alignment": 0.89,
+          "seasonal_relevance": 0.7733910306647759,
+          "commercial_appeal": 0.685581806397635,
+          "source": "color_trend_analysis"
+        },
+        {
+          "color_name": "Navy Depths",
+          "hex_code": "#1F2937",
+          "trend_momentum": 0.8343147920710501,
+          "burch_alignment": 0.95,
+          "seasonal_relevance": 0.7836938679310242,
+          "commercial_appeal": 0.7925990524674975,
+          "source": "color_trend_analysis"
+        },
+        {
+          "color_name": "Cream Pearl",
+          "hex_code": "#FDF6E3",
+          "trend_momentum": 0.7301057608489152,
+          "burch_alignment": 0.91,
+          "seasonal_relevance": 0.8949613176810918,
+          "commercial_appeal": 0.6643962423725128,
+          "source": "color_trend_analysis"
+        },
+        {
+          "color_name": "Rust Terra",
+          "hex_code": "#A0522D",
+          "trend_momentum": 0.7004780479492665,
+          "burch_alignment": 0.78,
+          "seasonal_relevance": 0.7925172327170624,
+          "commercial_appeal": 0.5463728774004278,
+          "source": "color_trend_analysis"
+        },
+        {
+          "color_name": "Charcoal Mist",
+          "hex_code": "#4B5563",
+          "trend_momentum": 0.846773467582965,
+          "burch_alignment": 0.86,
+          "seasonal_relevance": 0.7139467016997434,
+          "commercial_appeal": 0.7282251821213499,
+          "source": "color_trend_analysis"
+        }
+      ],
+      "avg_burch_alignment": 0.783664510919995,
+      "commercial_viability": 0.46452459552739456
+    },
+    "competitive_landscape": {
+      "count": 7,
+      "data": [
+        {
+          "brand_name": "Herm\u00e8s",
+          "market_segment": "ultra_luxury",
+          "market_strength": 0.95,
+          "digital_presence": 0.858070085687139,
+          "innovation_score": 0.6309675213891404,
+          "sustainability_score": 0.6895522936086868,
+          "competitive_threat_to_burch": 0.87,
+          "strategic_opportunity": 0.13,
+          "source": "competitive_intelligence"
+        },
+        {
+          "brand_name": "Chanel",
+          "market_segment": "luxury",
+          "market_strength": 0.93,
+          "digital_presence": 0.7171765496110428,
+          "innovation_score": 0.6109300928894046,
+          "sustainability_score": 0.6274270850715143,
+          "competitive_threat_to_burch": 0.8899999999999999,
+          "strategic_opportunity": 0.1100000000000001,
+          "source": "competitive_intelligence"
+        },
+        {
+          "brand_name": "Louis Vuitton",
+          "market_segment": "luxury",
+          "market_strength": 0.91,
+          "digital_presence": 0.8711831043950607,
+          "innovation_score": 0.7766738049570991,
+          "sustainability_score": 0.44320286569304224,
+          "competitive_threat_to_burch": 0.9099999999999999,
+          "strategic_opportunity": 0.09000000000000008,
+          "source": "competitive_intelligence"
+        },
+        {
+          "brand_name": "Gucci",
+          "market_segment": "contemporary_luxury",
+          "market_strength": 0.87,
+          "digital_presence": 0.896158378536915,
+          "innovation_score": 0.8021367826056764,
+          "sustainability_score": 0.5081663048376451,
+          "competitive_threat_to_burch": 0.95,
+          "strategic_opportunity": 0.050000000000000044,
+          "source": "competitive_intelligence"
+        },
+        {
+          "brand_name": "Prada",
+          "market_segment": "luxury",
+          "market_strength": 0.85,
+          "digital_presence": 0.8894931910283866,
+          "innovation_score": 0.6363717446623952,
+          "sustainability_score": 0.4219642736374357,
+          "competitive_threat_to_burch": 0.97,
+          "strategic_opportunity": 0.030000000000000027,
+          "source": "competitive_intelligence"
+        },
+        {
+          "brand_name": "Coach",
+          "market_segment": "accessible_luxury",
+          "market_strength": 0.78,
+          "digital_presence": 0.7321573995793716,
+          "innovation_score": 0.6696820770620041,
+          "sustainability_score": 0.501776346047142,
+          "competitive_threat_to_burch": 0.9600000000000001,
+          "strategic_opportunity": 0.039999999999999925,
+          "source": "competitive_intelligence"
+        },
+        {
+          "brand_name": "Kate Spade",
+          "market_segment": "contemporary",
+          "market_strength": 0.72,
+          "digital_presence": 0.6433448908589565,
+          "innovation_score": 0.5295967222868619,
+          "sustainability_score": 0.7197124722317767,
+          "competitive_threat_to_burch": 0.9,
+          "strategic_opportunity": 0.09999999999999998,
+          "source": "competitive_intelligence"
+        }
+      ],
+      "avg_threat_level": 0.9214285714285715,
+      "strategic_opportunities": 0
+    },
+    "consumer_insights": {
+      "count": 4,
+      "data": [
+        {
+          "demographic_group": "millennials_luxury",
+          "age_range": "28-43",
+          "purchasing_power": 0.82,
+          "digital_preference": 0.8648053932306863,
+          "sustainability_importance": 0.7690842566298989,
+          "brand_loyalty": 0.31795649635414225,
+          "burch_brand_affinity": 0.8756076110725267,
+          "market_influence": 0.7179982410794719,
+          "source": "consumer_behavior_analysis"
+        },
+        {
+          "demographic_group": "gen_z_accessible",
+          "age_range": "18-27",
+          "purchasing_power": 0.65,
+          "digital_preference": 0.9328763134020139,
+          "sustainability_importance": 0.6917685413085607,
+          "brand_loyalty": 0.430486311199964,
+          "burch_brand_affinity": 0.7812234881995523,
+          "market_influence": 0.507795267329709,
+          "source": "consumer_behavior_analysis"
+        },
+        {
+          "demographic_group": "gen_x_established",
+          "age_range": "44-59",
+          "purchasing_power": 0.91,
+          "digital_preference": 0.613758030189528,
+          "sustainability_importance": 0.5575792702078901,
+          "brand_loyalty": 0.6389284049488554,
+          "burch_brand_affinity": 0.8790655498586933,
+          "market_influence": 0.799949650371411,
+          "source": "consumer_behavior_analysis"
+        },
+        {
+          "demographic_group": "baby_boomers_luxury",
+          "age_range": "60+",
+          "purchasing_power": 0.95,
+          "digital_preference": 0.66835656842819,
+          "sustainability_importance": 0.5648690130965064,
+          "brand_loyalty": 0.5756746276113178,
+          "burch_brand_affinity": 0.9263317612713461,
+          "market_influence": 0.8800151732077788,
+          "source": "consumer_behavior_analysis"
+        }
+      ],
+      "burch_market_fit": 0.8655571026005296,
+      "high_influence_segments": 1
+    }
+  },
+  "strategic_recommendations": [
+    {
+      "priority": "HIGH",
+      "category": "product_development",
+      "action": "Accelerate development in 15 high-alignment trend categories",
+      "rationale": "Strong Burch brand alignment with emerging trends",
+      "timeline": "1-3 months",
+      "expected_impact": "High"
+    },
+    {
+      "priority": "MEDIUM",
+      "category": "competitive_response",
+      "action": "Develop differentiation strategy against 7 key competitors",
+      "rationale": "High competitive pressure in core market segments",
+      "timeline": "2-4 months",
+      "expected_impact": "Medium"
+    },
+    {
+      "priority": "HIGH",
+      "category": "market_expansion",
+      "action": "Target 3 high-affinity consumer segments for expansion",
+      "rationale": "Strong brand fit with underserved demographics",
+      "timeline": "1-2 months",
+      "expected_impact": "High"
+    }
+  ]
+}

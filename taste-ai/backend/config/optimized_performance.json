@@ -1,0 +1,26 @@
+{
+  "optimal_config": {
+    "uvicorn_workers": 1,
+    "database_pool_size": 2,
+    "database_max_overflow": 2,
+    "cache_size_mb": 64,
+    "cache_ttl_seconds": 300,
+    "image_quality": 80,
+    "image_max_size": 512,
+    "ml_batch_size": 64,
+    "rate_limit_per_minute": 20,
+    "memory_limit_mb": 6553,
+    "cpu_limit_percent": 29.2,
+    "request_timeout_seconds": 60,
+    "keepalive_timeout_seconds": 30
+  },
+  "test_results": {
+    "worker_performance": Infinity,
+    "database_latency": 1.0,
+    "cache_hit_ratio": 0.968,
+    "image_processing_score": 14841.804870282962,
+    "ml_throughput": 235463.6846493164,
+    "optimal_rate_limit": 0.8
+  },
+  "optimization_timestamp": 1750381569.365196
+}

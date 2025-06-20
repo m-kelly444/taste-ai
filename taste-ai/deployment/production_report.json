@@ -1,0 +1,110 @@
+{
+  "deployment_timestamp": "2025-06-19T21:19:18.517021",
+  "system_status": {
+    "model_performance": {
+      "model_loaded": true,
+      "inference_time_ms": 0.008881092071533203,
+      "predictions_range": [
+        0.8208917548749273,
+        0.9014626038759
+      ],
+      "avg_prediction": 0.8626143832945133
+    },
+    "docker_configuration": {
+      "docker_available": true,
+      "build_optimization": {
+        "multi_stage": true,
+        "layer_caching": true,
+        "minimal_base": true
+      },
+      "runtime_optimization": {
+        "memory_limit": "2g",
+        "cpu_limit": "1.5",
+        "restart_policy": "unless-stopped"
+      }
+    },
+    "api_endpoint_tests": {
+      "http://localhost:8001/health": {
+        "status_code": 200,
+        "response_time_ms": 5.25212287902832,
+        "success": true,
+        "content_length": 38
+      },
+      "http://localhost:8001/": {
+        "status_code": 200,
+        "response_time_ms": 2.241849899291992,
+        "success": true,
+        "content_length": 241
+      },
+      "http://localhost:8001/api/v1/trends/current": {
+        "status_code": 200,
+        "response_time_ms": 2.028226852416992,
+        "success": true,
+        "content_length": 551
+      }
+    }
+  },
+  "production_configs": {
+    "backend": {
+      "database": {
+        "url": "postgresql://user:password@db:5432/tasteai",
+        "pool_size": 20,
+        "max_overflow": 30,
+        "pool_timeout": 30
+      },
+      "redis": {
+        "url": "redis://redis:6379",
+        "max_connections": 50,
+        "timeout": 5
+      },
+      "api": {
+        "workers": 4,
+        "timeout": 60,
+        "max_requests": 1000,
+        "rate_limit": 100
+      },
+      "ml": {
+        "batch_size": 8,
+        "cache_predictions": true,
+        "model_warm_start": true
+      }
+    },
+    "frontend": {
+      "api_base_url": "http://localhost:8001",
+      "build_optimization": {
+        "minify": true,
+        "compression": true,
+        "tree_shaking": true,
+        "code_splitting": true
+      },
+      "caching": {
+        "static_assets": "1y",
+        "api_responses": "5m",
+        "images": "30d"
+      }
+    },
+    "nginx": {
+      "worker_processes": "auto",
+      "worker_connections": 1024,
+      "keepalive_timeout": 65,
+      "gzip": {
+        "enabled": true,
+        "compression_level": 6,
+        "min_length": 1024
+      },
+      "rate_limiting": {
+        "api_zone": "10r/s",
+        "auth_zone": "5r/m"
+      }
+    }
+  },
+  "deployment_ready": true,
+  "optimizations_applied": [
+    "ML model optimization completed",
+    "Docker multi-stage builds configured",
+    "Production environment variables set",
+    "Database connection pooling optimized",
+    "API rate limiting configured",
+    "Frontend build optimization enabled"
+  ]
+}
