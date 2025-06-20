@@ -1,0 +1,39 @@
+TASTE.AI Repository Cleanup Report
+Generated: Thu Jun 19 20:50:06 EDT 2025
+================================
+
+SUMMARY:
+--------
+- Duplicate repository structure detected and cleaned
+- Root-level duplicates removed: 14 items
+- Failed removals: 0 items
+- Complete project preserved in: taste-ai/
+
+REMOVED ITEMS:
+--------------
+✅ backend/
+✅ frontend/
+✅ ml/
+✅ docker-compose.yml
+✅ docker-compose.services-only.yml
+✅ .dockerignore
+✅ .gitignore
+✅ cleanup_report.json
+✅ setup.sh
+✅ setup2.sh
+✅ stop_services.sh
+✅ restart_system.sh
+✅ system_repair_report.txt
+✅ verify_backend.sh
+✅ test_report.json
+
+PRESERVED STRUCTURE:
+-------------------
+✅ taste-ai/ - Complete TASTE.AI project
+✅ All non-duplicate files in root preserved
+
+NEXT STEPS:
+-----------
+1. cd taste-ai/
+2. Run: docker-compose up -d
+3. Access: http://localhost:3002
