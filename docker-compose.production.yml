@@ -1,19 +1,25 @@
+version: '3.8'
+
 services:
   backend:
     build:
       context: ./backend
       dockerfile: Dockerfile
     ports:
-      - "8001:8000"
+      - "8000:8000"
     environment:
-      - PYTHONPATH=/app
+      - DATABASE_URL=postgresql://user:password@db:5432/tasteai
+      - REDIS_URL=redis://redis:6379
+      - SECRET_KEY=production-secret-key-change-this
+    depends_on:
+      - db
+      - redis
+    restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
       interval: 30s
       timeout: 10s
       retries: 3
-      start_period: 40s
-    restart: unless-stopped
 
   frontend:
     build:
@@ -22,46 +28,41 @@ services:
     ports:
       - "3002:80"
     depends_on:
-      backend:
-        condition: service_healthy
+      - backend
+    restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:80"]
       interval: 30s
       timeout: 10s
       retries: 3
-      start_period: 40s
-    restart: unless-stopped
 
   db:
-    image: postgres:15-alpine
+    image: postgres:15
     environment:
       - POSTGRES_DB=tasteai
       - POSTGRES_USER=user
       - POSTGRES_PASSWORD=password
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - postgres_production_data:/var/lib/postgresql/data
     ports:
-      - "5434:5432"
+      - "5432:5432"
+    restart: unless-stopped
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U user -d tasteai"]
       interval: 30s
       timeout: 10s
       retries: 3
-    restart: unless-stopped
 
   redis:
     image: redis:7-alpine
     ports:
-      - "6381:6379"
-    volumes:
-      - redis_data:/data
+      - "6379:6379"
+    restart: unless-stopped
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
       interval: 30s
       timeout: 10s
       retries: 3
-    restart: unless-stopped
 
 volumes:
-  postgres_data:
-  redis_data:
+  postgres_production_data:
