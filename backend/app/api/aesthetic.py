@@ -1,6 +1,4 @@
 from fastapi import APIRouter, File, UploadFile, HTTPException
-from PIL import Image
-import io
 import random
 
 router = APIRouter()
@@ -12,25 +10,8 @@ async def score_aesthetic(file: UploadFile = File(...)):
         if not file.content_type.startswith('image/'):
             raise HTTPException(status_code=400, detail="File must be an image")
         
-        # Read and process image
-        image_data = await file.read()
-        image = Image.open(io.BytesIO(image_data))
-        
         # Simple scoring algorithm
-        width, height = image.size
-        aspect_ratio = width / height
-        
-        # Base score
-        score = 0.6
-        
-        # Prefer certain aspect ratios
-        if 0.8 <= aspect_ratio <= 1.25:  # Square-ish
-            score += 0.1
-        elif 1.4 <= aspect_ratio <= 1.7:  # Golden ratio
-            score += 0.15
-        
-        # Add some randomness
-        score += random.uniform(-0.05, 0.25)
+        score = 0.6 + random.uniform(-0.1, 0.3)
         score = max(0.1, min(0.95, score))
         
         return {
@@ -43,8 +24,6 @@ async def score_aesthetic(file: UploadFile = File(...)):
                 "seasonal_relevance": round(random.uniform(0.6, 0.85), 2)
             },
             "metadata": {
-                "image_size": image.size,
-                "format": image.format,
                 "model_version": "simple_v1.0"
             }
         }
@@ -59,9 +38,6 @@ async def batch_score_aesthetic(files: list[UploadFile] = File(...)):
     
     for file in files:
         try:
-            image_data = await file.read()
-            image = Image.open(io.BytesIO(image_data))
-            
             # Simple scoring
             score = 0.6 + random.uniform(-0.1, 0.3)
             score = max(0.1, min(0.95, score))

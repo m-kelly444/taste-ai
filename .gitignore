@@ -1,0 +1,64 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# IDE
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite3
+dump.rdb
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# Docker
+docker-compose.override.yml
+
+# Cache
+.cache/
+.parcel-cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Process files
+*.pid
+
+# Backup files
+*.backup
+*.bak
+*_backup.*
+*_old.*
+*.orig
+*_copy.*
+*.tmp

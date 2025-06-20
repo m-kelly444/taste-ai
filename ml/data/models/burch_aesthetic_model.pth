@@ -1,0 +1,3 @@
+# Mock model file for testing
+# This is a placeholder - actual trained model would be a PyTorch binary
+model_placeholder: true
