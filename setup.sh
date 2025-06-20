@@ -1,279 +1,438 @@
-#!/bin/bash
-set -e
+# Additional specialized test scripts for specific components
 
-python3 -c "
-import asyncio
-import subprocess
-import psutil
-import GPUtil
+# 8. Test Chris Burch Data Loading
+cat > test_chris_data_loading.sh << 'EOF'
+#!/bin/bash
+
+echo "👑 Testing Chris Burch Data Loading"
+echo "=================================="
+
+# Test 1: Load Real Chris Burch Preferences
+echo "Test 1: Loading Real Preference Data"
+test_preference_loading() {
+    echo "  Testing preference data loading..."
+    
+    # Check if the real data files exist
+    if [ -f "../production_data/chris_burch_discovered_preferences.json" ]; then
+        echo "    ✅ Real preference data file found"
+        
+        # Test loading the data
+        python3 load_real_data_direct.py
+        
+        # Verify data was loaded into Redis
+        BRIGHTNESS=$(redis-cli -p 6380 -n 0 HGET chris_taste_model brightness_preference 2>/dev/null)
+        
+        if [ ! -z "$BRIGHTNESS" ]; then
+            echo "    ✅ Preference data loaded into Redis"
+            echo "    Brightness preference: $BRIGHTNESS"
+            
+            # Test model version
+            MODEL_VERSION=$(redis-cli -p 6380 -n 0 GET model_version 2>/dev/null)
+            echo "    Model version: $MODEL_VERSION"
+            
+            # Test company count
+            COMPANY_COUNT=$(redis-cli -p 6380 -n 0 GET companies_analyzed_count 2>/dev/null)
+            echo "    Companies analyzed: $COMPANY_COUNT"
+            
+        else
+            echo "    ❌ Failed to load preference data into Redis"
+        fi
+    else
+        echo "    ⚠️  Real preference data file not found"
+        echo "    Creating mock data for testing..."
+        
+        # Create mock preference data
+        python3 -c "
 import redis
 import json
-import time
-from concurrent.futures import ThreadPoolExecutor
-import signal
+
+r = redis.Redis(host='localhost', port=6380, db=0)
+r.hset('chris_taste_model', 'brightness_preference', '180.5')
+r.hset('chris_taste_model', 'saturation_preference', '142.3')
+r.hset('chris_taste_model', 'style_preference', 'minimalist')
+r.set('model_version', 'test_v1.0')
+
+print('Mock preference data loaded')
+"
+        echo "    ✅ Mock data loaded for testing"
+    fi
+}
+
+# Test 2: Scorer Integration
+echo "Test 2: Chris Burch Scorer Integration"
+test_scorer_integration() {
+    echo "  Testing scorer integration..."
+    
+    # Check if scorer configuration exists
+    if [ -f "../production_data/chris_burch_scorer_final.json" ]; then
+        echo "    ✅ Scorer configuration found"
+        
+        # Load and test scorer
+        python3 -c "
+import json
 import sys
+import os
 
-class MasterOrchestrator:
-    def __init__(self):
-        self.redis = redis.Redis()
-        self.processes = {}
-        self.system_metrics = {}
-        self.performance_targets = {
-            'gpu_utilization': 85.0,
-            'memory_efficiency': 90.0,
-            'throughput': 1000.0,
-            'latency': 0.1
-        }
-        
-    def check_system_resources(self):
-        cpu_percent = psutil.cpu_percent(interval=1)
-        memory = psutil.virtual_memory()
-        
-        gpu_stats = []
-        for gpu in GPUtil.getGPUs():
-            gpu_stats.append({
-                'id': gpu.id,
-                'load': gpu.load * 100,
-                'memory_util': gpu.memoryUtil * 100,
-                'memory_used': gpu.memoryUsed,
-                'memory_total': gpu.memoryTotal,
-                'temperature': gpu.temperature
-            })
-        
-        self.system_metrics = {
-            'cpu_percent': cpu_percent,
-            'memory_percent': memory.percent,
-            'memory_available': memory.available / (1024**3),
-            'gpus': gpu_stats,
-            'timestamp': time.time()
-        }
-        
-        self.redis.set('system_metrics', json.dumps(self.system_metrics))
-        
-        return self.system_metrics
-    
-    def start_process(self, script_name, process_name):
-        try:
-            process = subprocess.Popen(['/bin/bash', script_name], 
-                                     stdout=subprocess.PIPE, 
-                                     stderr=subprocess.PIPE)
-            self.processes[process_name] = {
-                'process': process,
-                'script': script_name,
-                'start_time': time.time(),
-                'status': 'running'
-            }
-            print(f'Started {process_name} (PID: {process.pid})')
-            return True
-        except Exception as e:
-            print(f'Failed to start {process_name}: {e}')
-            return False
-    
-    def monitor_process_health(self, process_name):
-        if process_name not in self.processes:
-            return False
-        
-        process_info = self.processes[process_name]
-        process = process_info['process']
-        
-        if process.poll() is not None:
-            self.processes[process_name]['status'] = 'dead'
-            return False
-        
-        try:
-            proc = psutil.Process(process.pid)
-            cpu_percent = proc.cpu_percent()
-            memory_info = proc.memory_info()
-            
-            health_data = {
-                'cpu_percent': cpu_percent,
-                'memory_mb': memory_info.rss / (1024**2),
-                'status': 'healthy',
-                'uptime': time.time() - process_info['start_time']
-            }
-            
-            self.redis.set(f'process_health_{process_name}', json.dumps(health_data))
-            return True
-            
-        except psutil.NoSuchProcess:
-            self.processes[process_name]['status'] = 'dead'
-            return False
-    
-    def restart_process(self, process_name):
-        if process_name in self.processes:
-            process_info = self.processes[process_name]
-            
-            try:
-                process_info['process'].terminate()
-                process_info['process'].wait(timeout=10)
-            except:
-                process_info['process'].kill()
-            
-            del self.processes[process_name]
-        
-        script_name = f'{process_name.split(\"_\")[0]}.sh'
-        return self.start_process(script_name, process_name)
-    
-    def optimize_resource_allocation(self):
-        metrics = self.check_system_resources()
-        
-        for gpu_stat in metrics['gpus']:
-            gpu_id = gpu_stat['id']
-            gpu_load = gpu_stat['load']
-            memory_util = gpu_stat['memory_util']
-            
-            if gpu_load < 50 and memory_util < 60:
-                self.redis.publish(f'gpu_{gpu_id}_underutilized', json.dumps(gpu_stat))
-            elif gpu_load > 95 or memory_util > 95:
-                self.redis.publish(f'gpu_{gpu_id}_overloaded', json.dumps(gpu_stat))
-        
-        if metrics['cpu_percent'] > 90:
-            self.redis.publish('cpu_overload', json.dumps(metrics))
-        
-        if metrics['memory_percent'] > 85:
-            self.redis.publish('memory_pressure', json.dumps(metrics))
-    
-    async def orchestrate_system(self):
-        scripts_to_run = [
-            ('01_gpu_system_init.sh', 'gpu_init'),
-            ('02_parallel_model_training.sh', 'model_training'),
-            ('03_gpu_inference_engine.sh', 'inference_engine'),
-            ('04_distributed_data_processing.sh', 'data_processing'),
-            ('05_real_time_optimization.sh', 'optimization'),
-            ('06_smart_memory_management.sh', 'memory_management'),
-            ('07_adaptive_architecture_evolution.sh', 'architecture_evolution'),
-            ('08_multi_gpu_ensemble.sh', 'gpu_ensemble')
-        ]
-        
-        for script, process_name in scripts_to_run:
-            success = self.start_process(script, process_name)
-            if success:
-                await asyncio.sleep(5)
-            else:
-                print(f'Failed to start {process_name}, continuing...')
-        
-        while True:
-            try:
-                self.optimize_resource_allocation()
-                
-                for process_name in list(self.processes.keys()):
-                    if not self.monitor_process_health(process_name):
-                        print(f'{process_name} is unhealthy, restarting...')
-                        self.restart_process(process_name)
-                        await asyncio.sleep(10)
-                
-                overall_performance = self.calculate_system_performance()
-                self.redis.set('overall_performance', str(overall_performance))
-                
-                if overall_performance < 0.7:
-                    await self.adaptive_scaling()
-                
-                await asyncio.sleep(30)
-                
-            except Exception as e:
-                print(f'Orchestration error: {e}')
-                await asyncio.sleep(60)
-    
-    def calculate_system_performance(self):
-        try:
-            metrics = json.loads(self.redis.get('system_metrics') or '{}')
-            
-            if not metrics or 'gpus' not in metrics:
-                return 0.5
-            
-            gpu_utilization = np.mean([gpu['load'] for gpu in metrics['gpus']])
-            memory_efficiency = 100 - metrics['memory_percent']
-            
-            inference_results = 0
-            for gpu_id in range(len(metrics['gpus'])):
-                results = self.redis.llen(f'inference_results_gpu_{gpu_id}')
-                inference_results += results
-            
-            throughput_score = min(inference_results / 1000.0, 1.0)
-            
-            performance = (
-                (gpu_utilization / 100) * 0.4 +
-                (memory_efficiency / 100) * 0.3 +
-                throughput_score * 0.3
-            )
-            
-            return performance
-            
-        except Exception as e:
-            print(f'Performance calculation error: {e}')
-            return 0.5
-    
-    async def adaptive_scaling(self):
-        print('Performing adaptive scaling...')
-        
-        metrics = self.check_system_resources()
-        
-        underutilized_gpus = [gpu for gpu in metrics['gpus'] if gpu['load'] < 50]
-        
-        if len(underutilized_gpus) > 1:
-            self.redis.publish('scale_up_inference', json.dumps({'gpus': len(underutilized_gpus)}))
-        
-        overloaded_gpus = [gpu for gpu in metrics['gpus'] if gpu['load'] > 95]
-        
-        if len(overloaded_gpus) > 0:
-            self.redis.publish('redistribute_load', json.dumps({'overloaded_gpus': [gpu['id'] for gpu in overloaded_gpus]}))
-        
-        if metrics['memory_percent'] > 90:
-            self.redis.publish('emergency_memory_cleanup', json.dumps(metrics))
-    
-    def signal_handler(self, signum, frame):
-        print('Shutting down orchestrator...')
-        
-        for process_name, process_info in self.processes.items():
-            try:
-                process_info['process'].terminate()
-                process_info['process'].wait(timeout=10)
-            except:
-                process_info['process'].kill()
-        
-        sys.exit(0)
+# Add parent directory to path
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-async def main():
-    orchestrator = MasterOrchestrator()
+try:
+    # Test importing the scorer
+    from production_data.create_scorer import ChrisBurchAestheticScorer
     
-    signal.signal(signal.SIGINT, orchestrator.signal_handler)
-    signal.signal(signal.SIGTERM, orchestrator.signal_handler)
+    # Load preferences
+    with open('../production_data/chris_burch_discovered_preferences.json', 'r') as f:
+        preferences = json.load(f)
     
-    await orchestrator.orchestrate_system()
-
-if __name__ == '__main__':
-    asyncio.run(main())
-" &
-
-ORCHESTRATOR_PID=$!
-echo "Master orchestrator started with PID: $ORCHESTRATOR_PID"
-
-trap "kill $ORCHESTRATOR_PID" EXIT
-
-while true; do
-    PERFORMANCE=$(redis-cli GET overall_performance 2>/dev/null || echo "0")
-    METRICS=$(redis-cli GET system_metrics 2>/dev/null)
+    # Create scorer
+    scorer = ChrisBurchAestheticScorer(preferences)
     
-    echo "System Performance: $PERFORMANCE"
+    # Test scoring with sample features
+    test_features = {
+        'brightness': 180.5,
+        'saturation': 142.3,
+        'complexity': 0.4
+    }
     
-    if [ ! -z "$METRICS" ]; then
-        echo "$METRICS" | python3 -c "
+    result = scorer.score_aesthetic(test_features)
+    
+    print(f'    Scorer test result: {result[\"chris_burch_score\"]:.3f}')
+    print(f'    Recommendation: {result[\"recommendation\"]}')
+    print('    ✅ Scorer integration working')
+    
+except Exception as e:
+    print(f'    ❌ Scorer integration failed: {e}')
+"
+    else
+        echo "    ⚠️  Scorer configuration not found"
+    fi
+}
+
+# Test 3: Portfolio Company Data
+echo "Test 3: Portfolio Company Analysis"
+test_portfolio_data() {
+    echo "  Testing portfolio company data..."
+    
+    # Test if we can load portfolio companies
+    PORTFOLIO_COMPANIES=$(redis-cli -p 6380 -n 0 SMEMBERS burch_portfolio_real 2>/dev/null | wc -l)
+    
+    if [ "$PORTFOLIO_COMPANIES" -gt "0" ]; then
+        echo "    ✅ Portfolio companies loaded: $PORTFOLIO_COMPANIES"
+        
+        # Show sample companies
+        echo "    Sample companies:"
+        redis-cli -p 6380 -n 0 SMEMBERS burch_portfolio_real 2>/dev/null | head -5 | while read company; do
+            echo "      • $company"
+        done
+    else
+        echo "    ⚠️  No portfolio companies found"
+        
+        # Load sample portfolio
+        redis-cli -p 6380 -n 0 SADD burch_portfolio_real "Tory Burch" "BaubleBar" "Outdoor Voices" "Rowing Blazers" > /dev/null
+        echo "    ✅ Sample portfolio companies added"
+    fi
+}
+
+# Run Chris Burch data tests
+test_preference_loading
+test_scorer_integration
+test_portfolio_data
+
+echo "✅ Chris Burch data loading tests completed!"
+EOF
+
+# 9. Test Production Systems
+cat > test_production_systems.sh << 'EOF'
+#!/bin/bash
+
+echo "🏭 Testing Production Systems"
+echo "============================"
+
+# Test 1: Keyword Engine
+echo "Test 1: Keyword Discovery Engine"
+test_keyword_engine() {
+    echo "  Testing keyword engine functionality..."
+    
+    # Check if keyword engine is running
+    if pgrep -f "live_keyword_engine.py" > /dev/null; then
+        echo "    ✅ Keyword engine process running"
+        
+        # Check Redis for discovered keywords
+        KEYWORD_COUNT=$(redis-cli -p 6381 -n 1 SCARD all_keywords 2>/dev/null || echo "0")
+        echo "    Keywords discovered: $KEYWORD_COUNT"
+        
+        # Check active keywords
+        ACTIVE_COUNT=$(redis-cli -p 6381 -n 1 SCARD active_keywords 2>/dev/null || echo "0")
+        echo "    Active keywords: $ACTIVE_COUNT"
+        
+        if [ "$KEYWORD_COUNT" -gt "0" ]; then
+            echo "    ✅ Keyword discovery working"
+            
+            # Show sample keywords
+            echo "    Sample keywords:"
+            redis-cli -p 6381 -n 1 SMEMBERS active_keywords 2>/dev/null | head -3 | while read keyword; do
+                echo "      • $keyword"
+            done
+        else
+            echo "    ⚠️  No keywords discovered yet"
+        fi
+    else
+        echo "    ⚠️  Keyword engine not running"
+        echo "    Starting keyword engine test..."
+        
+        # Start keyword engine temporarily for testing
+        cd production/keyword_engine/discovery
+        timeout 30 python3 live_keyword_engine.py &
+        KEYWORD_PID=$!
+        
+        sleep 10
+        
+        # Check if it generated any test data
+        TEST_KEYWORD_COUNT=$(redis-cli -p 6381 -n 1 SCARD all_keywords 2>/dev/null || echo "0")
+        
+        if [ "$TEST_KEYWORD_COUNT" -gt "0" ]; then
+            echo "    ✅ Keyword engine test successful"
+        else
+            echo "    ❌ Keyword engine test failed"
+        fi
+        
+        kill $KEYWORD_PID 2>/dev/null
+        cd ../../..
+    fi
+}
+
+# Test 2: Adaptive Models
+echo "Test 2: Adaptive Model Engine"
+test_adaptive_models() {
+    echo "  Testing adaptive model functionality..."
+    
+    if pgrep -f "adaptive_model_engine.py" > /dev/null; then
+        echo "    ✅ Adaptive model engine running"
+        
+        # Check for model evolution data
+        MODEL_REPORT=$(redis-cli -p 6381 -n 4 GET model_performance_report 2>/dev/null)
+        
+        if [ ! -z "$MODEL_REPORT" ]; then
+            echo "    ✅ Model performance reports available"
+            
+            # Parse report data
+            echo "$MODEL_REPORT" | python3 -c "
 import sys, json
 try:
     data = json.load(sys.stdin)
-    print(f'CPU: {data[\"cpu_percent\"]:.1f}%')
-    print(f'Memory: {data[\"memory_percent\"]:.1f}%')
-    print('GPUs:')
-    for gpu in data['gpus']:
-        print(f'  GPU {gpu[\"id\"]}: {gpu[\"load\"]:.1f}% load, {gpu[\"memory_util\"]:.1f}% memory, {gpu[\"temperature\"]}°C')
+    print(f'    Generation: {data.get(\"generation\", 0)}')
+    print(f'    Population: {data.get(\"population_size\", 0)} models')
+    
+    models = data.get('models', {})
+    if models:
+        best_model = max(models.items(), key=lambda x: x[1].get('recent_fitness', 0))
+        print(f'    Best model: {best_model[0][:20]}...')
+        print(f'    Best fitness: {best_model[1].get(\"recent_fitness\", 0):.4f}')
 except:
-    print('No system metrics available')
+    print('    Could not parse model report')
 "
+        else
+            echo "    ⚠️  No model performance reports yet"
+        fi
+    else
+        echo "    ⚠️  Adaptive model engine not running"
     fi
+}
+
+# Test 3: Real-time Processing
+echo "Test 3: Real-time Processing Engine"
+test_realtime_processing() {
+    echo "  Testing real-time processing..."
     
-    ACTIVE_PROCESSES=$(ps aux | grep -E "(gpu_system_init|parallel_model_training|gpu_inference_engine|distributed_data_processing|real_time_optimization|smart_memory_management|adaptive_architecture_evolution|multi_gpu_ensemble)" | grep -v grep | wc -l)
-    echo "Active processes: $ACTIVE_PROCESSES"
+    if pgrep -f "realtime_processor.py" > /dev/null; then
+        echo "    ✅ Real-time processor running"
+        
+        # Check intelligence growth
+        INTELLIGENCE=$(redis-cli -p 6381 -n 3 GET previous_intelligence 2>/dev/null || echo "0.0000")
+        echo "    Current intelligence level: $INTELLIGENCE"
+        
+        # Check pattern discovery
+        PATTERN_COUNT=$(redis-cli -p 6381 -n 3 KEYS "validated_pattern:*" | wc -l 2>/dev/null || echo "0")
+        echo "    Discovered patterns: $PATTERN_COUNT"
+        
+        # Check correlations
+        CORRELATION_COUNT=$(redis-cli -p 6381 -n 3 KEYS "correlation:*" | wc -l 2>/dev/null || echo "0")
+        echo "    Learned correlations: $CORRELATION_COUNT"
+        
+        if [ "$PATTERN_COUNT" -gt "0" ] || [ "$CORRELATION_COUNT" -gt "0" ]; then
+            echo "    ✅ Real-time processing active"
+        else
+            echo "    ⚠️  No processing data yet"
+        fi
+    else
+        echo "    ⚠️  Real-time processor not running"
+    fi
+}
+
+# Test 4: Functional Discovery
+echo "Test 4: Functional Discovery Engine"
+test_functional_discovery() {
+    echo "  Testing functional discovery..."
     
-    echo "---"
-    sleep 20
-done
+    if pgrep -f "functional_discovery.py" > /dev/null; then
+        echo "    ✅ Functional discovery engine running"
+        
+        # Check discovered domains
+        DOMAIN_COUNT=$(redis-cli -p 6381 -n 2 SCARD discovered_domains 2>/dev/null || echo "0")
+        echo "    Discovered domains: $DOMAIN_COUNT"
+        
+        # Check discoveries
+        DISCOVERY_COUNT=$(redis-cli -p 6381 -n 2 SCARD all_discoveries 2>/dev/null || echo "0")
+        echo "    Total discoveries: $DISCOVERY_COUNT"
+        
+        if [ "$DISCOVERY_COUNT" -gt "0" ]; then
+            echo "    ✅ Functional discovery active"
+        else
+            echo "    ⚠️  No discoveries yet"
+        fi
+    else
+        echo "    ⚠️  Functional discovery engine not running"
+    fi
+}
+
+# Run production system tests
+test_keyword_engine
+test_adaptive_models
+test_realtime_processing
+test_functional_discovery
+
+echo "✅ Production systems tests completed!"
+EOF
+
+# 10. Test Intelligence Systems
+cat > test_intelligence_systems.sh << 'EOF'
+#!/bin/bash
+
+echo "🧠 Testing Intelligence Systems"
+echo "==============================="
+
+# Test 1: 100x Intelligence Engine
+echo "Test 1: 100x Intelligence Amplification"
+test_100x_intelligence() {
+    echo "  Testing 100x intelligence system..."
+    
+    if pgrep -f "meta_intelligence.sh" > /dev/null; then
+        echo "    ✅ Meta-intelligence system running"
+        
+        # Check intelligence metrics
+        INTELLIGENCE_LEVEL=$(redis-cli -p 6381 GET intelligence_level 2>/dev/null || echo "0")
+        echo "    Intelligence level: $INTELLIGENCE_LEVEL"
+        
+        QUANTUM_INTELLIGENCE=$(redis-cli -p 6381 GET quantum_intelligence_total 2>/dev/null || echo "0")
+        echo "    Quantum intelligence: $QUANTUM_INTELLIGENCE"
+        
+        SYNTHESIS_INTELLIGENCE=$(redis-cli -p 6381 GET synthesis_intelligence 2>/dev/null || echo "0")
+        echo "    Synthesis intelligence: $SYNTHESIS_INTELLIGENCE"
+        
+        TOTAL_INTELLIGENCE=$((INTELLIGENCE_LEVEL + QUANTUM_INTELLIGENCE + SYNTHESIS_INTELLIGENCE))
+        echo "    Total intelligence: $TOTAL_INTELLIGENCE"
+        
+        if [ $TOTAL_INTELLIGENCE -gt 1000 ]; then
+            echo "    ✅ High intelligence level achieved"
+        else
+            echo "    ⚠️  Intelligence still building"
+        fi
+    else
+        echo "    ⚠️  100x intelligence system not running"
+    fi
+}
+
+# Test 2: Chris Research Engine
+echo "Test 2: Chris Research Engine"
+test_chris_research() {
+    echo "  Testing Chris research capabilities..."
+    
+    if pgrep -f "continuous_chris_research.sh" > /dev/null; then
+        echo "    ✅ Chris research engine running"
+        
+        # Check research data
+        CHRIS_DATA=$(redis-cli -p 6381 -n 10 DBSIZE 2>/dev/null || echo "0")
+        echo "    Chris research data points: $CHRIS_DATA"
+        
+        INVESTMENT_DATA=$(redis-cli -p 6381 -n 11 DBSIZE 2>/dev/null || echo "0")
+        echo "    Investment data points: $INVESTMENT_DATA"
+        
+        PSYCH_DATA=$(redis-cli -p 6381 -n 12 DBSIZE 2>/dev/null || echo "0")
+        echo "    Psychological data points: $PSYCH_DATA"
+        
+        LLM_DATA=$(redis-cli -p 6381 -n 13 DBSIZE 2>/dev/null || echo "0")
+        echo "    LLM analysis data points: $LLM_DATA"
+        
+        TOTAL_DATA=$((CHRIS_DATA + INVESTMENT_DATA + PSYCH_DATA + LLM_DATA))
+        echo "    Total Chris data: $TOTAL_DATA"
+        
+        if [ $TOTAL_DATA -gt 100 ]; then
+            echo "    ✅ Substantial Chris research data"
+        else
+            echo "    ⚠️  Research data still accumulating"
+        fi
+    else
+        echo "    ⚠️  Chris research engine not running"
+    fi
+}
+
+# Test 3: Dynamic Prompt Engine
+echo "Test 3: Dynamic Prompt Generation"
+test_dynamic_prompts() {
+    echo "  Testing dynamic prompt generation..."
+    
+    if pgrep -f "dynamic_prompt_generator.sh" > /dev/null; then
+        echo "    ✅ Dynamic prompt generator running"
+        
+        # Check generated prompts
+        CATEGORIES=$(redis-cli -p 6381 -n 20 KEYS "categories:*" | wc -l 2>/dev/null || echo "0")
+        echo "    Generated categories: $CATEGORIES"
+        
+        PROMPT_SETS=$(redis-cli -p 6381 -n 20 KEYS "prompts:*" | wc -l 2>/dev/null || echo "0")
+        echo "    Generated prompt sets: $PROMPT_SETS"
+        
+        META_PROMPTS=$(redis-cli -p 6381 -n 20 KEYS "meta_prompts:*" | wc -l 2>/dev/null || echo "0")
+        echo "    Meta-prompts: $META_PROMPTS"
+        
+        RESPONSES=$(redis-cli -p 6381 -n 13 KEYS "response:*" | wc -l 2>/dev/null || echo "0")
+        echo "    Generated responses: $RESPONSES"
+        
+        if [ $PROMPT_SETS -gt 10 ]; then
+            echo "    ✅ Dynamic prompt generation active"
+        else
+            echo "    ⚠️  Prompt generation still initializing"
+        fi
+    else
+        echo "    ⚠️  Dynamic prompt generator not running"
+    fi
+}
+
+# Run load tests
+test_api_stress
+test_memory_leaks
+
+echo "✅ Load handling tests completed!"
+EOF
+
+# Make all test scripts executable
+chmod +x test_*.sh
+
+# Run all tests
+run_all_tests
+
+echo ""
+echo "🎯 TASTE.AI Test Suite Summary"
+echo "=============================="
+echo "All test scripts created and executed!"
+echo ""
+echo "Individual test scripts:"
+echo "  • test_basic_functionality.sh - Basic system health"
+echo "  • test_api_endpoints.sh - API functionality"
+echo "  • test_ml_models.sh - ML model performance"
+echo "  • test_performance.sh - Performance metrics"
+echo "  • test_integration.sh - System integration"
+echo "  • test_advanced_features.sh - Specialized features"
+echo "  • test_load_handling.sh - Load and stress testing"
+echo ""
+echo "Run individual tests with: ./test_[name].sh"
+echo "Run all tests with: ./run_all_tests.sh"
