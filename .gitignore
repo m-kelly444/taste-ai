@@ -77,3 +77,4 @@ temp/
 screenshots/
 config.env
 data/logs/
+*.tar.gz
